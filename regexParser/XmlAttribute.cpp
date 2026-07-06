@@ -4,5 +4,3 @@ XmlAttribute::XmlAttribute(const std::string& attribute, const std::string& valu
 	: attribute{attribute}, value{value}
 {
 }
-
-
