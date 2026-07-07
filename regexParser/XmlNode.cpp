@@ -46,6 +46,12 @@ void XmlNode::addChild(std::unique_ptr<XmlNode>& child)
 	children.push_back(std::move(child));
 }
 
+void XmlNode::addChild(XmlNode& child)
+{
+	auto pChild = std::make_unique<XmlNode>(std::move(child));
+	children.push_back(std::move(pChild));
+}
+
 void XmlNode::addAttribute(const XmlAttribute& val)
 {
 	attribute = val;
@@ -56,6 +62,28 @@ XmlNode* XmlNode::findByAttribute(const XmlAttribute& attrib)
 	if (!attrib.is_valid())
 	{
 		return nullptr;
+	}
+
+	std::stack<XmlNode*> stack{};
+
+	for (auto& child : children)
+	{
+		stack.push(child.get());
+	}
+
+	while (!stack.empty())
+	{
+		XmlNode* top = stack.top();
+		if (top->attribute == attrib)
+		{
+			return top;
+		}
+
+		stack.pop();
+		for (auto& child : top->children)
+		{
+			stack.push(child.get());
+		}
 	}
 }
 

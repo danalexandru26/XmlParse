@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include"XmlNode.h"
+#include"XmlDocument.h"
 
 int main()
 {
@@ -11,17 +12,11 @@ int main()
 
 
 	node.setAttribute("question", "0");
+	node.addChild(child);
+	node.addChild(childOfChild);
 
-	auto pChildOfChild = std::make_unique<XmlNode>(std::move(childOfChild));
-	node.addChild(pChildOfChild);
-
-	auto pChild = std::make_unique<XmlNode>(std::move(child));
-	node.addChild(pChild);
-
-	auto start = std::make_unique<XmlNode>(std::move(node));
-	root.addChild(start);
+	root.addChild(node);
 
 	iterate(std::cout, root);
-
 	return 0;
 }
