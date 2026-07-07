@@ -68,6 +68,8 @@ bool XmlDocument::loadFromFile(const std::string& path)
 	std::string currentAttributeValue{};
 	std::string data{};
 
+	std::vector<std::unique_ptr<XmlNode>> nodes{};
+
 	while (file.get(c))
 	{
 		switch (state)
@@ -99,8 +101,13 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				}
 				else if (c == '>')
 				{
-					tag.clear();
+					state = S_TAG_CLOSE;
 				}
+			}
+			break;
+		case S_TAG_CLOSE:
+			{
+				state = S_DEFAULT;
 			}
 			break;
 		case S_INVALID_TAG:
@@ -205,12 +212,16 @@ bool XmlDocument::loadFromFile(const std::string& path)
 			}
 			break;
 		}
+
+		if (state == S_TAG_CLOSE)
+		{
+			auto node = std::make_unique<XmlNode>(tag, "");
+			nodes.push_back(std::move(node));
+		}
 	}
 
-	std::cout << tag << '\n';
-
-	for (std::size_t i = 0; i < attributes.size(); ++i)
+	for (auto& node : nodes)
 	{
-		std::cout << std::format("{}={}\n", attributes[i], attributeValues[i]);
+		std::cout << node->getTag() << '\n';
 	}
 }
