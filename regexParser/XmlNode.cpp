@@ -5,15 +5,6 @@ XmlNode::XmlNode(const std::string& tag, const std::string& data)
 {
 }
 
-XmlNode::XmlNode(const XmlNode& other)
-	: tag{other.tag}, data{other.data}, attribute{other.attribute}
-{
-	for (size_t i = 0; i < children.size(); ++i)
-	{
-		children.push_back(std::move(other.children[i]));
-	}
-}
-
 XmlNode::XmlNode(XmlNode&& other) noexcept
 {
 	swap(*this, other);
@@ -39,6 +30,10 @@ void XmlNode::setAttribute(const XmlAttribute& val)
 	attribute = val;
 }
 
+void XmlNode::addChild(std::unique_ptr<XmlNode>& child)
+{
+	children.push_back(std::move(child));
+}
 
 void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 {
@@ -54,7 +49,7 @@ void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 XmlNode& XmlNode::operator=(XmlNode other)
 {
 	swap(*this, other);
-	
+
 	return *this;
 }
 
@@ -73,9 +68,17 @@ std::ostream& operator<<(std::ostream& os, const XmlNode& node)
 {
 	std::string closingTag = node.tag;
 	closingTag.insert(1, "/");
+	os << node.tag << '\n';
 
-	auto format = std::format("{}{}{}\n", node.tag, node.data, closingTag);
-	os << format;
+	for (const auto& child : node.children)
+	{
+		std::string closingTag = child->tag;
+		closingTag.insert(1, "/");
+
+		auto format = std::format("{}{}{}\n", child->tag, child->data, closingTag);
+		os << format;
+	}
+	os << closingTag;
 
 	return os;
 }

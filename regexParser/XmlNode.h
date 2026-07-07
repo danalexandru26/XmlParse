@@ -11,14 +11,16 @@ class XmlNode
 {
 public:
 	XmlNode() = default;
-	XmlNode(const XmlNode& other);
-	XmlNode(XmlNode&& other) noexcept;
 	XmlNode(const std::string& tag, const std::string& data);
+	XmlNode(XmlNode& other) = delete;
+	XmlNode(XmlNode&& other) noexcept;
 
 	void setTag(const std::string& val);
 	void setData(const std::string& val);
 	void setAttribute(const XmlAttribute& val);
 	void setAttribute(const std::string& attrib, const std::string& val);
+
+	void addChild(std::unique_ptr<XmlNode>& child);
 
 	XmlNode& operator=(XmlNode other);
 
