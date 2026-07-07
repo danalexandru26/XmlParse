@@ -3,6 +3,7 @@
 #include<vector>
 #include<string>
 #include<format>
+#include<stack>
 #include<regex>
 #include<ostream>
 #include"XmlAttribute.h"
@@ -25,6 +26,7 @@ public:
 	XmlNode& operator=(XmlNode other);
 
 	friend void swap(XmlNode& lhs, XmlNode& rhs);
+	friend void iterate(std::ostream& os, const XmlNode& node);
 	friend std::ostream& operator<<(std::ostream& os, const XmlNode& node);
 
 private:

@@ -64,21 +64,54 @@ void swap(XmlNode& lhs, XmlNode& rhs)
 	lhs.children.swap(rhs.children);
 }
 
+void iterate(std::ostream& os, const XmlNode& root)
+{
+	if (root.children.empty())
+	{
+		return;
+	}
+
+	std::stack<std::pair<XmlNode*, bool>> stack{};
+	stack.push({root.children[0].get(), false});
+
+	while (!stack.empty())
+	{
+		auto [node, visited] = stack.top();
+		stack.pop();
+
+		if (visited)
+		{
+			std::string tag = node->tag;
+			tag.insert(1, "/");
+			os << tag << '\n';
+		}
+		else
+		{
+			os << node->tag << '\n';
+			if (!node->data.empty())
+			{
+				os << node->data << '\n';
+			}
+
+			stack.push({node, true});
+
+			for (auto& child : node->children)
+			{
+				if (child != nullptr)
+				{
+					stack.push({child.get(), false});
+				}
+			}
+		}
+	}
+}
+
 std::ostream& operator<<(std::ostream& os, const XmlNode& node)
 {
 	std::string closingTag = node.tag;
 	closingTag.insert(1, "/");
-	os << node.tag << '\n';
 
-	for (const auto& child : node.children)
-	{
-		std::string closingTag = child->tag;
-		closingTag.insert(1, "/");
-
-		auto format = std::format("{}{}{}\n", child->tag, child->data, closingTag);
-		os << format;
-	}
-	os << closingTag;
-
+	std::string format = std::format("{}\n{}\n{}\n", node.tag, node.data, closingTag);
+	os << format;
 	return os;
 }
