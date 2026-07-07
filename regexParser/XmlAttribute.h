@@ -1,4 +1,5 @@
 #pragma once
+#include<vector>
 #include<string>
 #include <regex>
 
@@ -8,11 +9,12 @@ public:
 	XmlAttribute() = default;
 	XmlAttribute(const std::string& attribute, const std::string& value);
 
+	bool addAttribute(const std::string& attribute, const std::string& value);
+	bool addAttributes(const std::vector<std::string>& attribute, const std::vector<std::string>& value);
+
 	bool is_valid() const;
+	bool is_valid(const std::string& attribute) const;
 
-	friend bool operator==(const XmlAttribute& lhs, const XmlAttribute& rhs);
-	friend bool operator!=(const XmlAttribute& lhs, const XmlAttribute& rhs);
-
-	std::string attribute;
-	std::string value;
+	std::vector<std::string> attributes;
+	std::vector<std::string> values;
 };
