@@ -90,6 +90,7 @@ XmlNode* XmlNode::findByAttribute(const XmlAttribute& attrib)
 			stack.push(child.get());
 		}
 	}
+	return nullptr;
 }
 
 
