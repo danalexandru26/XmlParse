@@ -11,6 +11,8 @@ class XmlNode
 {
 public:
 	XmlNode() = default;
+	XmlNode(const XmlNode& other);
+	XmlNode(XmlNode&& other) noexcept;
 	XmlNode(const std::string& tag, const std::string& data);
 
 	void setTag(const std::string& val);
@@ -18,6 +20,9 @@ public:
 	void setAttribute(const XmlAttribute& val);
 	void setAttribute(const std::string& attrib, const std::string& val);
 
+	XmlNode& operator=(XmlNode other);
+
+	friend void swap(XmlNode& lhs, XmlNode& rhs);
 	friend std::ostream& operator<<(std::ostream& os, const XmlNode& node);
 
 private:
