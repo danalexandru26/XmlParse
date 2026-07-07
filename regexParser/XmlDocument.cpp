@@ -46,6 +46,171 @@ void XmlDocument::saveToFile(const std::string& path)
 	iterate(file, root);
 }
 
-void XmlDocument::loadFromFile(const std::string& path)
+bool XmlDocument::loadFromFile(const std::string& path)
 {
+	std::ifstream file;
+	file.open(path);
+
+	if (!file.is_open())
+	{
+		std::cerr << "Could not open file\n";
+		return false;
+	}
+
+	uint8_t state = S_DEFAULT;
+	char c{};
+
+	std::string tag{};
+	std::vector<std::string> attributes{};
+	std::vector<std::string> attributeValues{};
+
+	std::string currentAttribute{};
+	std::string currentAttributeValue{};
+	std::string data{};
+
+	while (file.get(c))
+	{
+		switch (state)
+		{
+		case S_DEFAULT:
+			{
+				if (c == '<')
+				{
+					state = S_TAG;
+				}
+			}
+			break;
+		case S_TAG:
+			{
+				if (isalpha(c))
+				{
+					tag.push_back(c);
+				}
+				else if (c == ' ')
+				{
+					if (tag.empty())
+					{
+						state = S_INVALID_TAG;
+					}
+					else
+					{
+						state = S_ATTRIBUTE_TEST;
+					}
+				}
+				else if (c == '>')
+				{
+					tag.clear();
+				}
+			}
+			break;
+		case S_INVALID_TAG:
+			{
+				std::cerr << "Invalid tag syntax\n";
+				return false;
+			}
+			break;
+		case S_ATTRIBUTE_TEST:
+			{
+				if (c == ' ')
+				{
+				}
+				else if (currentAttribute.empty() && isalpha(c))
+				{
+					currentAttribute.push_back(c);
+					state = S_ATTRIBUTE_READ;
+				}
+				else if (currentAttribute.empty() && isdigit(c))
+				{
+					state = S_INVALID_ATTRIBUTE;
+				}
+				else if (c == '>')
+				{
+					state = S_TAG_CLOSE;
+				}
+				else
+				{
+					state = S_INVALID_ATTRIBUTE;
+				}
+			}
+			break;
+		case S_ATTRIBUTE_READ:
+			{
+				if (isalnum(c) || c == '_')
+				{
+					currentAttribute.push_back(c);
+				}
+				else if (c == ' ')
+				{
+					state = S_POTENTIAL_ATTRIBUTE_BREAK;
+				}
+				else if (c == '=')
+				{
+					attributes.push_back(currentAttribute);
+					currentAttribute.clear();
+
+					state = S_ATTRIBUTE_VALUE_READ_TEST;
+				}
+			}
+			break;
+		case S_POTENTIAL_ATTRIBUTE_BREAK:
+			{
+				if (c == ' ')
+				{
+				}
+				else if (c == '=')
+				{
+					attributes.push_back(currentAttribute);
+					currentAttribute.clear();
+
+					state = S_ATTRIBUTE_VALUE_READ_TEST;
+				}
+				else
+				{
+					state = S_INVALID_ATTRIBUTE;
+				}
+			}
+			break;
+		case S_INVALID_ATTRIBUTE:
+			{
+				std::cerr << std::format("Invalid attribute for tag {}\n", tag);
+				return false;
+			}
+			break;
+
+		case S_ATTRIBUTE_VALUE_READ_TEST:
+			{
+				if (c == '"')
+				{
+					state = S_ATTRIBUTE_VALUE_READ;
+				}
+				else if (c != ' ')
+				{
+					state = S_INVALID_ATTRIBUTE;
+				}
+			}
+			break;
+		case S_ATTRIBUTE_VALUE_READ:
+			{
+				if (c == '"')
+				{
+					attributeValues.push_back(currentAttributeValue);
+					currentAttributeValue.clear();
+
+					state = S_ATTRIBUTE_TEST;
+				}
+				else
+				{
+					currentAttributeValue.push_back(c);
+				}
+			}
+			break;
+		}
+	}
+
+	std::cout << tag << '\n';
+
+	for (std::size_t i = 0; i < attributes.size(); ++i)
+	{
+		std::cout << std::format("{}={}\n", attributes[i], attributeValues[i]);
+	}
 }
