@@ -1,6 +1,7 @@
 #pragma once
 #include<vector>
 #include<string>
+#include <format>
 #include <regex>
 
 class XmlAttribute
@@ -14,6 +15,11 @@ public:
 
 	bool is_valid() const;
 	bool is_valid(const std::string& attribute) const;
+
+	std::string stream() const;
+
+	friend bool operator==(const XmlAttribute& lhs, const XmlAttribute& rhs);
+	friend bool operator!=(const XmlAttribute& lhs, const XmlAttribute& rhs);
 
 	std::vector<std::string> attributes;
 	std::vector<std::string> values;

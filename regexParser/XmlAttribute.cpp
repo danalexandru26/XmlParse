@@ -58,3 +58,39 @@ bool XmlAttribute::is_valid() const
 	}
 	return true;
 }
+
+std::string XmlAttribute::stream() const
+{
+	std::string format{};
+
+	for (size_t i = 0; i < attributes.size(); ++i)
+	{
+		auto str = std::format("{}='{}'", attributes[i], values[i]);
+		format.append(str);
+	}
+	return format;
+}
+
+bool operator==(const XmlAttribute& lhs, const XmlAttribute& rhs)
+{
+	if (lhs.attributes.size() != rhs.attributes.size() ||
+		lhs.values.size() != rhs.values.size())
+	{
+		return false;
+	}
+
+	for (std::size_t i = 0; i < lhs.attributes.size(); ++i)
+	{
+		if (lhs.attributes[i] != rhs.attributes[i] ||
+			lhs.values[i] != rhs.values[i])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+bool operator!=(const XmlAttribute& lhs, const XmlAttribute& rhs)
+{
+	return !(lhs == rhs);
+}

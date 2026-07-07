@@ -137,8 +137,7 @@ void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 			std::string attribute{};
 			if (node->attribute.is_valid())
 			{
-				attribute = std::format(" {} = {}",
-				                        node->attribute.attribute, node->attribute.value);
+				attribute = node->attribute.stream();
 			}
 
 			os << std::format("<{}{}>\n", node->tag, attribute);
