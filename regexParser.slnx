@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="regexParser/regexParser.vcxproj" />
+  <Project Path="regexParser/regexParser.vcxproj" Id="eec23c9b-4425-4d34-880b-5c07b6d09380" />
 </Solution>

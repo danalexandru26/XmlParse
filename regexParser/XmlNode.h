@@ -2,7 +2,9 @@
 #include<memory>
 #include<vector>
 #include<string>
+#include<format>
 #include<regex>
+#include<ostream>
 #include"XmlAttribute.h"
 
 class XmlNode
@@ -15,6 +17,8 @@ public:
 	void setData(const std::string& val);
 	void setAttribute(const XmlAttribute& val);
 	void setAttribute(const std::string& attrib, const std::string& val);
+
+	friend std::ostream& operator<<(std::ostream& os, const XmlNode& node);
 
 private:
 	std::string tag;

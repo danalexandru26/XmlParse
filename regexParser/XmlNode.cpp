@@ -36,3 +36,14 @@ void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 		attribute = XmlAttribute(attrib, val);
 	}
 }
+
+std::ostream& operator<<(std::ostream& os, const XmlNode& node)
+{
+	std::string closingTag = node.tag;
+	closingTag.insert(1, "/");
+
+	auto format = std::format("{}{}{}\n", node.tag, node.data, closingTag);
+	os << format;
+
+	return os;
+}
