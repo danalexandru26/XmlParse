@@ -46,10 +46,9 @@ void XmlNode::addChild(std::unique_ptr<XmlNode>& child)
 	children.push_back(std::move(child));
 }
 
-void XmlNode::addChild(XmlNode& child)
+void XmlNode::addChild(XmlNode&& child)
 {
-	auto pChild = std::make_unique<XmlNode>(std::move(child));
-	children.push_back(std::move(pChild));
+	children.push_back(std::make_unique<XmlNode>(std::move(child)));
 }
 
 void XmlNode::addAttribute(const XmlAttribute& val)
