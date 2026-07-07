@@ -1,11 +1,16 @@
 #include"XmlDocument.h"
 
-XmlDoc::XmlDoc(std::unique_ptr<XmlNode>& node)
+XmlDocument::XmlDocument(std::unique_ptr<XmlNode> node)
 {
 	root = std::move(node);
 }
 
-XmlNode* XmlDoc::findByAttribute(const XmlAttribute& attribute)
+XmlNode* XmlDocument::findByAttribute(const XmlAttribute& attribute)
 {
 	return root->findByAttribute(attribute);
+}
+
+void XmlDocument::stream(std::ostream& os)
+{
+	iterate(os, root);
 }

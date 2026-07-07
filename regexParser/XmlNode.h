@@ -12,7 +12,7 @@ class XmlNode
 {
 public:
 	XmlNode() = default;
-	XmlNode(const std::string& tag, const std::string& data);
+	XmlNode(const std::string& tag, const std::string& data, const XmlAttribute& attribute = {});
 	XmlNode(XmlNode& other) = delete;
 	XmlNode(XmlNode&& other) noexcept;
 
@@ -30,7 +30,7 @@ public:
 	XmlNode& operator=(XmlNode other);
 
 	friend void swap(XmlNode& lhs, XmlNode& rhs);
-	friend void iterate(std::ostream& os, const XmlNode& node);
+	friend void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& node);
 	friend std::ostream& operator<<(std::ostream& os, const XmlNode& node);
 
 private:

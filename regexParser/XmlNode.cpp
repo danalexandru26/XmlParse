@@ -1,9 +1,10 @@
 #include"XmlNode.h"
 
-XmlNode::XmlNode(const std::string& tag, const std::string& data)
-	: tag{tag}, data{data}
+XmlNode::XmlNode(const std::string& tag, const std::string& data, const XmlAttribute& attribute)
+	: tag{tag}, data{data}, attribute{attribute}
 {
 }
+
 
 XmlNode::XmlNode(XmlNode&& other) noexcept
 {
@@ -33,7 +34,6 @@ void XmlNode::setAttribute(const XmlAttribute& val)
 void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 {
 	std::regex attribPattern("^[a-zA-z0-9_]+");
-
 	if (std::regex_search(attrib, attribPattern) &&
 		std::regex_search(attrib, attribPattern))
 	{
@@ -105,15 +105,15 @@ void swap(XmlNode& lhs, XmlNode& rhs)
 	lhs.children.swap(rhs.children);
 }
 
-void iterate(std::ostream& os, const XmlNode& root)
+void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 {
-	if (root.children.empty())
+	if (root->children.empty())
 	{
 		return;
 	}
 
 	std::stack<std::pair<XmlNode*, bool>> stack{};
-	stack.push({root.children[0].get(), false});
+	stack.push({root->children[0].get(), false});
 
 	while (!stack.empty())
 	{

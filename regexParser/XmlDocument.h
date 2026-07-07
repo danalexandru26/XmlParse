@@ -3,15 +3,15 @@
 #include<fstream>
 #include"XmlNode.h"
 
-class XmlDoc
+class XmlDocument
 {
 public:
-	XmlDoc() = default;
-	XmlDoc(std::unique_ptr<XmlNode>& root);
-	XmlDoc(const XmlDoc& other) = delete;
+	XmlDocument() = default;
+	XmlDocument(std::unique_ptr<XmlNode> root);
+	XmlDocument(const XmlDocument& other) = delete;
 
 	XmlNode* findByAttribute(const XmlAttribute& attribute);
-	void iterate(std::ostream& os);
+	void stream(std::ostream& os);
 
 private:
 	std::unique_ptr<XmlNode> root;
