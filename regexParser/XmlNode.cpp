@@ -1,5 +1,6 @@
 #include"XmlNode.h"
 
+
 XmlNode::XmlNode(const std::string& tag, const std::string& data, const XmlAttribute& attribute)
 	: tag{tag}, data{data}, attribute{attribute}
 {
@@ -39,6 +40,11 @@ void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 	{
 		attribute = XmlAttribute(attrib, val);
 	}
+}
+
+std::string XmlNode::getTag()
+{
+	return tag;
 }
 
 void XmlNode::addChild(std::unique_ptr<XmlNode> child)
@@ -109,6 +115,7 @@ void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 {
 	if (root->children.empty())
 	{
+		std::cerr << "Root is empty\n";
 		return;
 	}
 

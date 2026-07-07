@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include<memory>
 #include<vector>
 #include<string>
@@ -20,6 +21,8 @@ public:
 	void setData(const std::string& val);
 	void setAttribute(const XmlAttribute& val);
 	void setAttribute(const std::string& attrib, const std::string& val);
+
+	std::string getTag();
 
 	void addChild(std::unique_ptr<XmlNode> child);
 	void addChild(XmlNode&& child);

@@ -48,19 +48,4 @@ void XmlDocument::saveToFile(const std::string& path)
 
 void XmlDocument::loadFromFile(const std::string& path)
 {
-	std::ifstream file;
-	file.open(path);
-
-	if (!file.is_open())
-	{
-		std::cerr << "Writing to file cannot be performed\n";
-		return;
-	}
-
-	std::string currentState = {};
-	std::string line{};
-
-	while (std::getline(file, line))
-	{
-	}
 }

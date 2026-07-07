@@ -3,6 +3,7 @@
 #include<string>
 #include<format>
 #include<regex>
+#include"XmlDocument.h"
 
 class XmlParser
 {
@@ -12,7 +13,6 @@ public:
 	~XmlParser();
 
 	static bool validateTag(const std::string& tag);
-	static bool validateData(const std::string& data);
 
 private:
 	std::ofstream file;
