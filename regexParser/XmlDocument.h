@@ -2,6 +2,7 @@
 #include<iostream>
 #include<fstream>
 #include"XmlNode.h"
+#include"XmlParser.h"
 
 #define XML_HEADER "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n"
 
