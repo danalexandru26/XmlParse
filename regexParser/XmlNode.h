@@ -21,7 +21,7 @@ public:
 	void setAttribute(const XmlAttribute& val);
 	void setAttribute(const std::string& attrib, const std::string& val);
 
-	void addChild(std::unique_ptr<XmlNode>& child);
+	void addChild(std::unique_ptr<XmlNode> child);
 	void addChild(XmlNode&& child);
 	void addAttribute(const XmlAttribute& val);
 

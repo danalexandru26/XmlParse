@@ -41,7 +41,7 @@ void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 	}
 }
 
-void XmlNode::addChild(std::unique_ptr<XmlNode>& child)
+void XmlNode::addChild(std::unique_ptr<XmlNode> child)
 {
 	children.push_back(std::move(child));
 }
