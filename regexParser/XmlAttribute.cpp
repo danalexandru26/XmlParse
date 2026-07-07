@@ -5,7 +5,7 @@ XmlAttribute::XmlAttribute(const std::string& attribute, const std::string& valu
 {
 }
 
-bool XmlAttribute::is_valid()
+bool XmlAttribute::is_valid() const
 {
 	std::regex attribPattern("^[a-zA-z0-9_]+");
 

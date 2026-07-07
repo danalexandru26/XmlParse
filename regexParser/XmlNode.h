@@ -24,6 +24,8 @@ public:
 	void addChild(std::unique_ptr<XmlNode>& child);
 	void addAttribute(const XmlAttribute& val);
 
+	XmlNode* findByAttribute(const XmlAttribute& attrib);
+
 	XmlNode& operator=(XmlNode other);
 
 	friend void swap(XmlNode& lhs, XmlNode& rhs);

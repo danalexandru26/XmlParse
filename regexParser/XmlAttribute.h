@@ -8,7 +8,7 @@ public:
 	XmlAttribute() = default;
 	XmlAttribute(const std::string& attribute, const std::string& value);
 
-	bool is_valid();
+	bool is_valid() const;
 
 	friend bool operator==(const XmlAttribute& lhs, const XmlAttribute& rhs);
 	friend bool operator!=(const XmlAttribute& lhs, const XmlAttribute& rhs);

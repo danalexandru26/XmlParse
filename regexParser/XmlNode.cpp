@@ -30,16 +30,6 @@ void XmlNode::setAttribute(const XmlAttribute& val)
 	attribute = val;
 }
 
-void XmlNode::addChild(std::unique_ptr<XmlNode>& child)
-{
-	children.push_back(std::move(child));
-}
-
-void XmlNode::addAttribute(const XmlAttribute& val)
-{
-	attribute = val;
-}
-
 void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 {
 	std::regex attribPattern("^[a-zA-z0-9_]+");
@@ -50,6 +40,25 @@ void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 		attribute = XmlAttribute(attrib, val);
 	}
 }
+
+void XmlNode::addChild(std::unique_ptr<XmlNode>& child)
+{
+	children.push_back(std::move(child));
+}
+
+void XmlNode::addAttribute(const XmlAttribute& val)
+{
+	attribute = val;
+}
+
+XmlNode* XmlNode::findByAttribute(const XmlAttribute& attrib)
+{
+	if (!attrib.is_valid())
+	{
+		return nullptr;
+	}
+}
+
 
 XmlNode& XmlNode::operator=(XmlNode other)
 {

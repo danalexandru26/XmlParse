@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="XmlAttribute.cpp" />
+    <ClCompile Include="XmlDocument.cpp" />
     <ClCompile Include="XmlNode.cpp" />
     <ClCompile Include="XmlParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="XmlAttribute.h" />
+    <ClInclude Include="XmlDocument.h" />
     <ClInclude Include="XmlNode.h" />
     <ClInclude Include="XmlParser.h" />
   </ItemGroup>
