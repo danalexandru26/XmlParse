@@ -57,7 +57,7 @@ bool XmlDocument::loadFromFile(const std::string& path)
 		return false;
 	}
 
-	uint8_t state = S_DEFAULT;
+	State state = State::Default;
 	char c{};
 
 	std::string tag{};
@@ -74,15 +74,15 @@ bool XmlDocument::loadFromFile(const std::string& path)
 	{
 		switch (state)
 		{
-		case S_DEFAULT:
+		case State::Default:
 			{
 				if (c == '<')
 				{
-					state = S_TAG;
+					state = State::Tag;
 				}
 			}
 			break;
-		case S_TAG:
+		case State::Tag:
 			{
 				if (isalpha(c))
 				{
@@ -92,31 +92,31 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				{
 					if (tag.empty())
 					{
-						state = S_INVALID_TAG;
+						state = State::InvalidTag;
 					}
 					else
 					{
-						state = S_ATTRIBUTE_TEST;
+						state = State::AttributeTest;
 					}
 				}
 				else if (c == '>')
 				{
-					state = S_TAG_CLOSE;
+					state = State::TagClose;
 				}
 			}
 			break;
-		case S_TAG_CLOSE:
+		case State::TagClose:
 			{
-				state = S_DEFAULT;
+				state = State::Default;
 			}
 			break;
-		case S_INVALID_TAG:
+		case State::InvalidTag:
 			{
 				std::cerr << "Invalid tag syntax\n";
 				return false;
 			}
 			break;
-		case S_ATTRIBUTE_TEST:
+		case State::AttributeTest:
 			{
 				if (c == ' ')
 				{
@@ -124,23 +124,23 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				else if (currentAttribute.empty() && isalpha(c))
 				{
 					currentAttribute.push_back(c);
-					state = S_ATTRIBUTE_READ;
+					state = State::AttributeRead;
 				}
 				else if (currentAttribute.empty() && isdigit(c))
 				{
-					state = S_INVALID_ATTRIBUTE;
+					state = State::InvalidAttribute;
 				}
 				else if (c == '>')
 				{
-					state = S_TAG_CLOSE;
+					state = State::TagClose;
 				}
 				else
 				{
-					state = S_INVALID_ATTRIBUTE;
+					state = State::InvalidAttribute;
 				}
 			}
 			break;
-		case S_ATTRIBUTE_READ:
+		case State::AttributeRead:
 			{
 				if (isalnum(c) || c == '_')
 				{
@@ -148,18 +148,18 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				}
 				else if (c == ' ')
 				{
-					state = S_POTENTIAL_ATTRIBUTE_BREAK;
+					state = State::PotentialAttributeBreak;
 				}
 				else if (c == '=')
 				{
 					attributes.push_back(currentAttribute);
 					currentAttribute.clear();
 
-					state = S_ATTRIBUTE_VALUE_READ_TEST;
+					state = State::AttributeValueReadTest;
 				}
 			}
 			break;
-		case S_POTENTIAL_ATTRIBUTE_BREAK:
+		case State::PotentialAttributeBreak:
 			{
 				if (c == ' ')
 				{
@@ -169,41 +169,41 @@ bool XmlDocument::loadFromFile(const std::string& path)
 					attributes.push_back(currentAttribute);
 					currentAttribute.clear();
 
-					state = S_ATTRIBUTE_VALUE_READ_TEST;
+					state = State::AttributeValueReadTest;
 				}
 				else
 				{
-					state = S_INVALID_ATTRIBUTE;
+					state = State::InvalidAttribute;
 				}
 			}
 			break;
-		case S_INVALID_ATTRIBUTE:
+		case State::InvalidAttribute:
 			{
 				std::cerr << std::format("Invalid attribute for tag {}\n", tag);
 				return false;
 			}
 			break;
 
-		case S_ATTRIBUTE_VALUE_READ_TEST:
+		case State::AttributeValueReadTest:
 			{
 				if (c == '"')
 				{
-					state = S_ATTRIBUTE_VALUE_READ;
+					state = State::AttributeValueRead;
 				}
 				else if (c != ' ')
 				{
-					state = S_INVALID_ATTRIBUTE;
+					state = State::InvalidAttribute;
 				}
 			}
 			break;
-		case S_ATTRIBUTE_VALUE_READ:
+		case State::AttributeValueRead:
 			{
 				if (c == '"')
 				{
 					attributeValues.push_back(currentAttributeValue);
 					currentAttributeValue.clear();
 
-					state = S_ATTRIBUTE_TEST;
+					state = State::AttributeTest;
 				}
 				else
 				{
@@ -213,7 +213,7 @@ bool XmlDocument::loadFromFile(const std::string& path)
 			break;
 		}
 
-		if (state == S_TAG_CLOSE)
+		if (state == State::TagClose)
 		{
 			auto node = std::make_unique<XmlNode>(tag, "");
 			nodes.push_back(std::move(node));
