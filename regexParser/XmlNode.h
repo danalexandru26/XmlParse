@@ -22,6 +22,7 @@ public:
 	void setAttribute(const std::string& attrib, const std::string& val);
 
 	void addChild(std::unique_ptr<XmlNode>& child);
+	void addAttribute(const XmlAttribute& val);
 
 	XmlNode& operator=(XmlNode other);
 

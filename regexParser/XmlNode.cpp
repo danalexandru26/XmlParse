@@ -35,6 +35,11 @@ void XmlNode::addChild(std::unique_ptr<XmlNode>& child)
 	children.push_back(std::move(child));
 }
 
+void XmlNode::addAttribute(const XmlAttribute& val)
+{
+	attribute = val;
+}
+
 void XmlNode::setAttribute(const std::string& attrib, const std::string& val)
 {
 	std::regex attribPattern("^[a-zA-z0-9_]+");
@@ -81,13 +86,19 @@ void iterate(std::ostream& os, const XmlNode& root)
 
 		if (visited)
 		{
-			std::string tag = node->tag;
-			tag.insert(1, "/");
-			os << tag << '\n';
+			os << std::format("</{}>\n", node->tag);
 		}
 		else
 		{
-			os << node->tag << '\n';
+			std::string attribute{};
+			if (node->attribute.is_valid())
+			{
+				attribute = std::format(" {} = {}",
+				                        node->attribute.attribute, node->attribute.value);
+			}
+
+			os << std::format("<{}{}>\n", node->tag, attribute);
+
 			if (!node->data.empty())
 			{
 				os << node->data << '\n';

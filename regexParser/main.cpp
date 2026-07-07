@@ -5,9 +5,12 @@
 int main()
 {
 	XmlNode root;
-	XmlNode node("<p>", "");
-	XmlNode child("<p1>", "a");
-	XmlNode childOfChild("<p2>", "correct");
+	XmlNode node("p", "");
+	XmlNode child("p1", "a");
+	XmlNode childOfChild("p2", "correct");
+
+
+	node.setAttribute("question", "0");
 
 	auto pChildOfChild = std::make_unique<XmlNode>(std::move(childOfChild));
 	node.addChild(pChildOfChild);
