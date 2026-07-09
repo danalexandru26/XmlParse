@@ -1,19 +1,22 @@
 #pragma once
+#include<iostream>
 #include<fstream>
 #include<string>
 #include<format>
 #include<regex>
-#include"XmlDocument.h"
+#include<vector>
+#include<functional>
 
 class XmlParser
 {
 public:
 	XmlParser() = default;
 	XmlParser(const std::string& path);
-	~XmlParser();
 
-	static bool validateTag(const std::string& tag);
+	void configurePath(const std::string& path);
+	int parseToXml(std::function<void(const std::string &)> parser);
+	int txtToXml();
 
 private:
-	std::ofstream file;
+	std::string path;
 };

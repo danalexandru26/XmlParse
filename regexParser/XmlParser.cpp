@@ -1,21 +1,31 @@
 #include"XmlParser.h"
 
 XmlParser::XmlParser(const std::string& path)
+	: path{path}
 {
-	file.open(path);
 }
 
-XmlParser::~XmlParser()
+int XmlParser::parseToXml(std::function<void(const std::string&)> parser)
 {
-	if (file.is_open())
+	if (path.empty())
 	{
-		file.close();
+		return 1;
 	}
+
+	return 0;
 }
 
-bool XmlParser::validateTag(const std::string& tag)
+int XmlParser::txtToXml()
 {
-	std::regex regTag("<\\s*(/)?\\s*([A-Za-z_][A-Za-z0-9_.:-]*)");
+	if (path.empty())
+	{
+		return 1;
+	}
 
-	return std::regex_search(tag, regTag);
+	std::ifstream toParse(path);
+	if (!toParse.is_open())
+	{
+		std::cerr << "Text file handle cannot be instantiated\n";
+		return 1;
+	}
 }
