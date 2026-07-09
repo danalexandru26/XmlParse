@@ -28,7 +28,7 @@ public:
 	int txtToXml();
 
 private:
-	std::string extractText(const std::regex& pattern, const std::string& line);
+	std::smatch extractText(const std::regex& pattern, const std::string& line);
 
 private:
 	std::string path;

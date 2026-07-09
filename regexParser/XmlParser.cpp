@@ -64,22 +64,34 @@ int XmlParser::txtToXml()
 		{
 		case caseMatch::Question:
 			{
-				std::string id = extractText(lineMatch, line);
-				questionNode = std::make_unique<XmlNode>(id, "");
+				auto match = extractText(lineMatch, line);
+				if (!match.empty() && match.size() > 1)
+				{
+					questionNode = std::make_unique<XmlNode>(match[1].str(), "");
+				}
+				else
+				{
+				}
 			}
 			break;
 		case caseMatch::Option:
 			{
-				if (questionNode.get() != nullptr)
+				if (questionNode != nullptr)
 				{
-					std::string option = extractText(optionMatch, line);
-					questionNode->addChild(std::make_unique<XmlNode>(option, ""));
+					auto match = extractText(lineMatch, line);
+					if (!match.empty() && match.size() > 1)
+					{
+						questionNode->addChild(std::make_unique<XmlNode>(match[1].str(), ""));
+					}
+				}
+				else
+				{
 				}
 			}
 			break;
 		case caseMatch::Answer:
 			{
-				if (questionNode.get() != nullptr)
+				if (questionNode != nullptr)
 				{
 					nodes.push_back(std::move(questionNode));
 				}
@@ -87,7 +99,7 @@ int XmlParser::txtToXml()
 			break;
 		case caseMatch::Text:
 			{
-			std::cout << line << '\n';
+				std::cout << line << '\n';
 			}
 			break;
 		case caseMatch::Default:
@@ -102,17 +114,12 @@ int XmlParser::txtToXml()
 	return 0;
 }
 
-std::string XmlParser::extractText(const std::regex& pattern, const std::string& line)
+std::smatch XmlParser::extractText(const std::regex& pattern, const std::string& line)
 {
-	auto begin = std::sregex_iterator(line.begin(), line.end(), pattern);
-
-	for (auto it = begin; it != std::sregex_iterator(); ++it)
+	std::smatch match;
+	if (std::regex_search(line, match, pattern))
 	{
-		auto match = *it;
-		if (match.size() > 1)
-		{
-			return match[1];
-		}
+		return match;
 	}
 	return {};
 }
