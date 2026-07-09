@@ -90,6 +90,7 @@ int XmlParser::txtToXml()
 			break;
 		case caseMatch::Text:
 			{
+			std::cout << line << '\n';
 			}
 			break;
 		case caseMatch::Default:

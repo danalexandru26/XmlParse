@@ -52,6 +52,11 @@ size_t XmlNode::childCount()
 	return children.size();
 }
 
+void XmlNode::appendData(const std::string& val)
+{
+	data.append(val);
+}
+
 void XmlNode::addChild(std::unique_ptr<XmlNode> child)
 {
 	children.push_back(std::move(child));
