@@ -9,7 +9,9 @@ int main()
 	using xml = XmlDocument;
 	using parser = XmlParser;
 
-	parser parseXml()
+	parser parseXml("fixedQuiz.txt");
+
+	parseXml.txtToXml();
 
 	return 0;
 }
