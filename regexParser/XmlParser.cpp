@@ -1,6 +1,4 @@
 #include"XmlParser.h"
-#include <cstdio>
-#include <windows.h>
 
 XmlParser::XmlParser(const std::string& path)
 	: path{path}
@@ -31,12 +29,6 @@ int XmlParser::txtToXml()
 		return 1;
 	}
 
-	static std::regex lineMatch(R"(^(\d+)\.\D)");
-	static std::regex optionMatch(R"(^([a-zA-z])[\.\)]\s)");
-	static std::regex answerMatch(R"(:.+\()");
-
-	std::string line{};
-
 	std::vector<std::unique_ptr<XmlNode>> nodes{};
 	std::unique_ptr<XmlNode> questionNode{};
 	std::unique_ptr<XmlNode> optionNode{};
@@ -44,24 +36,10 @@ int XmlParser::txtToXml()
 	auto state{caseMatch::Default};
 	auto lineState{caseMatch::Default};
 
+	std::string line{};
 	while (std::getline(toParse, line))
 	{
-		if (std::regex_search(line, lineMatch))
-		{
-			lineState = caseMatch::Question;
-		}
-		else if (std::regex_search(line, optionMatch))
-		{
-			lineState = caseMatch::Option;
-		}
-		else if (std::regex_search(line, answerMatch))
-		{
-			lineState = caseMatch::Answer;
-		}
-		else
-		{
-			lineState = caseMatch::Text;
-		}
+		lineState = classifyState(line);
 
 		switch (state)
 		{
@@ -185,13 +163,16 @@ int XmlParser::txtToXml()
 			}
 		}
 	}
-
-	SetConsoleOutputCP(65001);
-	for (auto& ptr : nodes)
-	{
-		iterate(std::cout, ptr);
-	}
 	return 0;
+}
+
+caseMatch XmlParser::classifyState(const std::string& line)
+{
+	if (std::regex_search(line, lineMatch)) { return caseMatch::Question; }
+	if (std::regex_search(line, optionMatch)) { return caseMatch::Option; }
+	if (std::regex_search(line, answerMatch)) { return caseMatch::Answer; }
+	
+	return caseMatch::Text;
 }
 
 std::smatch XmlParser::extractText(const std::regex& pattern, const std::string& line)

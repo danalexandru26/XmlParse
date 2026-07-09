@@ -41,8 +41,6 @@ void XmlDocument::saveToFile(const std::string& path)
 		std::cerr << "Writing to file cannot be performed\n";
 		return;
 	}
-
-	file << XML_HEADER;
 	iterate(file, root);
 }
 

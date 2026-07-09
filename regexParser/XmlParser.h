@@ -28,7 +28,11 @@ public:
 	int txtToXml();
 
 private:
+	caseMatch classifyState(const std::string& line);
 	std::smatch extractText(const std::regex& pattern, const std::string& line);
 
+	const std::regex lineMatch{R"(^(\d+)\.\D)"};
+	const std::regex optionMatch{R"(^([a-zA-z])[\.\)]\s)"};
+	const std::regex answerMatch{R"(:.+\()"};
 	std::string path;
 };
