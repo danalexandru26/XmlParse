@@ -1,4 +1,6 @@
 #include"XmlParser.h"
+#include <cstdio>
+#include <windows.h>
 
 XmlParser::XmlParser(const std::string& path)
 	: path{path}
@@ -39,78 +41,156 @@ int XmlParser::txtToXml()
 	std::unique_ptr<XmlNode> questionNode{};
 	std::unique_ptr<XmlNode> optionNode{};
 
-	auto state = caseMatch::Default;
+	auto state{caseMatch::Default};
+	auto lineState{caseMatch::Default};
 
 	while (std::getline(toParse, line))
 	{
 		if (std::regex_search(line, lineMatch))
 		{
-			state = caseMatch::Question;
+			lineState = caseMatch::Question;
 		}
 		else if (std::regex_search(line, optionMatch))
 		{
-			state = caseMatch::Option;
+			lineState = caseMatch::Option;
 		}
 		else if (std::regex_search(line, answerMatch))
 		{
-			state = caseMatch::Answer;
+			lineState = caseMatch::Answer;
 		}
 		else
 		{
-			state = caseMatch::Text;
+			lineState = caseMatch::Text;
 		}
 
 		switch (state)
 		{
+		case caseMatch::Default:
+			{
+				switch (lineState)
+				{
+				case caseMatch::Question:
+					{
+						auto match = extractText(lineMatch, line);
+						if (!match.empty() && match.size() > 1)
+						{
+							questionNode = std::make_unique<XmlNode>("q_" + match[1].str(), line);
+							state = caseMatch::Question;
+						}
+						else
+						{
+						}
+					}
+					break;
+				default:
+					{
+						std::cerr << std::format("Invalid pattern. Skipping line: {}\n", line);
+					}
+				}
+			}
+			break;
 		case caseMatch::Question:
 			{
-				auto match = extractText(lineMatch, line);
-				if (!match.empty() && match.size() > 1)
+				switch (lineState)
 				{
-					questionNode = std::make_unique<XmlNode>(match[1].str(), "");
-				}
-				else
-				{
+				case caseMatch::Option:
+					{
+						auto match = extractText(optionMatch, line);
+						if (!match.empty() && match.size() > 1)
+						{
+							optionNode = std::make_unique<XmlNode>(match[1].str(), line);
+							state = caseMatch::Option;
+						}
+						else
+						{
+						}
+					}
+					break;
+				case caseMatch::Text:
+					{
+						if (questionNode != nullptr)
+						{
+							questionNode->appendData(" " + line);
+						}
+					}
+					break;
+				default:
+					{
+						std::cerr << "Invalid document formatting for question text or option identification\n";
+						return 1;
+					}
 				}
 			}
 			break;
 		case caseMatch::Option:
 			{
-				if (questionNode != nullptr)
+				switch (lineState)
 				{
-					auto match = extractText(lineMatch, line);
-					if (!match.empty() && match.size() > 1)
+				case caseMatch::Option:
 					{
-						questionNode->addChild(std::make_unique<XmlNode>(match[1].str(), ""));
+						if (questionNode != nullptr)
+						{
+							if (questionNode != nullptr)
+							{
+								questionNode->addChild(std::move(optionNode));
+							}
+
+							auto match = extractText(optionMatch, line);
+							if (!match.empty() && match.size() > 1)
+							{
+								optionNode = std::make_unique<XmlNode>(match[1].str(), line);
+							}
+							else
+							{
+							}
+						}
+						else
+						{
+						}
+					}
+					break;
+				case caseMatch::Answer:
+					{
+						if (questionNode != nullptr)
+						{
+							if (optionNode != nullptr)
+							{
+								questionNode->addChild(std::move(optionNode));
+							}
+							nodes.push_back(std::move(questionNode));
+							state = caseMatch::Default;
+						}
+					}
+					break;
+				case caseMatch::Text:
+					{
+						if (optionNode != nullptr)
+						{
+							optionNode->appendData(" " + line);
+						}
+					}
+					break;
+				default:
+					{
+						std::cerr << "Invalid document formatting for option text or answer identification\n";
+						return 1;
 					}
 				}
-				else
-				{
-				}
-			}
-			break;
-		case caseMatch::Answer:
-			{
-				if (questionNode != nullptr)
-				{
-					nodes.push_back(std::move(questionNode));
-				}
-			}
-			break;
-		case caseMatch::Text:
-			{
-				std::cout << line << '\n';
-			}
-			break;
-		case caseMatch::Default:
-			{
 			}
 			break;
 		default:
-			break;
+			{
+				std::cerr << "Invalid document formatting\n";
+				return 1;
+			}
 		}
 	}
 
+	SetConsoleOutputCP(65001);
+	for (auto& ptr : nodes)
+	{
+		iterate(std::cout, ptr);
+	}
 	return 0;
 }
 

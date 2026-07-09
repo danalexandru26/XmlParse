@@ -30,6 +30,5 @@ public:
 private:
 	std::smatch extractText(const std::regex& pattern, const std::string& line);
 
-private:
 	std::string path;
 };

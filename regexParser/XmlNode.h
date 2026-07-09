@@ -27,6 +27,7 @@ public:
 	void addAttribute(const XmlAttribute& val);
 
 	std::string getTag();
+	std::string getData();
 	size_t childCount();
 
 	void appendData(const std::string& val);
@@ -35,7 +36,7 @@ public:
 	XmlNode& operator=(XmlNode other);
 
 	friend void swap(XmlNode& lhs, XmlNode& rhs);
-	friend void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& node);
+	friend void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root);
 	friend std::ostream& operator<<(std::ostream& os, const XmlNode& node);
 
 private:
