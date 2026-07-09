@@ -11,7 +11,6 @@ int XmlParser::parseToXml(std::function<void(const std::string&)> parser)
 	{
 		return 1;
 	}
-
 	return 0;
 }
 
@@ -30,28 +29,70 @@ int XmlParser::txtToXml()
 		return 1;
 	}
 
+	static std::regex lineMatch(R"(^(\d+)\.\D)");
+	static std::regex optionMatch(R"(^([a-zA-z])[\.\)]\s)");
+	static std::regex answerMatch(R"(:.+\()");
+
+	std::string line{};
+
+	std::vector<std::unique_ptr<XmlNode>> nodes{};
+	std::unique_ptr<XmlNode> questionNode{};
+	std::unique_ptr<XmlNode> optionNode{};
+	std::unique_ptr<XmlNode> answerNode{};
+
 	auto state = caseMatch::Default;
-	std::string line;
+	int qMatch{};
+
 	while (std::getline(toParse, line))
 	{
-		switch (verifyMatch(line))
+		if (std::regex_search(line, lineMatch))
+		{
+			state = caseMatch::Question;
+		}
+		else if (std::regex_search(line, optionMatch))
+		{
+			state = caseMatch::Option;
+		}
+		else if (std::regex_search(line, answerMatch))
+		{
+			qMatch += 1;
+			state = caseMatch::Answer;
+		}
+		else
+		{
+			state = caseMatch::Text;
+		}
+
+		switch (state)
 		{
 		case caseMatch::Question:
 			{
-				std::cout << std::format("Question: {}\n", line);
+				std::string id = extractText(lineMatch, line);
+				questionNode = std::make_unique<XmlNode>(id, "");
 			}
 			break;
 		case caseMatch::Option:
 			{
-				std::cout << std::format("Option: {}\n", line);
+				if (questionNode.get() != nullptr)
+				{
+					std::string option = extractText(optionMatch, line);
+					questionNode->addChild(std::make_unique<XmlNode>(option, ""));
+				}
 			}
 			break;
 		case caseMatch::Answer:
 			{
-				std::cout << std::format("Answer: {}\n", line);
+				if (questionNode.get() != nullptr)
+				{
+					nodes.push_back(std::move(questionNode));
+				}
 			}
 			break;
 		case caseMatch::Text:
+			{
+			}
+			break;
+		case caseMatch::Default:
 			{
 			}
 			break;
@@ -63,23 +104,17 @@ int XmlParser::txtToXml()
 	return 0;
 }
 
-caseMatch XmlParser::verifyMatch(const std::string& line)
+std::string XmlParser::extractText(const std::regex& pattern, const std::string& line)
 {
-	static std::regex lineMatch(R"(^\d+\.\D)");
-	static std::regex optionMatch(R"(^[a-zA-z][\.\)]\s)");
-	static std::regex answerMatch(R"(:.+\()");
+	auto begin = std::sregex_iterator(line.begin(), line.end(), pattern);
 
-	if (std::regex_search(line, lineMatch))
+	for (auto it = begin; it != std::sregex_iterator(); ++it)
 	{
-		return caseMatch::Question;
+		auto match = *it;
+		if (match.size() > 1)
+		{
+			return match[1];
+		}
 	}
-	if (std::regex_search(line, optionMatch))
-	{
-		return caseMatch::Option;
-	}
-	if (std::regex_search(line, answerMatch))
-	{
-		return caseMatch::Answer;
-	}
-	return caseMatch::Text;
+	return {};
 }

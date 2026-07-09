@@ -3236,7 +3236,7 @@ b. durerea articulară
 c. durerea musculară
 d. durerea toracică
 e. durerea lombară
-i. R: e. (Vol. II, Cap. 1.5, Pag. 213)
+R: e. (Vol. II, Cap. 1.5, Pag. 213)
 413. *Când apare reumatismul articular acut?
 a. dupa infecția stafilococică cu streptococul B hemolitic
 b. după infecția streptococică cu streptococul B hemolitic
@@ -3820,7 +3820,7 @@ b. imbracarea manusilor sterile
 c. monitorizarea pacientului
 d. suprimarea acului de punctie
 e. dezinfectarea locului punctiei dupa retragerea acului
-Raspuns : a, b, c, e. ( Vol.II, Cap.2.2,Pag.411 )
+Raspuns: a, b, c, e. ( Vol.II, Cap.2.2,Pag.411 )
 2.3. Nursing în urologie
 493. Caracteristicile rinichiilor sunt:
 a. sunt localizatii in cavitatea toracica
@@ -3828,7 +3828,7 @@ b. au forma unui bob de mazare
 c. sunt organe pereche
 d. sunt situati de o parte si de alta a coloanei lombare
 e. au forma unui bob de fasole
-Raspuns corect;c,d,e.(Vol. II, Cap. 2.3, Pag.416)
+Raspuns corect:c,d,e.(Vol. II, Cap. 2.3, Pag.416)
 494. Functiile de baza ale rinichilor sunt:
 a. functia de epurare sanguina
 b. functia de conducere
@@ -3898,7 +3898,7 @@ b. radiogarafie simpla
 c. urografie
 d. biopsie
 e. scintigrafie
-Raspuns corect; b, c. (Vol. II. Cap. 2.3. Pag. 432)
+Raspuns corect: b, c. (Vol. II. Cap. 2.3. Pag. 432)
 504. Tratamentul medicamentos al liteazei renale consta in:
 a. antispastice
 b. analgezice
@@ -3912,7 +3912,7 @@ b. febra constanta
 c. durere lombara acuta
 d. hipertensiune arterial
 e. inapetenta
-Raspuns corect; a. (Vol. II. Cap. 2.3. Pag. 433)
+Raspuns corect: a. (Vol. II. Cap. 2.3. Pag. 433)
 506. Explorarile folosite in diagnosticarea cancerul de prostata sunt;
 a. PSA, PAP (fosfataza acida specifica prostate), uree, creatinine, ionograma
 b. biopsia de prostate
@@ -3950,7 +3950,7 @@ b. pregatirea psihica a pacientului
 c. pregateste locul punctiei, dezinfectia lui
 d. executa punctia si aspirarea urinii
 e. dezinfecteaza locul punctiei dupa retragerea acului
-Raspuns corect; a,b,c,e. ( Vol.II, Cap. 2.3, Pag.444/445)
+Raspuns corect: a,b,c,e. ( Vol.II, Cap. 2.3, Pag.444/445)
 511. *Care este scopul principal in efectuarea biopsiei renale:
 a. imbunatatirea functiei renale
 b. prelevarea fragmentuli de tesut pentru diagnostic
@@ -5495,7 +5495,7 @@ hipovolemie.
 d. un sindrom respirator postoperator poate include hipoxie, hipercapnee
 și acidoză respiratorie.
 e. infecția urinară postoperatorie este mai frecventă la bolnavii vârstnici,
-Raspunsuri corecte ;a,b,d,e .(Vol.III, Cap.2.1, Pag.292)
+Raspunsuri corecte: a,b,d,e .(Vol.III, Cap.2.1, Pag.292)
 712. Care sunt masurile necesare pentru pregătirea bolnavului înainte de
 oftalmoscopie?
 a. instilația cu 1-2 picături de homatropină 1% în sacul
@@ -5719,7 +5719,7 @@ b. funcție endocrină – secreția de hormoni sexuali feminini
 c. producția de spermatozoizi
 d. reglarea ciclului menstrual
 e. funcție hematopoietică
-f. Raspunsuri corecte :a, b, d. ( Vol.III,Cap 3, Pag 351)
+Raspunsuri corecte: a, b, d. ( Vol.III,Cap 3, Pag 351)
 741. Care sunt elementele principale care formează bazinul osos?
 a. oasele coxale (ilion, ischion și pubis)
 b. osul sacru și coccisul
@@ -6928,11 +6928,11 @@ e. folosirea pernelor pentru a ajuta la o poziție corectă
 R: a, b, c, e. (Vol. III, Cap. 8, Pag. 628)
 908. *Din punct de vedere al analgezicelor adjuvante, la ce tip de durere ajută
 corticosteroizii?
-a.durerea provocată de colica renala
-b.durerea provocată de edeme sau inflamații
-c.durerea provocată de afecțiunile nervilor
-d.durerea provocată de spasmele mușchilor scheletici
-e.durerea provocată de colica abdominală
+a. durerea provocată de colica renala
+b. durerea provocată de edeme sau inflamații
+c. durerea provocată de afecțiunile nervilor
+d. durerea provocată de spasmele mușchilor scheletici
+e. durerea provocată de colica abdominală
 R: b .(Vol.III, Cap. 8, Pag.626)
 909. *.Benzodiazepinele se folosesc pentru tratarea:
 a. durerea provocată de colica renala
@@ -7063,7 +7063,7 @@ b. administrarea exclusivă a tratamentului prescris fără evaluare
 c. educațtia pacientului și a familiei privind îngrijirea la domiciliu
 d. identificarea riscurilor de dependență și a complicațiilor
 e. excluderea familiei din planul de îngrijire
-Raspuns corect ;a,c,d.(Vol.III.Cap.9.Pag.684)
+Raspuns corect: a,c,d.(Vol.III.Cap.9.Pag.684)
 927. Factorii care influențiază decizia de menținere a persoanei vârnisce includ :
 a. gradul de autonomie a persoanei ;
 b. existența unei rețele de sprijin familial ;

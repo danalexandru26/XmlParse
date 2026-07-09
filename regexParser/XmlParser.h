@@ -2,10 +2,11 @@
 #include<iostream>
 #include<fstream>
 #include<string>
-#include<format>
 #include<regex>
 #include<vector>
 #include<functional>
+#include"XmlNode.h"
+
 
 enum class caseMatch
 {
@@ -27,7 +28,7 @@ public:
 	int txtToXml();
 
 private:
-	caseMatch verifyMatch(const std::string& line);
+	std::string extractText(const std::regex& pattern, const std::string& line);
 
 private:
 	std::string path;

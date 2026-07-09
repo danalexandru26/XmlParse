@@ -3236,7 +3236,7 @@ b. durerea articulară
 c. durerea musculară
 d. durerea toracică
 e. durerea lombară
-i. R: e. (Vol. II, Cap. 1.5, Pag. 213)
+R: e. (Vol. II, Cap. 1.5, Pag. 213)
 413. *Când apare reumatismul articular acut?
 a. dupa infecția stafilococică cu streptococul B hemolitic
 b. după infecția streptococică cu streptococul B hemolitic
@@ -6928,11 +6928,11 @@ e. folosirea pernelor pentru a ajuta la o poziție corectă
 R: a, b, c, e. (Vol. III, Cap. 8, Pag. 628)
 908. *Din punct de vedere al analgezicelor adjuvante, la ce tip de durere ajută
 corticosteroizii?
-a.durerea provocată de colica renala
-b.durerea provocată de edeme sau inflamații
-c.durerea provocată de afecțiunile nervilor
-d.durerea provocată de spasmele mușchilor scheletici
-e.durerea provocată de colica abdominală
+a. durerea provocată de colica renala
+b. durerea provocată de edeme sau inflamații
+c. durerea provocată de afecțiunile nervilor
+d. durerea provocată de spasmele mușchilor scheletici
+e. durerea provocată de colica abdominală
 R: b .(Vol.III, Cap. 8, Pag.626)
 909. *.Benzodiazepinele se folosesc pentru tratarea:
 a. durerea provocată de colica renala

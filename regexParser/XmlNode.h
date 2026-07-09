@@ -23,6 +23,7 @@ public:
 	void setAttribute(const std::string& attrib, const std::string& val);
 
 	std::string getTag();
+	size_t childCount();
 
 	void addChild(std::unique_ptr<XmlNode> child);
 	void addChild(XmlNode&& child);

@@ -47,6 +47,11 @@ std::string XmlNode::getTag()
 	return tag;
 }
 
+size_t XmlNode::childCount()
+{
+	return children.size();
+}
+
 void XmlNode::addChild(std::unique_ptr<XmlNode> child)
 {
 	children.push_back(std::move(child));
@@ -121,7 +126,10 @@ void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 	}
 
 	std::stack<std::pair<XmlNode*, bool>> stack{};
-	stack.push({root->children[0].get(), false});
+	for (auto& ptr : root->children)
+	{
+		stack.push({ptr.get(), false});
+	}
 
 	while (!stack.empty())
 	{
