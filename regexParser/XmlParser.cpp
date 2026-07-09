@@ -38,10 +38,8 @@ int XmlParser::txtToXml()
 	std::vector<std::unique_ptr<XmlNode>> nodes{};
 	std::unique_ptr<XmlNode> questionNode{};
 	std::unique_ptr<XmlNode> optionNode{};
-	std::unique_ptr<XmlNode> answerNode{};
 
 	auto state = caseMatch::Default;
-	int qMatch{};
 
 	while (std::getline(toParse, line))
 	{
@@ -55,7 +53,6 @@ int XmlParser::txtToXml()
 		}
 		else if (std::regex_search(line, answerMatch))
 		{
-			qMatch += 1;
 			state = caseMatch::Answer;
 		}
 		else
