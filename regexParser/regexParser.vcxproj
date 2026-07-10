@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="application.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="XmlAttribute.cpp" />
     <ClCompile Include="XmlDocument.cpp" />
@@ -146,6 +147,7 @@
     <ClCompile Include="XmlParser.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="application.h" />
     <ClInclude Include="XmlAttribute.h" />
     <ClInclude Include="XmlDocument.h" />
     <ClInclude Include="XmlNode.h" />

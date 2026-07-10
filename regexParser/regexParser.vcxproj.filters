@@ -19,6 +19,18 @@
     <Filter Include="Source Files\XML">
       <UniqueIdentifier>{89f980c2-4133-41fd-97b8-9a01567aff19}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Application">
+      <UniqueIdentifier>{b8c42a03-3692-45ff-81dc-3a8c1a9f01f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{d8e66041-37bd-4a30-8eb0-115c00d4ce73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application\GUI">
+      <UniqueIdentifier>{ac802e1c-0bf6-425d-bed5-a29e6c835f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\GUI">
+      <UniqueIdentifier>{c3652268-e6c5-4536-adca-e1d9e6cc6d84}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +48,9 @@
     <ClCompile Include="XmlDocument.cpp">
       <Filter>Source Files\XML</Filter>
     </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="XmlParser.h">
@@ -49,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="XmlDocument.h">
       <Filter>Header Files\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>Header Files\Application</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
