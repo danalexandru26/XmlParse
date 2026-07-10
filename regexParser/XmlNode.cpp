@@ -134,7 +134,6 @@ void print(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 		std::cerr << "Root is empty\n";
 		return;
 	}
-	os << ' ';
 	if (!os)
 	{
 		std::cerr << "Output operation failure\n";
