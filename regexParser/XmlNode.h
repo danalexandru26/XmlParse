@@ -12,40 +12,6 @@
 #include<ostream>
 #include"XmlAttribute.h"
 
-enum class NodeData
-{
-	Tag = 0x0,
-	Data = 0x1,
-	Attribute = 0x2,
-};
-
-template <typename T>
-struct is_bitmask_enum : std::false_type
-{
-};
-
-template <>
-struct is_bitmask_enum<NodeData> : std::true_type
-{
-};
-
-template <typename T>
-concept EnumMask = std::is_enum_v<T> && is_bitmask_enum<T>::value;
-
-template <EnumMask E>
-constexpr E operator|(E lhs, E rhs)
-{
-	using T = std::underlying_type_t<E>;
-	return static_cast<E>(static_cast<T>(lhs) | static_cast<T>(rhs));
-}
-
-template <EnumMask E>
-constexpr E operator&(E lhs, E rhs)
-{
-	using T = std::underlying_type_t<E>;
-	return static_cast<E>(static_cast<T>(lhs) & static_cast<T>(rhs));
-}
-
 class XmlNode
 {
 public:

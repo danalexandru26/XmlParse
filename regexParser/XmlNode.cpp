@@ -52,15 +52,6 @@ std::string XmlNode::getData()
 	return data;
 }
 
-void print(const NodeData& info)
-{
-	switch (info)
-	{
-	default:
-		break;
-	}
-}
-
 size_t XmlNode::childCount()
 {
 	return children.size();
