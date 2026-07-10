@@ -1,9 +1,9 @@
 #pragma once
 #include<iostream>
+#include<memory>
 #include<fstream>
 #include<string>
 #include<regex>
-#include<vector>
 #include<functional>
 #include"XmlNode.h"
 
@@ -25,7 +25,7 @@ public:
 
 	void configurePath(const std::string& path);
 	int parseToXml(std::function<void(const std::string&)> parser);
-	int txtToXml();
+	std::unique_ptr<XmlNode> txtToXml();
 
 private:
 	caseMatch classifyState(const std::string& line);

@@ -11,7 +11,9 @@ int main()
 
 	parser parseXml("fixedQuiz.txt");
 
-	parseXml.txtToXml();
+	std::unique_ptr<XmlNode> root = parseXml.txtToXml();
 
+	std::ofstream test;
+	print(test, root);
 	return 0;
 }

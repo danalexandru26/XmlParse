@@ -14,22 +14,22 @@ int XmlParser::parseToXml(std::function<void(const std::string&)> parser)
 	return 0;
 }
 
-int XmlParser::txtToXml()
+std::unique_ptr<XmlNode> XmlParser::txtToXml()
 {
 	if (path.empty())
 	{
 		std::cerr << "Path is not set\n";
-		return 1;
+		return nullptr;
 	}
 
 	std::ifstream toParse(path);
 	if (!toParse.is_open())
 	{
 		std::cerr << "Text file handle cannot be instantiated\n";
-		return 1;
+		return nullptr;
 	}
 
-	std::vector<std::unique_ptr<XmlNode>> nodes{};
+	std::unique_ptr<XmlNode> root = std::make_unique<XmlNode>("root", "");
 	std::unique_ptr<XmlNode> questionNode{};
 	std::unique_ptr<XmlNode> optionNode{};
 
@@ -95,7 +95,7 @@ int XmlParser::txtToXml()
 				default:
 					{
 						std::cerr << "Invalid document formatting for question text or option identification\n";
-						return 1;
+						return nullptr;
 					}
 				}
 			}
@@ -135,7 +135,7 @@ int XmlParser::txtToXml()
 							{
 								questionNode->addChild(std::move(optionNode));
 							}
-							nodes.push_back(std::move(questionNode));
+							root->addChild(std::move(questionNode));
 							state = caseMatch::Default;
 						}
 					}
@@ -151,7 +151,7 @@ int XmlParser::txtToXml()
 				default:
 					{
 						std::cerr << "Invalid document formatting for option text or answer identification\n";
-						return 1;
+						return nullptr;
 					}
 				}
 			}
@@ -159,11 +159,11 @@ int XmlParser::txtToXml()
 		default:
 			{
 				std::cerr << "Invalid document formatting\n";
-				return 1;
+				return nullptr;
 			}
 		}
 	}
-	return 0;
+	return root;
 }
 
 caseMatch XmlParser::classifyState(const std::string& line)
@@ -171,7 +171,7 @@ caseMatch XmlParser::classifyState(const std::string& line)
 	if (std::regex_search(line, lineMatch)) { return caseMatch::Question; }
 	if (std::regex_search(line, optionMatch)) { return caseMatch::Option; }
 	if (std::regex_search(line, answerMatch)) { return caseMatch::Answer; }
-	
+
 	return caseMatch::Text;
 }
 

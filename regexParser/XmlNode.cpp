@@ -136,11 +136,17 @@ void swap(XmlNode& lhs, XmlNode& rhs)
 	lhs.children.swap(rhs.children);
 }
 
-void iterate(std::function<void(XmlNode&, NodeData mask)> functor, const std::unique_ptr<XmlNode>& root)
+void print(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 {
 	if (root->children.empty())
 	{
 		std::cerr << "Root is empty\n";
+		return;
+	}
+	os << ' ';
+	if (!os)
+	{
+		std::cerr << "Output operation failure\n";
 		return;
 	}
 
@@ -154,7 +160,7 @@ void iterate(std::function<void(XmlNode&, NodeData mask)> functor, const std::un
 
 		if (visited)
 		{
-			functor(*node, NodeData::Tag);
+			os << std::format("</{}>\n", node->tag);
 		}
 		else
 		{
@@ -164,10 +170,11 @@ void iterate(std::function<void(XmlNode&, NodeData mask)> functor, const std::un
 				attribute = node->attribute.stream();
 			}
 
-			functor(*node, NodeData::Tag | NodeData::Attribute);
+			os << std::format("<{}{}>\n", node->tag, attribute);
 			if (!node->data.empty())
 			{
-				functor(*node, NodeData::Data);
+				std::string data = node->sanitize();
+				os << std::format("{}\n", data);
 			}
 
 			stack.push({node, true});
@@ -182,16 +189,36 @@ void iterate(std::function<void(XmlNode&, NodeData mask)> functor, const std::un
 	}
 }
 
-std::ostream& operator<<(std::ostream& os, const XmlNode& node)
+std::string XmlNode::sanitize()
 {
-	std::string closingTag = node.tag;
-	closingTag.insert(1, "/");
+	std::string clean{data};
 
-	std::string format = std::format("{}\n{}\n{}\n", node.tag, node.data, closingTag);
-	os << format;
-	return os;
-}
+	for (size_t i = 0; i < clean.length(); ++i)
+	{
+		switch (clean[i])
+		{
+		case '>':
+			{
+				clean.replace(i, 1, R"(&gt;)");
+				i += 1;
+			}
+			break;
+		case '<':
+			{
+				clean.replace(i, 1, R"(&lt;)");
+				i += 1;
+			}
+			break;
+		case '&':
+			{
+				clean.replace(i, 1, R"(&amp;)");
+				i += 1;
+			}
+			break;
+		default:
+			break;
+		}
+	}
 
-void sanitize(XmlNode& node)
-{
+	return clean;
 }

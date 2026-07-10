@@ -63,9 +63,9 @@ public:
 	void addChild(XmlNode&& child);
 	void addAttribute(const XmlAttribute& val);
 
+	std::string sanitize();
 	std::string getTag();
 	std::string getData();
-	void print(const NodeData& info);
 	size_t childCount();
 
 	void appendData(const std::string& val);
@@ -73,10 +73,8 @@ public:
 	XmlNode* findByAttribute(const XmlAttribute& attrib);
 	XmlNode& operator=(XmlNode other);
 
+	friend void print(std::ostream& os, const std::unique_ptr<XmlNode>& root);
 	friend void swap(XmlNode& lhs, XmlNode& rhs);
-	friend void iterate(std::function<void(XmlNode&, NodeData mask)> functor, const std::unique_ptr<XmlNode>& root);
-	friend std::ostream& operator<<(std::ostream& os, const XmlNode& node);
-	friend void sanitize(XmlNode& node);
 
 private:
 	std::string tag;
