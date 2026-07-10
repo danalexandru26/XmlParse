@@ -52,6 +52,15 @@ std::string XmlNode::getData()
 	return data;
 }
 
+void print(const NodeData& info)
+{
+	switch (info)
+	{
+	default:
+		break;
+	}
+}
+
 size_t XmlNode::childCount()
 {
 	return children.size();
@@ -127,7 +136,7 @@ void swap(XmlNode& lhs, XmlNode& rhs)
 	lhs.children.swap(rhs.children);
 }
 
-void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root)
+void iterate(std::function<void(XmlNode&, NodeData mask)> functor, const std::unique_ptr<XmlNode>& root)
 {
 	if (root->children.empty())
 	{
@@ -145,7 +154,7 @@ void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 
 		if (visited)
 		{
-			os << std::format("</{}>\n", node->tag);
+			functor(*node, NodeData::Tag);
 		}
 		else
 		{
@@ -155,15 +164,13 @@ void iterate(std::ostream& os, const std::unique_ptr<XmlNode>& root)
 				attribute = node->attribute.stream();
 			}
 
-			os << std::format("<{}{}>\n", node->tag, attribute);
-
+			functor(*node, NodeData::Tag | NodeData::Attribute);
 			if (!node->data.empty())
 			{
-				os << node->data << '\n';
+				functor(*node, NodeData::Data);
 			}
 
 			stack.push({node, true});
-
 			for (auto& child : node->children)
 			{
 				if (child != nullptr)
@@ -183,4 +190,8 @@ std::ostream& operator<<(std::ostream& os, const XmlNode& node)
 	std::string format = std::format("{}\n{}\n{}\n", node.tag, node.data, closingTag);
 	os << format;
 	return os;
+}
+
+void sanitize(XmlNode& node)
+{
 }

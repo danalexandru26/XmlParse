@@ -12,7 +12,7 @@ XmlNode* XmlDocument::findByAttribute(const XmlAttribute& attribute)
 
 void XmlDocument::stream(std::ostream& os)
 {
-	iterate(os, root);
+	//iterate(os, root);
 }
 
 void XmlDocument::setRoot(std::unique_ptr<XmlNode> node)
@@ -41,7 +41,6 @@ void XmlDocument::saveToFile(const std::string& path)
 		std::cerr << "Writing to file cannot be performed\n";
 		return;
 	}
-	iterate(file, root);
 }
 
 bool XmlDocument::loadFromFile(const std::string& path)
