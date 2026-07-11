@@ -65,7 +65,8 @@ bool XmlDocument::loadFromFile(const std::string& path)
 	std::string currentAttributeValue{};
 	std::string data{};
 
-	auto root = std::make_unique<XmlNode>("root");
+	std::unique_ptr<XmlNode> child{};
+	std::unique_ptr<XmlNode> root = std::make_unique<XmlNode>("root");
 	std::stack<XmlNode*> stack{};
 
 	char c{};
@@ -93,6 +94,10 @@ bool XmlDocument::loadFromFile(const std::string& path)
 					{
 						tag.push_back(c);
 					}
+					else if (isdigit(c) && !tag.empty())
+					{
+						tag.push_back(c);
+					}
 					else if (c == ' ')
 					{
 						if (tag.empty())
@@ -106,6 +111,25 @@ bool XmlDocument::loadFromFile(const std::string& path)
 					}
 					else if (c == '>')
 					{
+						XmlNode* parent{nullptr};
+						if (!stack.empty())
+						{
+							parent = stack.top();
+						}
+						child = std::make_unique<XmlNode>(tag);
+						XmlNode* childPtr = child.get();
+
+						if (parent != nullptr)
+						{
+							parent->addChild(std::move(child));
+						}
+						else
+						{
+							root->addChild(std::move(child));
+						}
+						stack.push(childPtr);
+						state = State::NodeData;
+						tag.clear();
 						state = State::NodeData;
 					}
 				}
@@ -148,6 +172,24 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				}
 				else if (c == '>')
 				{
+					XmlNode* parent{nullptr};
+					if (!stack.empty())
+					{
+						parent = stack.top();
+					}
+					child = std::make_unique<XmlNode>(tag);
+					XmlNode* childPtr = child.get();
+
+					if (parent != nullptr)
+					{
+						parent->addChild(std::move(child));
+					}
+					else
+					{
+						root->addChild(std::move(child));
+					}
+					stack.push(childPtr);
+					tag.clear();
 					state = State::NodeData;
 				}
 				else
@@ -231,6 +273,13 @@ bool XmlDocument::loadFromFile(const std::string& path)
 			{
 				if (c == '<')
 				{
+					if (!stack.empty())
+					{
+						XmlNode* current = stack.top();
+						current->appendData(data);
+
+						data.clear();
+					}
 					state = State::Tag;
 				}
 				else
@@ -254,17 +303,15 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				}
 				else if (c == '>')
 				{
-					//Close Node
-					state = State::Tag;
+					if (!stack.empty())
+					{
+						stack.pop();
+					}
+					endTag.clear();
+					state = State::Default;
 				}
 			}
 			break;
-		}
-
-		if (state == State::TagClose)
-		{
-			auto node = std::make_unique<XmlNode>(tag, "");
-			stack.push(node.get());
 		}
 	}
 	print(std::cout, root);
