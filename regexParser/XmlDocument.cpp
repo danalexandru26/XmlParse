@@ -54,10 +54,10 @@ bool XmlDocument::loadFromFile(const std::string& path)
 		return false;
 	}
 
-	State state = State::Default;
-	char c{};
+	auto state = State::Default;
 
 	std::string tag{};
+	std::string endTag{};
 	std::vector<std::string> attributes{};
 	std::vector<std::string> attributeValues{};
 
@@ -65,8 +65,10 @@ bool XmlDocument::loadFromFile(const std::string& path)
 	std::string currentAttributeValue{};
 	std::string data{};
 
-	std::vector<std::unique_ptr<XmlNode>> nodes{};
+	auto root = std::make_unique<XmlNode>("root");
+	std::stack<XmlNode*> stack{};
 
+	char c{};
 	while (file.get(c))
 	{
 		switch (state)
@@ -81,30 +83,47 @@ bool XmlDocument::loadFromFile(const std::string& path)
 			break;
 		case State::Tag:
 			{
-				if (isalpha(c))
+				if (c == '/')
 				{
-					tag.push_back(c);
+					state = State::NodeClosure;
 				}
-				else if (c == ' ')
+				else
 				{
-					if (tag.empty())
+					if (isalpha(c) || c == '_')
 					{
-						state = State::InvalidTag;
+						tag.push_back(c);
 					}
-					else
+					else if (c == ' ')
 					{
-						state = State::AttributeTest;
+						if (tag.empty())
+						{
+							state = State::InvalidTag;
+						}
+						else
+						{
+							state = State::AttributeTest;
+						}
 					}
-				}
-				else if (c == '>')
-				{
-					state = State::TagClose;
+					else if (c == '>')
+					{
+						state = State::NodeData;
+					}
 				}
 			}
 			break;
 		case State::TagClose:
 			{
-				state = State::Default;
+				if (c == ' ')
+				{
+				}
+				if (c == '<')
+				{
+					state = State::NodeClosure;
+				}
+				else
+				{
+					state = State::InvalidNode;
+				}
 			}
 			break;
 		case State::InvalidTag:
@@ -129,7 +148,7 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				}
 				else if (c == '>')
 				{
-					state = State::TagClose;
+					state = State::NodeData;
 				}
 				else
 				{
@@ -150,7 +169,6 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				else if (c == '=')
 				{
 					attributes.push_back(currentAttribute);
-					currentAttribute.clear();
 
 					state = State::AttributeValueReadTest;
 				}
@@ -164,7 +182,6 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				else if (c == '=')
 				{
 					attributes.push_back(currentAttribute);
-					currentAttribute.clear();
 
 					state = State::AttributeValueReadTest;
 				}
@@ -198,6 +215,8 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				if (c == '"')
 				{
 					attributeValues.push_back(currentAttributeValue);
+
+					currentAttribute.clear();
 					currentAttributeValue.clear();
 
 					state = State::AttributeTest;
@@ -208,17 +227,46 @@ bool XmlDocument::loadFromFile(const std::string& path)
 				}
 			}
 			break;
+		case State::NodeData:
+			{
+				if (c == '<')
+				{
+					state = State::Tag;
+				}
+				else
+				{
+					data.push_back(c);
+				}
+			}
+			break;
+		case State::NodeClosure:
+			{
+				if ((isalpha(c) || c == '_'))
+				{
+					endTag.push_back(c);
+				}
+				else if (c == ' ')
+				{
+					if (endTag.empty())
+					{
+						state = State::InvalidTag;
+					}
+				}
+				else if (c == '>')
+				{
+					//Close Node
+					state = State::Tag;
+				}
+			}
+			break;
 		}
 
 		if (state == State::TagClose)
 		{
 			auto node = std::make_unique<XmlNode>(tag, "");
-			nodes.push_back(std::move(node));
+			stack.push(node.get());
 		}
 	}
-
-	for (auto& node : nodes)
-	{
-		std::cout << node->getTag() << '\n';
-	}
+	print(std::cout, root);
+	return true;
 }

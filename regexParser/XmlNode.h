@@ -16,7 +16,7 @@ class XmlNode
 {
 public:
 	XmlNode() = default;
-	XmlNode(const std::string& tag, const std::string& data, const XmlAttribute& attribute = {});
+	XmlNode(const std::string& tag, const std::string& data = {}, const XmlAttribute& attribute = {});
 	XmlNode(XmlNode& other) = delete;
 	XmlNode(XmlNode&& other) noexcept;
 

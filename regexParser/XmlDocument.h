@@ -17,7 +17,10 @@ enum class State
 	AttributeValueReadTest,
 	AttributeValueRead,
 	PotentialAttributeBreak,
-	InvalidAttribute = 30
+	NodeData,
+	NodeClosure,
+	InvalidAttribute,
+	InvalidNode
 };
 
 class XmlDocument
