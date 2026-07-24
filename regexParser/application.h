@@ -13,7 +13,7 @@ class Application
 {
 public:
 	Application() = default;
-	Application(const std::string title);
+	Application(const std::string title, Mode mode);
 
 	int readText(const std::string& path);
 	int readXml(const std::string& path);
