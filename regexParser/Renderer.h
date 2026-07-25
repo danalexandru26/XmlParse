@@ -1,28 +1,12 @@
 #pragma once
-#include<glad/glad.h>
-#include<GLFW/glfw3.h>
 #include<iostream>
 #include<string>
 #include<vector>
 #include<utility>
+#include<array>
 
-enum class RendererStatus
-{
-	GLFW_INITIALIZE_SUCCESS,
-	GLFW_INITIALIZE_ERROR,
-
-	GLAD_INITIALIZE_SUCCESS,
-	GLAD_INITIALIZE_FAILURE,
-
-	WINDOW_HANDLER_SUCCESS,
-	WINDOW_HANDLER_FAILURE,
-
-	OPENGL_VERSION_VALID,
-	OPENGL_VERSION_INVALID,
-
-	RENDERER_VALID,
-	RENDERER_INVALID
-};
+struct GLFWwindow;
+typedef void (*GLFWframebuffersizefun)(GLFWwindow* window, int width, int height);
 
 class Renderer
 {
@@ -31,19 +15,21 @@ public:
 	Renderer(const std::pair<int, int>& version, int width, int height, std::string title = "default");
 	~Renderer();
 
-	RendererStatus ininitializeRenderer();
-	RendererStatus initializeGLFW();
-	RendererStatus initializeGLAD();
+	bool initializeRenderer();
+	bool initializeGLFW();
+	bool initializeGLAD();
+	bool initializeImGui();
 
-	RendererStatus constructWindow();
+	bool constructWindow();
 
 	bool shouldClose();
 	void setResizeCallback(GLFWframebuffersizefun func);
 	void swapBuffers();
+	void pollEvents();
+	void clearColor(std::array<float, 4> color, GLbitfield mask);
 
 private:
-	void terminateGLFW();
-	RendererStatus validateGLVersion(const std::pair<int, int>& version) const;
+	bool validateGLVersion(const std::pair<int, int>& version) const;
 
 private:
 	GLFWwindow* window;
@@ -51,8 +37,5 @@ private:
 	int height;
 
 	std::string title;
-	std::pair<int, int> glVersion;
-	std::vector<float> clearColor;
-
-	RendererStatus state;
+	std::pair<int, int> version;
 };

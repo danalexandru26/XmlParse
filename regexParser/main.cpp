@@ -1,10 +1,10 @@
 #include<iostream>
-#include<fstream>
+#include<glad/glad.h>
+#include <imgui.h>
 
 #include"XmlNode.h"
 #include"XmlDocument.h"
 #include"XmlParser.h"
-
 #include"Renderer.h"
 
 constexpr size_t width = 1280;
@@ -16,17 +16,19 @@ int WinMain()
 {
 	Renderer renderer({3, 3}, width, height, "Application");
 
-	RendererStatus status = renderer.ininitializeRenderer();
-	if (status == RendererStatus::RENDERER_VALID)
+	bool status = renderer.initializeRenderer();
+	if (status == false)
 	{
-		while (!renderer.shouldClose())
-		{
-			glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-			glClear(GL_COLOR_BUFFER_BIT);
+		std::cerr << "Renderer could not be initialized\n";
+		return 0;
+	}
 
-			glfwPollEvents();
-			renderer.swapBuffers();
-		}
+	while (!renderer.shouldClose())
+	{
+		renderer.pollEvents();
+
+		renderer.clearColor({0.1f, 0.1f, 0.1f, 1.0f}, GL_COLOR_BUFFER_BIT);
+		renderer.swapBuffers();
 	}
 
 	return 0;
