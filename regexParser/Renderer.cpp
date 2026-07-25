@@ -4,6 +4,9 @@
 
 #include"Renderer.h"
 
+#include <backends/imgui_impl_glfw.h>
+#include <backends/imgui_impl_opengl3.h>
+
 Renderer::Renderer(const std::pair<int, int>& version, int width, int height, std::string title)
 	: version{version}, width{width}, height{height}, title{title}
 {
@@ -49,6 +52,32 @@ bool Renderer::initializeGLAD()
 	{
 		std::cerr << "GLAD could not be initialized\n";
 
+		return false;
+	}
+	return true;
+}
+
+bool Renderer::initializeImGui()
+{
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+
+	ImGuiIO& io = ImGui::GetIO();
+	(void)io;
+
+	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
+
+	ImGui::StyleColorsClassic();
+
+	if (!ImGui_ImplGlfw_InitForOpenGL(window, true))
+	{
+		std::cerr << "ImGui GLFW Implementation cannot be initialized\n";
+		return false;
+	}
+	if (!ImGui_ImplOpenGL3_Init(nullptr))
+	{
+		std::cerr << "ImGui OpenGL3 Implementation cannot be initialized\n";
 		return false;
 	}
 	return true;

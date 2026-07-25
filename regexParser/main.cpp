@@ -1,6 +1,8 @@
 #include<iostream>
 #include<glad/glad.h>
 #include <imgui.h>
+#include <backends/imgui_impl_glfw.h>
+#include <backends/imgui_impl_opengl3.h>
 
 #include"XmlNode.h"
 #include"XmlDocument.h"
@@ -23,11 +25,22 @@ int WinMain()
 		return 0;
 	}
 
+	renderer.initializeImGui();
 	while (!renderer.shouldClose())
 	{
 		renderer.pollEvents();
 
+		ImGui_ImplOpenGL3_NewFrame();
+		ImGui_ImplGlfw_NewFrame();
+		ImGui::NewFrame();
+
+		ImGui::ShowDemoWindow();
+
+		ImGui::Render();
+
 		renderer.clearColor({0.1f, 0.1f, 0.1f, 1.0f}, GL_COLOR_BUFFER_BIT);
+
+		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 		renderer.swapBuffers();
 	}
 
