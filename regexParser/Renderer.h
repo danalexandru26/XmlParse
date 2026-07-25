@@ -31,10 +31,13 @@ public:
 	Renderer(const std::pair<int, int>& version, int width, int height, std::string title = "default");
 	~Renderer();
 
+	RendererStatus ininitializeRenderer();
 	RendererStatus initializeGLFW();
 	RendererStatus initializeGLAD();
 
 	RendererStatus constructWindow();
+
+	bool shouldClose();
 
 private:
 	void terminateGLFW();
