@@ -38,6 +38,8 @@ public:
 	RendererStatus constructWindow();
 
 	bool shouldClose();
+	void setResizeCallback(GLFWframebuffersizefun func);
+	void swapBuffers();
 
 private:
 	void terminateGLFW();

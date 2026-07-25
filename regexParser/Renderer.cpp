@@ -108,6 +108,19 @@ bool Renderer::shouldClose()
 	return glfwWindowShouldClose(window);
 }
 
+void Renderer::setResizeCallback(GLFWframebuffersizefun func)
+{
+	if (window != nullptr && state == RendererStatus::RENDERER_VALID)
+	{
+		glfwSetFramebufferSizeCallback(window, func);
+	}
+}
+
+void Renderer::swapBuffers()
+{
+	glfwSwapBuffers(window);
+}
+
 void Renderer::terminateGLFW()
 {
 	glfwTerminate();

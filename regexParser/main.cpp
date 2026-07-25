@@ -1,9 +1,3 @@
-#include<glad/glad.h>
-#include"imgui.h"
-#include "backends/imgui_impl_glfw.h"
-#include "backends/imgui_impl_opengl3.h"
-#include<GLFW/glfw3.h>
-
 #include<iostream>
 #include<fstream>
 
@@ -11,124 +5,31 @@
 #include"XmlDocument.h"
 #include"XmlParser.h"
 
+#include"Renderer.h"
+
 constexpr size_t width = 1280;
 constexpr size_t height = 720;
 
-void initializeGLFW();
-int initializeGLAD();
-void initializeImgui(GLFWwindow* window);
-void shutdownImgui();
-
-GLFWwindow* instantiateWindow(const size_t width, const size_t height, const std::string title = "default");
 void framebufferResizeCallback(GLFWwindow* window, int width, int height);
 
 int WinMain()
 {
-	initializeGLFW();
+	Renderer renderer({3, 3}, width, height, "Application");
 
-	GLFWwindow* window = instantiateWindow(width, height);
-
-	glfwMakeContextCurrent(window);
-	glfwSwapInterval(1);
-
-	if (initializeGLAD() == -1)
+	RendererStatus status = renderer.ininitializeRenderer();
+	if (status == RendererStatus::RENDERER_VALID)
 	{
-		glfwTerminate();
-		return -1;
+		while (!renderer.shouldClose())
+		{
+			glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+			glClear(GL_COLOR_BUFFER_BIT);
+
+			glfwPollEvents();
+			renderer.swapBuffers();
+		}
 	}
 
-	glViewport(0, 0, width, height);
-	glfwSetFramebufferSizeCallback(window, framebufferResizeCallback);
-
-	initializeImgui(window);
-
-	while (!glfwWindowShouldClose(window))
-	{
-		glfwPollEvents();
-
-		ImGui_ImplOpenGL3_NewFrame();
-		ImGui_ImplGlfw_NewFrame();
-		ImGui::NewFrame();
-		ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport());
-
-		ImGui::ShowDemoWindow();
-		//ImGui::ShowDebugLogWindow();
-		ImGui::Render();
-
-		glClear(GL_COLOR_BUFFER_BIT);
-		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-		glfwSwapBuffers(window);
-	}
-
-	shutdownImgui();
-	glfwTerminate();
 	return 0;
-}
-
-void initializeGLFW()
-{
-	glfwInit();
-
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-}
-
-
-int initializeGLAD()
-{
-	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-	{
-		std::cerr << "Failed to initialize GLAD\n";
-
-		return -1;
-	}
-	return 0;
-}
-
-void initializeImgui(GLFWwindow* window)
-{
-	float main_scale = ImGui_ImplGlfw_GetContentScaleForMonitor(glfwGetPrimaryMonitor());
-
-	IMGUI_CHECKVERSION();
-	ImGui::CreateContext();
-	ImGuiIO& io = ImGui::GetIO();
-	(void)io;
-
-	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
-	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
-	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
-
-
-	ImGui::StyleColorsDark();
-
-	ImGuiStyle& style = ImGui::GetStyle();
-	style.ScaleAllSizes(main_scale);
-	style.FontScaleDpi = main_scale;
-
-	ImGui_ImplGlfw_InitForOpenGL(window, true);
-	ImGui_ImplOpenGL3_Init();
-}
-
-
-void shutdownImgui()
-{
-	ImGui_ImplOpenGL3_Shutdown();
-	ImGui_ImplGlfw_Shutdown();
-	ImGui::DestroyContext();
-}
-
-GLFWwindow* instantiateWindow(const size_t width, const size_t height, const std::string title)
-{
-	GLFWwindow* window = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
-	if (window == nullptr)
-	{
-		std::cerr << "Window handler could not be instantiated\n";
-		glfwTerminate();
-
-		return nullptr;
-	}
-	return window;
 }
 
 void framebufferResizeCallback(GLFWwindow* window, int width, int height)
