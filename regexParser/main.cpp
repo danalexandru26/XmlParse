@@ -21,7 +21,7 @@ void initializeImgui(GLFWwindow* window);
 GLFWwindow* instantiateWindow(const size_t width, const size_t height, const std::string title = "default");
 void framebufferResizeCallback(GLFWwindow* window, int width, int height);
 
-int main()
+int WinMain()
 {
 	initializeGLFW();
 
@@ -43,8 +43,19 @@ int main()
 
 	while (!glfwWindowShouldClose(window))
 	{
-		glfwSwapBuffers(window);
 		glfwPollEvents();
+
+		ImGui_ImplOpenGL3_NewFrame();
+		ImGui_ImplGlfw_NewFrame();
+		ImGui::NewFrame();
+
+		ImGui::ShowDemoWindow();
+		//ImGui::ShowDebugLogWindow();
+		ImGui::Render();
+
+		glClear(GL_COLOR_BUFFER_BIT);
+		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+		glfwSwapBuffers(window);
 	}
 
 	glfwTerminate();
@@ -91,6 +102,7 @@ void initializeImgui(GLFWwindow* window)
 	style.FontScaleDpi = main_scale;
 
 	ImGui_ImplGlfw_InitForOpenGL(window, true);
+	ImGui_ImplOpenGL3_Init();
 }
 
 GLFWwindow* instantiateWindow(const size_t width, const size_t height, const std::string title)
