@@ -17,6 +17,7 @@ constexpr size_t height = 720;
 void initializeGLFW();
 int initializeGLAD();
 void initializeImgui(GLFWwindow* window);
+void shutdownImgui();
 
 GLFWwindow* instantiateWindow(const size_t width, const size_t height, const std::string title = "default");
 void framebufferResizeCallback(GLFWwindow* window, int width, int height);
@@ -58,6 +59,7 @@ int WinMain()
 		glfwSwapBuffers(window);
 	}
 
+	shutdownImgui();
 	glfwTerminate();
 	return 0;
 }
@@ -103,6 +105,14 @@ void initializeImgui(GLFWwindow* window)
 
 	ImGui_ImplGlfw_InitForOpenGL(window, true);
 	ImGui_ImplOpenGL3_Init();
+}
+
+
+void shutdownImgui()
+{
+	ImGui_ImplOpenGL3_Shutdown();
+	ImGui_ImplGlfw_Shutdown();
+	ImGui::DestroyContext();
 }
 
 GLFWwindow* instantiateWindow(const size_t width, const size_t height, const std::string title)
