@@ -159,6 +159,7 @@
     <ClCompile Include="E:\imgui-1.92.8-docking\imgui_tables.cpp" />
     <ClCompile Include="E:\imgui-1.92.8-docking\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="XmlAttribute.cpp" />
     <ClCompile Include="XmlDocument.cpp" />
     <ClCompile Include="XmlNode.cpp" />
@@ -166,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="XmlAttribute.h" />
     <ClInclude Include="XmlDocument.h" />
     <ClInclude Include="XmlNode.h" />

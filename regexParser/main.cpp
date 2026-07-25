@@ -49,6 +49,7 @@ int WinMain()
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
+		ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport());
 
 		ImGui::ShowDemoWindow();
 		//ImGui::ShowDebugLogWindow();
@@ -96,6 +97,8 @@ void initializeImgui(GLFWwindow* window)
 
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
+	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
+
 
 	ImGui::StyleColorsDark();
 
