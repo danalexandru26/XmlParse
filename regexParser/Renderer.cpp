@@ -42,6 +42,12 @@ RendererStatus Renderer::initializeGLAD()
 {
 	if (state == RendererStatus::RENDERER_INVALID) return state;
 
+	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+	{
+		std::cerr << "GLAD could not be initialized\n";
+		return RendererStatus::GLAD_INITIALIZE_FAILURE;
+	}
+
 	return RendererStatus::GLAD_INITIALIZE_SUCCESS;
 }
 
