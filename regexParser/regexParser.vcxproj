@@ -71,11 +71,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\gl_files\include;E:\imgui-1.92.8;$(IncludePath)</IncludePath>
+    <IncludePath>E:\gl_files\include;E:\imgui-1.92.8-docking;$(IncludePath)</IncludePath>
     <LibraryPath>E:\gl_files\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>E:\gl_files\include;E:\imgui-1.92.8;$(IncludePath)</IncludePath>
+    <IncludePath>E:\gl_files\include;E:\imgui-1.92.8-docking;$(IncludePath)</IncludePath>
     <LibraryPath>E:\gl_files\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -121,7 +121,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -140,7 +140,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -151,13 +151,13 @@
   <ItemGroup>
     <ClCompile Include="application.cpp" />
     <ClCompile Include="E:\glad\glad.c" />
-    <ClCompile Include="E:\imgui-1.92.8\backends\imgui_impl_glfw.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8\backends\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8\imgui.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8\imgui_demo.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8\imgui_draw.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8\imgui_tables.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8\imgui_widgets.cpp" />
+    <ClCompile Include="E:\imgui-1.92.8-docking\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="E:\imgui-1.92.8-docking\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="E:\imgui-1.92.8-docking\imgui.cpp" />
+    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_demo.cpp" />
+    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_draw.cpp" />
+    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_tables.cpp" />
+    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="XmlAttribute.cpp" />
     <ClCompile Include="XmlDocument.cpp" />
