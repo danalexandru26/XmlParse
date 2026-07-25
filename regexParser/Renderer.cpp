@@ -22,7 +22,7 @@ Renderer::~Renderer()
 	terminateGLFW();
 }
 
-RendererStatus Renderer::ininitializeRenderer()
+RendererStatus Renderer::initializeRenderer()
 {
 	RendererStatus status{};
 
