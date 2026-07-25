@@ -28,11 +28,13 @@ class Renderer
 {
 public:
 	Renderer() = default;
-	Renderer(const std::pair<int, int>& version, size_t width, size_t height, std::string title = "default");
+	Renderer(const std::pair<int, int>& version, int width, int height, std::string title = "default");
 	~Renderer();
 
 	RendererStatus initializeGLFW();
 	RendererStatus initializeGLAD();
+
+	RendererStatus constructWindow();
 
 private:
 	void terminateGLFW();
@@ -40,8 +42,8 @@ private:
 
 private:
 	GLFWwindow* window;
-	size_t width;
-	size_t height;
+	int width;
+	int height;
 
 	std::string title;
 	std::pair<int, int> glVersion;

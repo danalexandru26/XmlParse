@@ -1,6 +1,6 @@
 #include"Renderer.h"
 
-Renderer::Renderer(const std::pair<int, int>& version, size_t width, size_t height, std::string title)
+Renderer::Renderer(const std::pair<int, int>& version, int width, int height, std::string title)
 	: width{width}, height{height}, title{title}
 {
 	if (validateGLVersion(version) == RendererStatus::OPENGL_VERSION_INVALID)
@@ -49,6 +49,20 @@ RendererStatus Renderer::initializeGLAD()
 	}
 
 	return RendererStatus::GLAD_INITIALIZE_SUCCESS;
+}
+
+RendererStatus Renderer::constructWindow()
+{
+	if (state == RendererStatus::RENDERER_INVALID) return state;
+
+	window = glfwCreateWindow(width, height, title.c_str(), nullptr, nullptr);
+	if (window != nullptr)
+	{
+		glfwMakeContextCurrent(window);
+		glfwSwapInterval(1);
+		return RendererStatus::WINDOW_HANDLER_SUCCESS;
+	}
+	return RendererStatus::WINDOW_HANDLER_FAILURE;
 }
 
 void Renderer::terminateGLFW()
