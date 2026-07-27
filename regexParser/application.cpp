@@ -38,15 +38,16 @@ bool Application::start()
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
+		ImGui::DockSpaceOverViewport();
 
 		displayDropDown();
 
 		ImGui::Render();
 		renderer.clearColor(defaultColor, GL_COLOR_BUFFER_BIT);
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
 		renderer.swapBuffers();
 	}
-
 	return true;
 }
 
@@ -82,29 +83,26 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
 irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.)";
 
 
-	if (!ImGui::Begin("Questions"))
+	if (ImGui::Begin("Questions"))
 	{
-		ImGui::End();
-	}
+		ImGui::InputInt("questionId", &questionId);
+		ImGui::Separator();
+		ImGui::Indent(10.0f);
 
-	ImGui::InputInt("questionId", &questionId);
-	ImGui::Separator();
-	ImGui::Indent(10.0f);
-
-	if (ImGui::BeginChild("Scrollable", ImVec2(0, 0), false))
-	{
-		for (int i = 0; i < 100; ++i)
+		if (ImGui::BeginChild("Scrollable", ImVec2(0, 0), false))
 		{
-			std::string questionHeader = "Question " + std::to_string(i);
-			if (ImGui::CollapsingHeader(questionHeader.c_str()))
+			for (int i = 0; i < 100; ++i)
 			{
-			ImGui:;
-				ImGui::TextWrapped("%s", loremParagraph);
+				std::string questionHeader = "Question " + std::to_string(i);
+				if (ImGui::CollapsingHeader(questionHeader.c_str()))
+				{
+				ImGui:;
+					ImGui::TextWrapped("%s", loremParagraph);
+				}
+				ImGui::Separator();
 			}
-			ImGui::Separator();
 		}
 		ImGui::EndChild();
 	}
-
 	ImGui::End();
 }
