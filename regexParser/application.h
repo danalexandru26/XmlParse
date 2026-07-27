@@ -26,6 +26,7 @@ public:
 private:
 	bool setupRenderer();
 	void displayDefaultScreen();
+	void displayDropDown();
 
 private:
 	std::string title;
