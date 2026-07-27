@@ -130,8 +130,93 @@ void Renderer::clearColor(std::array<float, 4> color, GLbitfield mask)
 	glClear(mask);
 }
 
-void Renderer::styleImGui()
+void Renderer::applyGruvboxImGui()
 {
+	ImGuiStyle& style = ImGui::GetStyle();
+	ImVec4* colors = style.Colors;
+
+	style.WindowRounding = 4.0f;
+	style.ChildRounding = 4.0f;
+	style.FrameRounding = 3.0f;
+	style.PopupRounding = 4.0f;
+	style.ScrollbarRounding = 4.0f;
+	style.GrabRounding = 3.0f;
+	style.TabRounding = 4.0f;
+
+	style.WindowBorderSize = 1.0f;
+	style.FrameBorderSize = 0.0f;
+	style.PopupBorderSize = 1.0f;
+	style.WindowPadding = ImVec2(10.0f, 10.0f);
+	style.FramePadding = ImVec2(8.0f, 4.0f);
+	style.ItemSpacing = ImVec2(8.0f, 6.0f);
+	style.ItemInnerSpacing = ImVec2(6.0f, 4.0f);
+
+	const ImVec4 bg0_hard = ImVec4(0.114f, 0.122f, 0.129f, 1.00f);
+	const ImVec4 bg0 = ImVec4(0.157f, 0.157f, 0.157f, 1.00f);
+	const ImVec4 bg1 = ImVec4(0.235f, 0.220f, 0.212f, 1.00f);
+	const ImVec4 bg2 = ImVec4(0.314f, 0.286f, 0.271f, 1.00f);
+	const ImVec4 bg3 = ImVec4(0.400f, 0.361f, 0.333f, 1.00f);
+
+	const ImVec4 fg0 = ImVec4(0.984f, 0.961f, 0.894f, 1.00f);
+	const ImVec4 fg1 = ImVec4(0.922f, 0.859f, 0.698f, 1.00f);
+	const ImVec4 fg4 = ImVec4(0.659f, 0.600f, 0.518f, 1.00f);
+
+	const ImVec4 yellow = ImVec4(0.980f, 0.741f, 0.184f, 1.00f);
+	const ImVec4 orange = ImVec4(0.980f, 0.490f, 0.196f, 1.00f);
+	const ImVec4 aqua = ImVec4(0.537f, 0.753f, 0.525f, 1.00f);
+	const ImVec4 green = ImVec4(0.722f, 0.733f, 0.149f, 1.00f);
+
+	colors[ImGuiCol_WindowBg] = bg0;
+	colors[ImGuiCol_ChildBg] = bg0_hard;
+	colors[ImGuiCol_PopupBg] = bg1;
+
+	colors[ImGuiCol_Border] = bg2;
+	colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
+
+	colors[ImGuiCol_Text] = fg1;
+	colors[ImGuiCol_TextDisabled] = fg4;
+
+	colors[ImGuiCol_Header] = bg1;
+	colors[ImGuiCol_HeaderHovered] = bg2;
+	colors[ImGuiCol_HeaderActive] = bg3;
+
+	colors[ImGuiCol_Button] = bg2;
+	colors[ImGuiCol_ButtonHovered] = ImVec4(orange.x, orange.y, orange.z, 0.70f);
+	colors[ImGuiCol_ButtonActive] = orange;
+
+	colors[ImGuiCol_FrameBg] = bg1;
+	colors[ImGuiCol_FrameBgHovered] = bg2;
+	colors[ImGuiCol_FrameBgActive] = bg3;
+	colors[ImGuiCol_CheckMark] = yellow;
+	colors[ImGuiCol_SliderGrab] = yellow;
+	colors[ImGuiCol_SliderGrabActive] = orange;
+
+	colors[ImGuiCol_Tab] = bg0_hard;
+	colors[ImGuiCol_TabHovered] = bg2;
+	colors[ImGuiCol_TabActive] = bg1;
+	colors[ImGuiCol_TabUnfocused] = bg0_hard;
+	colors[ImGuiCol_TabUnfocusedActive] = bg1;
+	colors[ImGuiCol_DockingPreview] = ImVec4(yellow.x, yellow.y, yellow.z, 0.40f);
+	colors[ImGuiCol_DockingEmptyBg] = bg0_hard;
+
+	colors[ImGuiCol_TitleBg] = bg0_hard;
+	colors[ImGuiCol_TitleBgActive] = bg1;
+	colors[ImGuiCol_TitleBgCollapsed] = bg0_hard;
+
+	colors[ImGuiCol_ScrollbarBg] = bg0_hard;
+	colors[ImGuiCol_ScrollbarGrab] = bg2;
+	colors[ImGuiCol_ScrollbarGrabHovered] = bg3;
+	colors[ImGuiCol_ScrollbarGrabActive] = fg4;
+
+	colors[ImGuiCol_Separator] = bg2;
+	colors[ImGuiCol_SeparatorHovered] = yellow;
+	colors[ImGuiCol_SeparatorActive] = orange;
+	colors[ImGuiCol_ResizeGrip] = bg2;
+	colors[ImGuiCol_ResizeGripHovered] = yellow;
+	colors[ImGuiCol_ResizeGripActive] = orange;
+
+	colors[ImGuiCol_NavCursor] = ImVec4(0.980f, 0.490f, 0.196f, 1.00f);
+	colors[ImGuiCol_TabSelectedOverline] = ImVec4(0.980f, 0.741f, 0.184f, 1.00f);
 }
 
 bool Renderer::validateGLVersion(const std::pair<int, int>& version) const

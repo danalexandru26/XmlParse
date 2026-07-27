@@ -28,7 +28,7 @@ public:
 	void pollEvents();
 	void clearColor(std::array<float, 4> color, GLbitfield mask);
 
-	void styleImGui();
+	void applyGruvboxImGui();
 
 private:
 	bool validateGLVersion(const std::pair<int, int>& version) const;

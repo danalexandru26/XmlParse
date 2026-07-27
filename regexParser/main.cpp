@@ -27,6 +27,8 @@ int WinMain()
 	}
 
 	renderer.initializeImGui();
+	renderer.applyGruvboxImGui();
+
 	while (!renderer.shouldClose())
 	{
 		renderer.pollEvents();
@@ -57,14 +59,21 @@ int WinMain()
 
 		ImGui::DockSpaceOverViewport(dockspaceID, viewport, ImGuiDockNodeFlags_PassthruCentralNode);
 
-		ImGui::Begin("Scene");
-		ImGui::End();
+		if (ImGui::Begin("Scene"))
+		{
+			ImGui::End();
+		}
 
-		ImGui::Begin("Browse");
-		ImGui::End();
+		if (ImGui::Begin("Browse"))
+		{
+			ImGui::End();
+		}
 
-		ImGui::Begin("Session");
-		ImGui::End();
+		if (ImGui::Begin("Session"))
+		{
+			ImGui::End();
+		}
+
 
 		ImGui::Render();
 
