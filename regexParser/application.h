@@ -1,27 +1,36 @@
 #pragma once
+#include<array>
+#include"Renderer.h"
 #include"XmlNode.h"
 #include"XmlDocument.h"
 #include"XmlParser.h"
 
-enum class Mode : uint32_t
-{
-	Console = 1,
-	Graphical = 2,
-};
+constexpr int defaultWidth = 1280;
+constexpr int defaultHeight = 720;
+
+constexpr int fallbackOpenglMajor = 3;
+constexpr int fallbackOpenglMinor = 3;
+
+constexpr std::array<float, 4> defaultColor{0.1f, 0.1f, 0.1f, 1.0f};
 
 class Application
 {
 public:
 	Application() = default;
-	Application(const std::string title, Mode mode);
+	Application(std::pair<int, int> version, const int& width, const int& height, const std::string& title);
 
-	int readText(const std::string& path);
-	int readXml(const std::string& path);
+	bool start();
+	bool readText(const std::string& path);
+	bool readXml(const std::string& path);
+
+private:
+	bool setupRenderer();
+	void displayDefaultScreen();
 
 private:
 	std::string title;
-	Mode mode;
 
+	Renderer renderer;
 	XmlParser parser;
 	XmlDocument document;
 };

@@ -5,6 +5,8 @@
 #include<utility>
 #include<array>
 
+#include"glad/glad.h"
+
 struct GLFWwindow;
 typedef void (*GLFWframebuffersizefun)(GLFWwindow* window, int width, int height);
 

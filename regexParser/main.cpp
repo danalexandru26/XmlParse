@@ -5,6 +5,7 @@
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
 
+#include "application.h"
 #include"XmlNode.h"
 #include"XmlDocument.h"
 #include"XmlParser.h"
@@ -17,82 +18,12 @@ void framebufferResizeCallback(GLFWwindow* window, int width, int height);
 
 int WinMain()
 {
-	Renderer renderer({3, 3}, width, height, "Application");
+	Application app({ 3, 3 }, width, height, "QuizGen");
 
-	bool status = renderer.initializeRenderer();
-	if (status == false)
+	if (!app.start())
 	{
-		std::cerr << "Renderer could not be initialized\n";
-		return 0;
-	}
-
-	renderer.initializeImGui();
-	renderer.applyGruvboxImGui();
-
-	while (!renderer.shouldClose())
-	{
-		renderer.pollEvents();
-
-		ImGui_ImplOpenGL3_NewFrame();
-		ImGui_ImplGlfw_NewFrame();
-		ImGui::NewFrame();
-
-		ImGuiID dockspaceID = ImGui::GetID("Dockspace V1");
-		ImGuiViewport* viewport = ImGui::GetMainViewport();
-		if (ImGui::DockBuilderGetNode(dockspaceID) == nullptr)
-		{
-			ImGui::DockBuilderAddNode(dockspaceID, ImGuiDockNodeFlags_DockSpace);
-			ImGui::DockBuilderSetNodeSize(dockspaceID, viewport->Size);
-
-			ImGuiID dockLeftID{};
-			ImGuiID dockBottomID{};
-			ImGuiID dockMainID{dockspaceID};
-
-			ImGui::DockBuilderSplitNode(dockMainID, ImGuiDir_Down, 0.25f, &dockBottomID, &dockMainID);
-			ImGui::DockBuilderSplitNode(dockMainID, ImGuiDir_Left, 0.20f, &dockLeftID, &dockMainID);
-
-			ImGui::DockBuilderDockWindow("Scene", dockMainID);
-			ImGui::DockBuilderDockWindow("Session", dockBottomID);
-			ImGui::DockBuilderDockWindow("Browse", dockLeftID);
-			ImGui::DockBuilderFinish(dockspaceID);
-		}
-
-		ImGui::DockSpaceOverViewport(dockspaceID, viewport, ImGuiDockNodeFlags_PassthruCentralNode);
-
-		if (ImGui::Begin("Scene"))
-		{
-			ImGui::End();
-		}
-
-		if (ImGui::Begin("Browse"))
-		{
-			ImGui::End();
-		}
-
-		if (ImGui::Begin("Session"))
-		{
-			ImGui::End();
-		}
-
-		if (ImGui::BeginMainMenuBar())
-		{
-			if (ImGui::BeginMenu("View"))
-			{
-				if (ImGui::MenuItem("Questions"))
-				{
-				}
-				ImGui::EndMenu();
-			}
-
-			ImGui::EndMainMenuBar();
-		}
-
-		ImGui::Render();
-
-		renderer.clearColor({0.1f, 0.1f, 0.1f, 1.0f}, GL_COLOR_BUFFER_BIT);
-
-		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-		renderer.swapBuffers();
+		std::cerr << "Critical error\n";
+		return 1;
 	}
 
 	return 0;

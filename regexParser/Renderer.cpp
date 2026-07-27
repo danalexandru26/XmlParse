@@ -1,11 +1,10 @@
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
 #include <imgui.h>
-
-#include"Renderer.h"
-
+#include <imgui_internal.h>
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
+#include"Renderer.h"
 
 Renderer::Renderer(const std::pair<int, int>& version, int width, int height, std::string title)
 	: version{version}, width{width}, height{height}, title{title}
