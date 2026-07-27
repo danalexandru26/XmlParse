@@ -67,8 +67,9 @@ bool Renderer::initializeImGui()
 
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
+	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
-	ImGui::StyleColorsClassic();
+	ImGui::StyleColorsLight();
 
 	if (!ImGui_ImplGlfw_InitForOpenGL(window, true))
 	{
@@ -127,6 +128,10 @@ void Renderer::clearColor(std::array<float, 4> color, GLbitfield mask)
 {
 	glClearColor(color[0], color[1], color[2], color[3]);
 	glClear(mask);
+}
+
+void Renderer::styleImGui()
+{
 }
 
 bool Renderer::validateGLVersion(const std::pair<int, int>& version) const

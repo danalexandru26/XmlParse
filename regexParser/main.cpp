@@ -1,6 +1,7 @@
 #include<iostream>
 #include<glad/glad.h>
 #include <imgui.h>
+#include <imgui_internal.h>
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
 
@@ -34,7 +35,36 @@ int WinMain()
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
 
-		ImGui::ShowDemoWindow();
+		ImGuiID dockspaceID = ImGui::GetID("Dockspace V1");
+		ImGuiViewport* viewport = ImGui::GetMainViewport();
+		if (ImGui::DockBuilderGetNode(dockspaceID) == nullptr)
+		{
+			ImGui::DockBuilderAddNode(dockspaceID, ImGuiDockNodeFlags_DockSpace);
+			ImGui::DockBuilderSetNodeSize(dockspaceID, viewport->Size);
+
+			ImGuiID dockLeftID{};
+			ImGuiID dockBottomID{};
+			ImGuiID dockMainID{dockspaceID};
+
+			ImGui::DockBuilderSplitNode(dockMainID, ImGuiDir_Down, 0.25f, &dockBottomID, &dockMainID);
+			ImGui::DockBuilderSplitNode(dockMainID, ImGuiDir_Left, 0.20f, &dockLeftID, &dockMainID);
+
+			ImGui::DockBuilderDockWindow("Scene", dockMainID);
+			ImGui::DockBuilderDockWindow("Session", dockBottomID);
+			ImGui::DockBuilderDockWindow("Browse", dockLeftID);
+			ImGui::DockBuilderFinish(dockspaceID);
+		}
+
+		ImGui::DockSpaceOverViewport(dockspaceID, viewport, ImGuiDockNodeFlags_PassthruCentralNode);
+
+		ImGui::Begin("Scene");
+		ImGui::End();
+
+		ImGui::Begin("Browse");
+		ImGui::End();
+
+		ImGui::Begin("Session");
+		ImGui::End();
 
 		ImGui::Render();
 
