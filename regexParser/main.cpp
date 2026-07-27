@@ -74,6 +74,18 @@ int WinMain()
 			ImGui::End();
 		}
 
+		if (ImGui::BeginMainMenuBar())
+		{
+			if (ImGui::BeginMenu("View"))
+			{
+				if (ImGui::MenuItem("Questions"))
+				{
+				}
+				ImGui::EndMenu();
+			}
+
+			ImGui::EndMainMenuBar();
+		}
 
 		ImGui::Render();
 
