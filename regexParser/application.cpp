@@ -24,12 +24,12 @@ bool Application::readText(const std::string& path)
 		return false;
 	}
 
-	if (document.setRoot(std::move(root)))
+	if (!document.setRoot(std::move(root)))
 	{
-		std::cerr << "XML document root successfully configured\n";
-		return true;
+		std::cerr << "XML document root could not be configured\n";
+		return false;
 	}
-	return false;
+	return true;
 }
 
 bool Application::readXml(const std::string& path)
@@ -211,7 +211,7 @@ void Application::displayQuiz(int& questionCount)
 	static int currentQuestion{};
 	size_t size{document.root->childCount()};
 
-	static std::vector<int> selectedResults{};
+	static std::vector<int> selectedResults(6, 0);
 
 	for (size_t i = 0; i < size; ++i)
 	{
@@ -222,13 +222,18 @@ void Application::displayQuiz(int& questionCount)
 
 			if (ImGui::CollapsingHeader(questionText.c_str(), ImGuiTreeNodeFlags_DefaultOpen))
 			{
+				size_t resultIdx{};
 				ImGui::Indent(20.0f);
 				for (const auto& option : document.root->children[i]->children)
 				{
 					if (option->getTag() != "R")
 					{
-						ImGui::Selectable(option->getData().c_str());
+						if (ImGui::Selectable(option->getData().c_str(), selectedResults[resultIdx] != 0))
+						{
+							selectedResults[resultIdx] = ~selectedResults[resultIdx];
+						}
 					}
+					++resultIdx;
 				}
 				ImGui::Unindent(20.0f);
 			}
