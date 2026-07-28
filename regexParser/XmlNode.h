@@ -46,5 +46,7 @@ private:
 	std::string tag;
 	std::string data;
 	XmlAttribute attribute;
+
+public:
 	std::vector<std::unique_ptr<XmlNode>> children;
 };

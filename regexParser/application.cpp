@@ -1,9 +1,8 @@
-#include"application.h"
-
 #include <imgui.h>
 #include <imgui_internal.h>
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
+#include"application.h"
 
 Application::Application(std::pair<int, int> version, const int& width, const int& height,
                          const std::string& title)
@@ -14,7 +13,22 @@ Application::Application(std::pair<int, int> version, const int& width, const in
 
 bool Application::readText(const std::string& path)
 {
-	return true;
+	parser.configurePath(path);
+
+	std::unique_ptr<XmlNode> root = parser.txtToXml();
+
+	if (root == nullptr)
+	{
+		std::cerr << "Text document could not be parsed to XML\n";
+		return false;
+	}
+
+	if (document.setRoot(std::move(root)))
+	{
+		std::cerr << "XML document root successfully configured\n";
+		return true;
+	}
+	return false;
 }
 
 bool Application::readXml(const std::string& path)
@@ -30,6 +44,12 @@ bool Application::start()
 		return false;
 	}
 
+	if (!readText(defaultPathText))
+	{
+		std::cerr << "Error parsing text to XML\n";
+		return false;
+	}
+
 	std::cerr << "Starting Application\n";
 	while (!renderer.shouldClose())
 	{
@@ -41,6 +61,8 @@ bool Application::start()
 		ImGui::DockSpaceOverViewport();
 
 		displayDropDown();
+		displayQuizWindow();
+		displayStatusWindow();
 
 		ImGui::Render();
 		renderer.clearColor(defaultColor, GL_COLOR_BUFFER_BIT);
@@ -77,32 +99,50 @@ void Application::displayDefaultScreen()
 void Application::displayDropDown()
 {
 	static int questionId{};
-	static const char* loremParagraph = R"(Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.)";
-
 
 	if (ImGui::Begin("Questions"))
 	{
-		ImGui::InputInt("questionId", &questionId);
-		ImGui::Separator();
 		ImGui::Indent(10.0f);
+		ImGui::PushItemWidth(200.0f);
+		ImGui::InputInt("Question ID", &questionId);
+		ImGui::Separator();
 
-		if (ImGui::BeginChild("Scrollable", ImVec2(0, 0), false))
+		if (document.root != nullptr)
 		{
-			for (int i = 0; i < 100; ++i)
+			if (ImGui::BeginChild("Question", ImVec2(0, 0), false))
 			{
-				std::string questionHeader = "Question " + std::to_string(i);
-				if (ImGui::CollapsingHeader(questionHeader.c_str()))
+				for (const auto& child : document.root->children)
 				{
-				ImGui:;
-					ImGui::TextWrapped("%s", loremParagraph);
+					if (ImGui::CollapsingHeader(child->getTag().c_str()))
+					{
+						ImGui::TextWrapped("%s", child->getData().c_str());
+						for (const auto& option : child->children)
+						{
+							ImGui::TextWrapped("%s", option->getData().c_str());
+							ImGui::Separator();
+						}
+					}
+					ImGui::Separator();
 				}
-				ImGui::Separator();
 			}
+			ImGui::EndChild();
 		}
-		ImGui::EndChild();
 	}
 	ImGui::End();
+}
+
+void Application::displayQuizWindow()
+{
+	if (ImGui::Begin("Quiz Window"))
+	{
+		ImGui::End();
+	}
+}
+
+void Application::displayStatusWindow()
+{
+	if (ImGui::Begin("Status Window"))
+	{
+		ImGui::End();
+	}
 }

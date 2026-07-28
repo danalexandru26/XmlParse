@@ -4,7 +4,6 @@
 #include <imgui_internal.h>
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
-
 #include "application.h"
 #include"XmlNode.h"
 #include"XmlDocument.h"
@@ -14,11 +13,9 @@
 constexpr size_t width = 1280;
 constexpr size_t height = 720;
 
-void framebufferResizeCallback(GLFWwindow* window, int width, int height);
-
-int WinMain()
+int main()
 {
-	Application app({ 3, 3 }, width, height, "QuizGen");
+	Application app({3, 3}, width, height, "QuizGen");
 
 	if (!app.start())
 	{
@@ -27,9 +24,4 @@ int WinMain()
 	}
 
 	return 0;
-}
-
-void framebufferResizeCallback(GLFWwindow* window, int width, int height)
-{
-	glViewport(0, 0, width, height);
 }

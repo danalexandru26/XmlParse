@@ -15,13 +15,14 @@ void XmlDocument::stream(std::ostream& os)
 	//iterate(os, root);
 }
 
-void XmlDocument::setRoot(std::unique_ptr<XmlNode> node)
+bool XmlDocument::setRoot(std::unique_ptr<XmlNode> node)
 {
 	if (root == nullptr)
 	{
-		root = std::make_unique<XmlNode>(XmlNode({"root", ""}));
+		root = std::move(node);
+		return true;
 	}
-	root->addChild(std::move(node));
+	return false;
 }
 
 void XmlDocument::clear()

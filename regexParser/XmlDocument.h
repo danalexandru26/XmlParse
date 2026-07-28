@@ -33,12 +33,11 @@ public:
 	XmlNode* findByAttribute(const XmlAttribute& attribute);
 	void stream(std::ostream& os);
 
-	void setRoot(std::unique_ptr<XmlNode> node);
+	bool setRoot(std::unique_ptr<XmlNode> node);
 	void clear();
 
 	void saveToFile(const std::string& path);
 	bool loadFromFile(const std::string& path);
 
-private:
 	std::unique_ptr<XmlNode> root;
 };

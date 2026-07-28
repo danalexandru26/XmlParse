@@ -5,6 +5,14 @@ XmlParser::XmlParser(const std::string& path)
 {
 }
 
+void XmlParser::configurePath(const std::string& path)
+{
+	if (this->path.empty())
+	{
+		this->path = path;
+	}
+}
+
 int XmlParser::parseToXml(std::function<void(const std::string&)> parser)
 {
 	if (path.empty())

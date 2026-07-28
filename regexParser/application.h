@@ -11,6 +11,8 @@ constexpr int defaultHeight = 720;
 constexpr int fallbackOpenglMajor = 3;
 constexpr int fallbackOpenglMinor = 3;
 
+const std::string defaultPathText = R"(D:\github\XmlParse\x64\Debug\questions.txt)";
+
 constexpr std::array<float, 4> defaultColor{0.1f, 0.1f, 0.1f, 1.0f};
 
 class Application
@@ -25,8 +27,11 @@ public:
 
 private:
 	bool setupRenderer();
+
 	void displayDefaultScreen();
 	void displayDropDown();
+	void displayQuizWindow();
+	void displayStatusWindow();
 
 private:
 	std::string title;

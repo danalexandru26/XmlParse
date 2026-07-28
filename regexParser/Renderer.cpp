@@ -64,6 +64,8 @@ bool Renderer::initializeImGui()
 	ImGuiIO& io = ImGui::GetIO();
 	(void)io;
 
+	setupFont(io, ro_glyph_ranges);
+
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
 	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
@@ -125,6 +127,16 @@ void Renderer::clearColor(std::array<float, 4> color, GLbitfield mask)
 {
 	glClearColor(color[0], color[1], color[2], color[3]);
 	glClear(mask);
+}
+
+void Renderer::setupFont(ImGuiIO& io, const ImWchar gylphRange[])
+{
+	ImFont* font = io.Fonts->AddFontFromFileTTF(
+		"C:\\Windows\\Fonts\\segoeui.ttf",
+		18.0f,
+		nullptr,
+		ro_glyph_ranges
+	);
 }
 
 void Renderer::applyGruvboxImGui()
