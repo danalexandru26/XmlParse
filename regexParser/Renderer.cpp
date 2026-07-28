@@ -80,6 +80,7 @@ bool Renderer::initializeImGui()
 		std::cerr << "ImGui OpenGL3 Implementation cannot be initialized\n";
 		return false;
 	}
+
 	return true;
 }
 
@@ -139,92 +140,75 @@ void Renderer::setupFont(ImGuiIO& io, const ImWchar gylphRange[])
 	);
 }
 
-void Renderer::applyGruvboxImGui()
+void Renderer::styleLight()
 {
 	ImGuiStyle& style = ImGui::GetStyle();
 	ImVec4* colors = style.Colors;
 
-	style.WindowRounding = 4.0f;
-	style.ChildRounding = 4.0f;
-	style.FrameRounding = 3.0f;
-	style.PopupRounding = 4.0f;
-	style.ScrollbarRounding = 4.0f;
-	style.GrabRounding = 3.0f;
-	style.TabRounding = 4.0f;
+	// Catppuccin Latte Palette
+	const ImVec4 base = ImVec4(0.93f, 0.94f, 0.96f, 1.00f); // #EFF1F5
+	const ImVec4 mantle = ImVec4(0.90f, 0.91f, 0.94f, 1.00f); // #E6E9EF
+	const ImVec4 surface0 = ImVec4(0.85f, 0.86f, 0.90f, 1.00f); // #CCD0DA
+	const ImVec4 surface1 = ImVec4(0.79f, 0.81f, 0.86f, 1.00f); // #BCC0CC
 
+	const ImVec4 text = ImVec4(0.30f, 0.31f, 0.38f, 1.00f); // #4C4F69
+	const ImVec4 subtext0 = ImVec4(0.53f, 0.54f, 0.60f, 1.00f); // #8C8FA1
+
+	const ImVec4 mauve = ImVec4(0.53f, 0.32f, 0.88f, 1.00f); // Primary Accent (#8839EF)
+	const ImVec4 lavender = ImVec4(0.45f, 0.55f, 0.96f, 1.00f); // Hover Accent (#7287FD)
+	const ImVec4 blue = ImVec4(0.12f, 0.40f, 0.96f, 1.00f); // #1E66F5
+
+	colors[ImGuiCol_Text] = text;
+	colors[ImGuiCol_TextDisabled] = subtext0;
+	colors[ImGuiCol_WindowBg] = base;
+	colors[ImGuiCol_ChildBg] = mantle;
+	colors[ImGuiCol_PopupBg] = mantle;
+	colors[ImGuiCol_Border] = surface1;
+	colors[ImGuiCol_BorderShadow] = ImVec4(0, 0, 0, 0);
+
+	colors[ImGuiCol_FrameBg] = surface0;
+	colors[ImGuiCol_FrameBgHovered] = surface1;
+	colors[ImGuiCol_FrameBgActive] = ImVec4(0.72f, 0.75f, 0.81f, 1.00f);
+
+	colors[ImGuiCol_TitleBg] = mantle;
+	colors[ImGuiCol_TitleBgActive] = surface0;
+	colors[ImGuiCol_TitleBgCollapsed] = mantle;
+	colors[ImGuiCol_MenuBarBg] = mantle;
+
+	colors[ImGuiCol_Button] = surface0;
+	colors[ImGuiCol_ButtonHovered] = lavender;
+	colors[ImGuiCol_ButtonActive] = mauve;
+
+	colors[ImGuiCol_Header] = ImVec4(0.53f, 0.32f, 0.88f, 0.20f);
+	colors[ImGuiCol_HeaderHovered] = lavender;
+	colors[ImGuiCol_HeaderActive] = mauve;
+
+	colors[ImGuiCol_Tab] = mantle;
+	colors[ImGuiCol_TabHovered] = lavender;
+	colors[ImGuiCol_TabActive] = base;
+	colors[ImGuiCol_TabUnfocused] = mantle;
+	colors[ImGuiCol_TabUnfocusedActive] = base;
+
+	colors[ImGuiCol_CheckMark] = mauve;
+	colors[ImGuiCol_SliderGrab] = mauve;
+	colors[ImGuiCol_SliderGrabActive] = lavender;
+	colors[ImGuiCol_ScrollbarBg] = base;
+	colors[ImGuiCol_ScrollbarGrab] = surface0;
+	colors[ImGuiCol_ScrollbarGrabHovered] = surface1;
+	colors[ImGuiCol_ScrollbarGrabActive] = mauve;
+	colors[ImGuiCol_NavHighlight] = mauve;
+
+	style.WindowRounding = 8.0f;
+	style.FrameRounding = 5.0f;
+	style.PopupRounding = 6.0f;
+	style.ScrollbarRounding = 8.0f;
+	style.GrabRounding = 4.0f;
+	style.TabRounding = 5.0f;
 	style.WindowBorderSize = 1.0f;
-	style.FrameBorderSize = 0.0f;
-	style.PopupBorderSize = 1.0f;
-	style.ItemSpacing = ImVec2(8.0f, 6.0f);
-	style.ItemInnerSpacing = ImVec2(6.0f, 4.0f);
-
-	const ImVec4 bg0_hard = ImVec4(0.114f, 0.122f, 0.129f, 1.00f);
-	const ImVec4 bg0 = ImVec4(0.157f, 0.157f, 0.157f, 1.00f);
-	const ImVec4 bg1 = ImVec4(0.235f, 0.220f, 0.212f, 1.00f);
-	const ImVec4 bg2 = ImVec4(0.314f, 0.286f, 0.271f, 1.00f);
-	const ImVec4 bg3 = ImVec4(0.400f, 0.361f, 0.333f, 1.00f);
-
-	const ImVec4 fg0 = ImVec4(0.984f, 0.961f, 0.894f, 1.00f);
-	const ImVec4 fg1 = ImVec4(0.922f, 0.859f, 0.698f, 1.00f);
-	const ImVec4 fg4 = ImVec4(0.659f, 0.600f, 0.518f, 1.00f);
-
-	const ImVec4 yellow = ImVec4(0.980f, 0.741f, 0.184f, 1.00f);
-	const ImVec4 orange = ImVec4(0.980f, 0.490f, 0.196f, 1.00f);
-	const ImVec4 aqua = ImVec4(0.537f, 0.753f, 0.525f, 1.00f);
-	const ImVec4 green = ImVec4(0.722f, 0.733f, 0.149f, 1.00f);
-
-	colors[ImGuiCol_WindowBg] = bg0;
-	colors[ImGuiCol_ChildBg] = bg0_hard;
-	colors[ImGuiCol_PopupBg] = bg1;
-
-	colors[ImGuiCol_Border] = bg2;
-	colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
-
-	colors[ImGuiCol_Text] = fg1;
-	colors[ImGuiCol_TextDisabled] = fg4;
-
-	colors[ImGuiCol_MenuBarBg] = bg0_hard;
-	colors[ImGuiCol_Header] = bg1;
-	colors[ImGuiCol_HeaderHovered] = bg2;
-	colors[ImGuiCol_HeaderActive] = bg3;
-
-	colors[ImGuiCol_Button] = bg2;
-	colors[ImGuiCol_ButtonHovered] = ImVec4(orange.x, orange.y, orange.z, 0.70f);
-	colors[ImGuiCol_ButtonActive] = orange;
-
-	colors[ImGuiCol_FrameBg] = bg1;
-	colors[ImGuiCol_FrameBgHovered] = bg2;
-	colors[ImGuiCol_FrameBgActive] = bg3;
-	colors[ImGuiCol_CheckMark] = yellow;
-	colors[ImGuiCol_SliderGrab] = yellow;
-	colors[ImGuiCol_SliderGrabActive] = orange;
-
-	colors[ImGuiCol_Tab] = bg0_hard;
-	colors[ImGuiCol_TabHovered] = bg2;
-	colors[ImGuiCol_TabActive] = bg1;
-	colors[ImGuiCol_TabUnfocused] = bg0_hard;
-	colors[ImGuiCol_TabUnfocusedActive] = bg1;
-	colors[ImGuiCol_DockingPreview] = ImVec4(yellow.x, yellow.y, yellow.z, 0.40f);
-	colors[ImGuiCol_DockingEmptyBg] = bg0_hard;
-
-	colors[ImGuiCol_TitleBg] = bg0_hard;
-	colors[ImGuiCol_TitleBgActive] = bg1;
-	colors[ImGuiCol_TitleBgCollapsed] = bg0_hard;
-
-	colors[ImGuiCol_ScrollbarBg] = bg0_hard;
-	colors[ImGuiCol_ScrollbarGrab] = bg2;
-	colors[ImGuiCol_ScrollbarGrabHovered] = bg3;
-	colors[ImGuiCol_ScrollbarGrabActive] = fg4;
-
-	colors[ImGuiCol_Separator] = bg2;
-	colors[ImGuiCol_SeparatorHovered] = yellow;
-	colors[ImGuiCol_SeparatorActive] = orange;
-	colors[ImGuiCol_ResizeGrip] = bg2;
-	colors[ImGuiCol_ResizeGripHovered] = yellow;
-	colors[ImGuiCol_ResizeGripActive] = orange;
-
-	colors[ImGuiCol_NavCursor] = ImVec4(0.980f, 0.490f, 0.196f, 1.00f);
-	colors[ImGuiCol_TabSelectedOverline] = ImVec4(0.980f, 0.741f, 0.184f, 1.00f);
+	style.FrameBorderSize = 1.0f;
+	style.WindowPadding = ImVec2(12, 12);
+	style.FramePadding = ImVec2(8, 5);
+	style.ItemSpacing = ImVec2(8, 6);
 }
 
 bool Renderer::validateGLVersion(const std::pair<int, int>& version) const

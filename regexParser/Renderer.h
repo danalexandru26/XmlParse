@@ -42,7 +42,7 @@ public:
 	void clearColor(std::array<float, 4> color, GLbitfield mask);
 
 	void setupFont(ImGuiIO& io, const ImWchar gylphRange[]);
-	void applyGruvboxImGui();
+	void styleLight();
 
 private:
 	bool validateGLVersion(const std::pair<int, int>& version) const;

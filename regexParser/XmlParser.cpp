@@ -85,6 +85,8 @@ std::unique_ptr<XmlNode> XmlParser::txtToXml()
 						if (!match.empty() && match.size() > 1)
 						{
 							optionNode = std::make_unique<XmlNode>(match[1].str(), line);
+							questionNode->addChild(std::move(optionNode));
+
 							state = caseMatch::Option;
 						}
 						else
@@ -116,15 +118,11 @@ std::unique_ptr<XmlNode> XmlParser::txtToXml()
 					{
 						if (questionNode != nullptr)
 						{
-							if (questionNode != nullptr)
-							{
-								questionNode->addChild(std::move(optionNode));
-							}
-
 							auto match = extractText(optionMatch, line);
 							if (!match.empty() && match.size() > 1)
 							{
 								optionNode = std::make_unique<XmlNode>(match[1].str(), line);
+								questionNode->addChild(std::move(optionNode));
 							}
 							else
 							{
@@ -139,11 +137,10 @@ std::unique_ptr<XmlNode> XmlParser::txtToXml()
 					{
 						if (questionNode != nullptr)
 						{
-							if (optionNode != nullptr)
-							{
-								questionNode->addChild(std::move(optionNode));
-							}
+							auto answer = std::make_unique<XmlNode>("R", line);
+							questionNode->addChild(std::move(answer));
 							root->addChild(std::move(questionNode));
+
 							state = caseMatch::Default;
 						}
 					}

@@ -58,7 +58,9 @@ bool Application::start()
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
-		ImGui::DockSpaceOverViewport();
+
+		ImGuiDockNodeFlags flags = ImGuiDockNodeFlags_PassthruCentralNode;
+		ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport(), flags);
 
 		displayDropDown();
 		displayQuizWindow();
@@ -86,7 +88,7 @@ bool Application::setupRenderer()
 		std::cerr << "Error during ImGui initialization\n";
 		return false;
 	}
-	renderer.applyGruvboxImGui();
+	renderer.styleLight();
 
 	return true;
 }
@@ -109,6 +111,8 @@ void Application::displayDropDown()
 
 		if (document.root != nullptr)
 		{
+			int currentLoopID{};
+
 			if (ImGui::BeginChild("Question", ImVec2(0, 0), false))
 			{
 				for (const auto& child : document.root->children)
@@ -116,11 +120,15 @@ void Application::displayDropDown()
 					if (ImGui::CollapsingHeader(child->getTag().c_str()))
 					{
 						ImGui::TextWrapped("%s", child->getData().c_str());
+
+						ImGui::Indent(20.0f);
 						for (const auto& option : child->children)
 						{
-							ImGui::TextWrapped("%s", option->getData().c_str());
-							ImGui::Separator();
+							ImGui::PushID(currentLoopID);
+							ImGui::Selectable(option->getData().c_str());
+							ImGui::PopID();
 						}
+						ImGui::Unindent(20.0f);
 					}
 					ImGui::Separator();
 				}
@@ -135,14 +143,23 @@ void Application::displayQuizWindow()
 {
 	if (ImGui::Begin("Quiz Window"))
 	{
-		ImGui::End();
+		float textWidth = ImGui::CalcTextSize("Quiz Configuration").x;
+		float windowWidth = ImGui::GetContentRegionAvail().x;
+
+		ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
+		ImGui::TextEx("Quiz Configuration");
+
+		ImGui::Spacing();
+		ImGui::Separator();
+		ImGui::Spacing();
 	}
+	ImGui::End();
 }
 
 void Application::displayStatusWindow()
 {
 	if (ImGui::Begin("Status Window"))
 	{
-		ImGui::End();
 	}
+	ImGui::End();
 }
