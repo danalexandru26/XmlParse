@@ -1,6 +1,8 @@
 #pragma once
 #include<array>
-#include<set>
+#include<algorithm>
+#include<numeric>
+#include<random>
 #include"Renderer.h"
 #include"XmlNode.h"
 #include"XmlDocument.h"
@@ -39,8 +41,10 @@ private:
 	void displayQuizSelection(int& questionCount);
 	void displayQuiz(int& questionCount);
 
+	void randomizeSet(const int& size);
+
 private:
-	std::set<int> selector;
+	std::vector<size_t> selector;
 	std::string title;
 
 	ApplicationState state;

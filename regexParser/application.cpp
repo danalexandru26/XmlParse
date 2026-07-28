@@ -121,7 +121,11 @@ void Application::displayDropDown()
 						for (const auto& option : child->children)
 						{
 							ImGui::PushID(currentLoopID);
-							ImGui::Selectable(option->getData().c_str());
+							if ((option->getTag() == "R" && state != ApplicationState::QUIZ_EXEC) || option->getTag() !=
+								"R")
+							{
+								ImGui::Selectable(option->getData().c_str());
+							}
 							ImGui::PopID();
 						}
 						ImGui::Unindent(20.0f);
@@ -159,6 +163,15 @@ void Application::displayMainWindow()
 	ImGui::End();
 }
 
+void Application::displayStatusWindow()
+{
+	if (ImGui::Begin("Status Window"))
+	{
+	}
+	ImGui::End();
+}
+
+
 void Application::displayQuizSelection(int& questionCount)
 {
 	float textWidth = ImGui::CalcTextSize("Quiz Configuration").x;
@@ -187,6 +200,7 @@ void Application::displayQuizSelection(int& questionCount)
 	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.50f, 0.90f, 0.50f, 1.00f));
 	if (ImGui::Button("Start", ImVec2(200.0f, 30.0f)))
 	{
+		randomizeSet(questionCount);
 		state = ApplicationState::QUIZ_EXEC;
 	}
 	ImGui::PopStyleColor();
@@ -194,17 +208,74 @@ void Application::displayQuizSelection(int& questionCount)
 
 void Application::displayQuiz(int& questionCount)
 {
-	if (ImGui::Button("switch"))
+	static int currentQuestion{};
+	size_t size{document.root->childCount()};
+
+	static std::vector<int> selectedResults{};
+
+	for (size_t i = 0; i < size; ++i)
 	{
-		state = ApplicationState::QUIZ_SELECT;
+		if (selector[currentQuestion] == i)
+		{
+			const std::string questionId = document.root->children[i]->getTag();
+			const auto questionText = document.root->children[i]->getData();
+
+			if (ImGui::CollapsingHeader(questionText.c_str(), ImGuiTreeNodeFlags_DefaultOpen))
+			{
+				ImGui::Indent(20.0f);
+				for (const auto& option : document.root->children[i]->children)
+				{
+					if (option->getTag() != "R")
+					{
+						ImGui::Selectable(option->getData().c_str());
+					}
+				}
+				ImGui::Unindent(20.0f);
+			}
+		}
 	}
+	ImGui::Spacing();
+
+	float windowWidth = ImGui::GetContentRegionAvail().x;
+	ImGui::SetCursorPosX((windowWidth - 200.0f) * 0.5f);
+
+	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.85f, 0.82f, 0.94f, 1.00f));
+	ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.78f, 0.74f, 0.90f, 1.00f));
+	ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.68f, 0.62f, 0.85f, 1.00f));
+	ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.20f, 0.20f, 0.30f, 1.00f));
+	if (ImGui::Button("Previous", ImVec2(100.0f, 30.0f)))
+	{
+		if (currentQuestion > 0)
+		{
+			currentQuestion -= 1;
+		}
+		selectedResults.clear();
+	}
+
+	ImGui::SameLine();
+	if (ImGui::Button("Next", ImVec2(100.0f, 30.0f)))
+	{
+		if (currentQuestion < questionCount - 1)
+		{
+			currentQuestion += 1;
+		}
+		selectedResults.clear();
+	}
+	ImGui::PopStyleColor(4);
 }
 
-
-void Application::displayStatusWindow()
+void Application::randomizeSet(const int& size)
 {
-	if (ImGui::Begin("Status Window"))
+	if (!selector.empty())
 	{
+		selector.clear();
 	}
-	ImGui::End();
+	selector = std::vector<size_t>(1028);
+	std::iota(selector.begin(), selector.end(), 0);
+
+	std::random_device rnd{};
+	std::mt19937 gen(rnd());
+	std::shuffle(selector.begin(), selector.end(), gen);
+
+	selector.resize(size);
 }
