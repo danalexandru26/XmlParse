@@ -1,5 +1,6 @@
 #pragma once
 #include<array>
+#include<set>
 #include"Renderer.h"
 #include"XmlNode.h"
 #include"XmlDocument.h"
@@ -8,12 +9,15 @@
 constexpr int defaultWidth = 1280;
 constexpr int defaultHeight = 720;
 
-constexpr int fallbackOpenglMajor = 3;
-constexpr int fallbackOpenglMinor = 3;
-
 const std::string defaultPathText = R"(D:\github\XmlParse\x64\Debug\questions.txt)";
-
 constexpr std::array<float, 4> defaultColor{0.1f, 0.1f, 0.1f, 1.0f};
+
+
+enum class ApplicationState
+{
+	QUIZ_SELECT,
+	QUIZ_EXEC
+};
 
 class Application
 {
@@ -28,14 +32,18 @@ public:
 private:
 	bool setupRenderer();
 
-	void displayDefaultScreen();
 	void displayDropDown();
-	void displayQuizWindow();
+	void displayMainWindow();
 	void displayStatusWindow();
 
+	void displayQuizSelection(int& questionCount);
+	void displayQuiz(int& questionCount);
+
 private:
+	std::set<int> selector;
 	std::string title;
 
+	ApplicationState state;
 	Renderer renderer;
 	XmlParser parser;
 	XmlDocument document;

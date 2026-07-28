@@ -8,6 +8,7 @@ Application::Application(std::pair<int, int> version, const int& width, const in
                          const std::string& title)
 	: title{title}
 {
+	state = ApplicationState::QUIZ_SELECT;
 	renderer = Renderer(version, width, height, title);
 }
 
@@ -63,7 +64,7 @@ bool Application::start()
 		ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport(), flags);
 
 		displayDropDown();
-		displayQuizWindow();
+		displayMainWindow();
 		displayStatusWindow();
 
 		ImGui::Render();
@@ -91,11 +92,6 @@ bool Application::setupRenderer()
 	renderer.styleLight();
 
 	return true;
-}
-
-void Application::displayDefaultScreen()
-{
-	ImGui::ShowDemoWindow();
 }
 
 void Application::displayDropDown()
@@ -139,22 +135,71 @@ void Application::displayDropDown()
 	ImGui::End();
 }
 
-void Application::displayQuizWindow()
+void Application::displayMainWindow()
 {
-	if (ImGui::Begin("Quiz Window"))
+	static int questionCount{};
+	questionCount = std::max(0, questionCount);
+
+	if (ImGui::Begin("Main Window"))
 	{
-		float textWidth = ImGui::CalcTextSize("Quiz Configuration").x;
-		float windowWidth = ImGui::GetContentRegionAvail().x;
-
-		ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
-		ImGui::TextEx("Quiz Configuration");
-
-		ImGui::Spacing();
-		ImGui::Separator();
-		ImGui::Spacing();
+		switch (state)
+		{
+		case ApplicationState::QUIZ_SELECT:
+			{
+				displayQuizSelection(questionCount);
+			}
+			break;
+		case ApplicationState::QUIZ_EXEC:
+			{
+				displayQuiz(questionCount);
+			}
+			break;
+		}
 	}
 	ImGui::End();
 }
+
+void Application::displayQuizSelection(int& questionCount)
+{
+	float textWidth = ImGui::CalcTextSize("Quiz Configuration").x;
+	float windowWidth = ImGui::GetContentRegionAvail().x;
+	float windowHeight = ImGui::GetContentRegionAvail().y;
+
+	ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
+	ImGui::TextEx("Quiz Configuration");
+
+	ImGui::Spacing();
+	ImGui::Separator();
+	ImGui::Spacing();
+
+	textWidth = ImGui::CalcTextSize("Question Count").x;
+	ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
+	ImGui::TextEx("Question Count");
+	ImGui::Spacing();
+
+	ImGui::SetNextItemWidth(400.0f);
+	ImGui::SetCursorPosY(windowHeight * 0.2f);
+	ImGui::SetCursorPosX((windowWidth - 400.0f) * 0.5f);
+	ImGui::InputInt("##Number of Questions", &questionCount);
+	ImGui::Spacing();
+
+	ImGui::SetCursorPosX((windowWidth - 200.0f) * 0.5f);
+	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.50f, 0.90f, 0.50f, 1.00f));
+	if (ImGui::Button("Start", ImVec2(200.0f, 30.0f)))
+	{
+		state = ApplicationState::QUIZ_EXEC;
+	}
+	ImGui::PopStyleColor();
+}
+
+void Application::displayQuiz(int& questionCount)
+{
+	if (ImGui::Button("switch"))
+	{
+		state = ApplicationState::QUIZ_SELECT;
+	}
+}
+
 
 void Application::displayStatusWindow()
 {
