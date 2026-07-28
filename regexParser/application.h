@@ -42,8 +42,10 @@ private:
 	void displayQuiz(int& questionCount);
 
 	void randomizeSet(const int& size);
+	std::vector<int> parseResultLine(const std::string& string);
 
 private:
+	std::array<int, 1028> grade;
 	std::vector<size_t> selector;
 	std::string title;
 

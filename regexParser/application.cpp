@@ -10,6 +10,8 @@ Application::Application(std::pair<int, int> version, const int& width, const in
 {
 	state = ApplicationState::QUIZ_SELECT;
 	renderer = Renderer(version, width, height, title);
+
+	std::ranges::fill(grade, 0);
 }
 
 bool Application::readText(const std::string& path)
@@ -29,6 +31,7 @@ bool Application::readText(const std::string& path)
 		std::cerr << "XML document root could not be configured\n";
 		return false;
 	}
+
 	return true;
 }
 
@@ -212,6 +215,10 @@ void Application::displayQuiz(int& questionCount)
 	size_t size{document.root->childCount()};
 
 	static std::vector<int> selectedResults(6, 0);
+	std::string statusLabel = std::format("Question {}/{}", currentQuestion + 1, questionCount);
+
+	ImGui::TextEx(statusLabel.c_str());
+	ImGui::Spacing();
 
 	for (size_t i = 0; i < size; ++i)
 	{
@@ -222,7 +229,9 @@ void Application::displayQuiz(int& questionCount)
 
 			if (ImGui::CollapsingHeader(questionText.c_str(), ImGuiTreeNodeFlags_DefaultOpen))
 			{
+				std::vector<int> result{};
 				size_t resultIdx{};
+
 				ImGui::Indent(20.0f);
 				for (const auto& option : document.root->children[i]->children)
 				{
@@ -232,6 +241,10 @@ void Application::displayQuiz(int& questionCount)
 						{
 							selectedResults[resultIdx] = ~selectedResults[resultIdx];
 						}
+					}
+					else if (option->getTag() == "R")
+					{
+						result = parseResultLine(option->getData());
 					}
 					++resultIdx;
 				}
@@ -283,4 +296,23 @@ void Application::randomizeSet(const int& size)
 	std::shuffle(selector.begin(), selector.end(), gen);
 
 	selector.resize(size);
+}
+
+std::vector<int> Application::parseResultLine(const std::string& string)
+{
+	std::vector<int> result(6, 0);
+
+	for (const auto& c : string)
+	{
+		if (c == '(')
+		{
+			break;
+		}
+		if (c != 'R' && isalpha(c))
+		{
+			result[tolower(c) - 'a'] = ~result[tolower(c) - 'a'];
+		}
+	}
+
+	return result;
 }
