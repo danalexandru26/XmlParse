@@ -249,7 +249,7 @@ void Application::displayQuiz(int& questionCount)
 		{
 			currentQuestion -= 1;
 		}
-		selectedResults.clear();
+		std::ranges::fill(selectedResults, 0);
 	}
 
 	ImGui::SameLine();
@@ -259,7 +259,7 @@ void Application::displayQuiz(int& questionCount)
 		{
 			currentQuestion += 1;
 		}
-		selectedResults.clear();
+		std::ranges::fill(selectedResults, 0);
 	}
 	ImGui::PopStyleColor(4);
 }
