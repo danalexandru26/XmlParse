@@ -176,8 +176,7 @@ void Application::displayDropDown()
 
 void Application::displayMainWindow()
 {
-	static int questionCount{};
-	questionCount = std::max(0, questionCount);
+	static int questionCount{1};
 
 	if (ImGui::Begin("Quiz"))
 	{
@@ -236,11 +235,32 @@ void Application::displayQuizSelection(int& questionCount)
 	ImGui::InputInt("##Number of Questions", &questionCount);
 	ImGui::Spacing();
 
+	ImGui::SetNextItemWidth(300.0f);
+	ImGui::SetCursorPosY(windowHeight * 0.3f);
+	ImGui::SetCursorPosX((windowWidth - 300.0f) * 0.5f);
+
+	static int values[2]{};
+	if (ImGui::InputInt2("##", values))
+	{
+		values[0] = std::max(0, values[0]);
+		values[1] = std::max(0, values[1]);
+	}
+
+	ImGui::Spacing();
 	ImGui::SetCursorPosX((windowWidth - 200.0f) * 0.5f);
 	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.50f, 0.90f, 0.50f, 1.00f));
 	if (ImGui::Button("Start", ImVec2(200.0f, 30.0f)))
 	{
-		randomizeSet(questionCount);
+		if (values[0] && values[1] && values[0] < values[1])
+		{
+			questionCount = (values[1] - values[0]) + 1;
+			fillSet(values[0], values[1]);
+		}
+		else
+		{
+			randomizeSet(questionCount);
+		}
+
 		state = ApplicationState::QUIZ_EXEC;
 	}
 	ImGui::PopStyleColor();
@@ -325,7 +345,6 @@ void Application::displayQuiz(int& questionCount)
 	{
 		if (ImGui::Button("Finish", ImVec2(100.0f, 30.0f)))
 		{
-			state = ApplicationState::QUIZ_FINISH;
 			bool correct{true};
 
 			for (size_t i = 0; i < result.size() && correct; ++i)
@@ -342,6 +361,9 @@ void Application::displayQuiz(int& questionCount)
 			}
 			selectionCache[selector[currentQuestion]] = selectedResults;
 			std::ranges::fill(selectedResults, 0);
+
+			currentQuestion = 0;
+			state = ApplicationState::QUIZ_FINISH;
 		}
 	}
 	else
@@ -451,7 +473,79 @@ void Application::displayQuizResults(int& questionCount)
 
 	ImGui::Spacing();
 	ImGui::TextEx(summary.c_str());
+
+	if (ImGui::Button("Restart"))
+	{
+		resetQuizData();
+		state = ApplicationState::QUIZ_SELECT;
+	}
+
 	ImGui::Separator();
+}
+
+void Application::randomizeSet(const int& size)
+{
+	if (!selector.empty())
+	{
+		selector = {};
+	}
+
+	selector = std::vector<int>(1028);
+	std::iota(selector.begin(), selector.end(), 0);
+
+	std::random_device rnd{};
+	std::mt19937 gen(rnd());
+	std::shuffle(selector.begin(), selector.end(), gen);
+
+	selector.resize(size);
+}
+
+void Application::fillSet(const int& start, const int& finish)
+{
+	if (!selector.empty())
+	{
+		selector = {};
+	}
+
+	for (int i = start - 1; i < finish; ++i)
+	{
+		selector.push_back(i);
+	}
+}
+
+void Application::resetQuizData()
+{
+	if (!selector.empty())
+	{
+		selector = {};
+	}
+	if (!grade.empty())
+	{
+		grade = {};
+	}
+	if (!selectionCache.empty())
+	{
+		selectionCache = {};
+	}
+}
+
+std::vector<int> Application::parseResultLine(const std::string& string)
+{
+	std::vector<int> result(maxQuestionOptions, 0);
+
+	for (const auto& c : string)
+	{
+		if (c == '(')
+		{
+			break;
+		}
+		if (c != 'R' && isalpha(c))
+		{
+			result[tolower(c) - 'a'] = ~result[tolower(c) - 'a'];
+		}
+	}
+
+	return result;
 }
 
 void Application::setLightTheme()
@@ -594,39 +688,4 @@ void Application::setDarkTheme()
 	style.WindowPadding = ImVec2(12, 12);
 	style.FramePadding = ImVec2(8, 5);
 	style.ItemSpacing = ImVec2(8, 6);
-}
-
-void Application::randomizeSet(const int& size)
-{
-	if (!selector.empty())
-	{
-		selector.clear();
-	}
-	selector = std::vector<int>(1028);
-	std::iota(selector.begin(), selector.end(), 0);
-
-	std::random_device rnd{};
-	std::mt19937 gen(rnd());
-	std::shuffle(selector.begin(), selector.end(), gen);
-
-	selector.resize(size);
-}
-
-std::vector<int> Application::parseResultLine(const std::string& string)
-{
-	std::vector<int> result(maxQuestionOptions, 0);
-
-	for (const auto& c : string)
-	{
-		if (c == '(')
-		{
-			break;
-		}
-		if (c != 'R' && isalpha(c))
-		{
-			result[tolower(c) - 'a'] = ~result[tolower(c) - 'a'];
-		}
-	}
-
-	return result;
 }

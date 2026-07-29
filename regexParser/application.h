@@ -57,11 +57,15 @@ private:
 	void displayQuiz(int& questionCount);
 	void displayQuizResults(int& questionCount);
 
+	void randomizeSet(const int& size);
+	void fillSet(const int& start, const int& finish);
+
+	void resetQuizData();
+
+	std::vector<int> parseResultLine(const std::string& string);
+
 	void setLightTheme();
 	void setDarkTheme();
-
-	void randomizeSet(const int& size);
-	std::vector<int> parseResultLine(const std::string& string);
 
 private:
 	std::array<int, maxQuestionCount> grade;
