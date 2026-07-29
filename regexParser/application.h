@@ -35,6 +35,7 @@ public:
 private:
 	bool setupRenderer();
 
+	void displayMainMenuBar();
 	void displayDropDown();
 	void displayMainWindow();
 	void displayStatusWindow();
@@ -42,6 +43,9 @@ private:
 	void displayQuizSelection(int& questionCount);
 	void displayQuiz(int& questionCount);
 	void displayQuizResults(int& questionCount);
+
+	void setLightTheme();
+	void setDarkTheme();
 
 	void randomizeSet(const int& size);
 	std::vector<int> parseResultLine(const std::string& string);
