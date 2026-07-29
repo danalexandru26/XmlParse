@@ -94,7 +94,7 @@ bool Application::setupRenderer()
 		std::cerr << "Error during ImGui initialization\n";
 		return false;
 	}
-	setLightTheme();
+	setDarkTheme();
 	return true;
 }
 
@@ -151,7 +151,7 @@ void Application::displayDropDown()
 							{
 								float wrapWidth = ImGui::GetContentRegionAvail().x;
 								ImVec2 textSize =
-									ImGui::CalcTextSize(option->getData().c_str(), NULL, false, wrapWidth);
+									ImGui::CalcTextSize(option->getData().c_str(), nullptr, false, wrapWidth);
 
 								ImVec2 cursorPos = ImGui::GetCursorPos();
 
@@ -269,17 +269,32 @@ void Application::displayQuiz(int& questionCount)
 
 			if (ImGui::CollapsingHeader(questionText.c_str(), ImGuiTreeNodeFlags_DefaultOpen))
 			{
-				size_t resultIdx{};
+				int resultIdx{};
 
 				ImGui::Indent(20.0f);
 				for (const auto& option : document.root->children[i]->children)
 				{
 					if (option->getTag() != "R")
 					{
-						if (ImGui::Selectable(option->getData().c_str(), selectedResults[resultIdx] != 0))
+						float wrapWidth = ImGui::GetContentRegionAvail().x;
+						ImVec2 textSize =
+							ImGui::CalcTextSize(option->getData().c_str(), nullptr, false, wrapWidth);
+						ImVec2 cursorPos = ImGui::GetCursorPos();
+
+						ImGui::PushID(resultIdx);
+						ImGui::PushStyleColor(ImGuiCol_Header, ImColors::GreenHeader);
+
+						if (ImGui::Selectable("##", selectedResults[resultIdx] != 0, 0,
+						                      ImVec2(wrapWidth, textSize.y)))
 						{
 							selectedResults[resultIdx] = ~selectedResults[resultIdx];
 						}
+
+						ImGui::SetCursorPos(cursorPos);
+						ImGui::TextWrapped("%s", option->getData().c_str());
+
+						ImGui::PopID();
+						ImGui::PopStyleColor();
 					}
 					else if (option->getTag() == "R")
 					{
@@ -378,7 +393,7 @@ void Application::displayQuizResults(int& questionCount)
 			ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.90f, 0.20f, 0.20f, 0.40f));
 		}
 
-		if (ImGui::CollapsingHeader(questionData.c_str()))
+		if (ImGui::CollapsingHeader(questionData.c_str(), false))
 		{
 			ImGui::Indent(20.0f);
 
@@ -389,20 +404,32 @@ void Application::displayQuizResults(int& questionCount)
 				{
 					if (grade[current] == 1)
 					{
-						ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.15f, 1.0f, 0.30f, 0.8f));
+						ImGui::PushStyleColor(ImGuiCol_Header, ImColors::GreenHeader);
 					}
 					else
 					{
-						ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.20f, 0.20f, 0.8f));
+						ImGui::PushStyleColor(ImGuiCol_Header, ImColors::RedHeader);
 					}
 				}
+				else
+				{
+					ImGui::PushStyleColor(ImGuiCol_Header, ImColors::Transparent);
+				}
 
+				float wrapWidth = ImGui::GetContentRegionAvail().x;
+				ImVec2 textSize =
+					ImGui::CalcTextSize(option->getData().c_str(), nullptr, false, wrapWidth);
+
+				ImVec2 cursorPos = ImGui::GetCursorPos();
+
+				if (ImGui::Selectable("##selectableId", true, 0, ImVec2(wrapWidth, textSize.y)))
+				{
+				}
+
+				ImGui::SetCursorPos(cursorPos);
 				ImGui::TextWrapped("%s", option->getData().c_str());
 
-				if (optionIdx < maxQuestionOptions && selectionCache[current][optionIdx] == -1)
-				{
-					ImGui::PopStyleColor();
-				}
+				ImGui::PopStyleColor();
 				++optionIdx;
 			}
 			ImGui::Unindent(20.0f);

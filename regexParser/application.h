@@ -21,10 +21,11 @@ struct ImVec4;
 
 namespace ImColors
 {
-	constexpr ImVec4 Red = ImVec4(0.85f, 0.25f, 0.25f, 1.00f);
-	constexpr ImVec4 Green = ImVec4(0.18f, 0.65f, 0.32f, 1.00f);
-	constexpr ImVec4 RedHeader = ImVec4(0.90f, 0.20f, 0.20f, 0.40f);
-	constexpr ImVec4 GreenHeader = ImVec4(0.15f, 0.75f, 0.30f, 0.40f);
+	constexpr ImVec4 Red = ImVec4(0.85f, 0.25f, 0.25f, 1.0f);
+	constexpr ImVec4 Green = ImVec4(0.18f, 0.65f, 0.32f, 1.0f);
+	constexpr ImVec4 RedHeader = ImVec4(0.90f, 0.20f, 0.20f, 0.70f);
+	constexpr ImVec4 GreenHeader = ImVec4(0.15f, 0.75f, 0.30f, 0.70f);
+	constexpr ImVec4 Transparent = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
 }
 
 enum class ApplicationState
