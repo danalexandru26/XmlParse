@@ -11,9 +11,21 @@
 constexpr int defaultWidth = 1280;
 constexpr int defaultHeight = 720;
 
+constexpr int maxQuestionCount = 1028;
+constexpr int maxQuestionOptions = 6;
+
 const std::string defaultPathText = R"(D:\github\XmlParse\x64\Debug\questions.txt)";
 constexpr std::array<float, 4> defaultColor{0.1f, 0.1f, 0.1f, 1.0f};
 
+struct ImVec4;
+
+namespace ImColors
+{
+	constexpr ImVec4 Red = ImVec4(0.85f, 0.25f, 0.25f, 1.00f);
+	constexpr ImVec4 Green = ImVec4(0.18f, 0.65f, 0.32f, 1.00f);
+	constexpr ImVec4 RedHeader = ImVec4(0.90f, 0.20f, 0.20f, 0.40f);
+	constexpr ImVec4 GreenHeader = ImVec4(0.15f, 0.75f, 0.30f, 0.40f);
+}
 
 enum class ApplicationState
 {
@@ -51,7 +63,8 @@ private:
 	std::vector<int> parseResultLine(const std::string& string);
 
 private:
-	std::array<int, 1028> grade;
+	std::array<int, maxQuestionCount> grade;
+	std::array<std::vector<int>, maxQuestionCount> selectionCache;
 	std::vector<int> selector;
 	std::string title;
 

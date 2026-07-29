@@ -12,6 +12,7 @@ Application::Application(std::pair<int, int> version, const int& width, const in
 	renderer = Renderer(version, width, height, title);
 
 	std::ranges::fill(grade, 0);
+	std::ranges::fill(selectionCache, std::vector<int>());
 }
 
 bool Application::readText(const std::string& path)
@@ -93,8 +94,7 @@ bool Application::setupRenderer()
 		std::cerr << "Error during ImGui initialization\n";
 		return false;
 	}
-	renderer.styleLight();
-
+	setLightTheme();
 	return true;
 }
 
@@ -179,7 +179,7 @@ void Application::displayMainWindow()
 	static int questionCount{};
 	questionCount = std::max(0, questionCount);
 
-	if (ImGui::Begin("Main Window"))
+	if (ImGui::Begin("Quiz"))
 	{
 		switch (state)
 		{
@@ -205,7 +205,7 @@ void Application::displayMainWindow()
 
 void Application::displayStatusWindow()
 {
-	if (ImGui::Begin("Status Window"))
+	if (ImGui::Begin("Status"))
 	{
 	}
 	ImGui::End();
@@ -252,7 +252,7 @@ void Application::displayQuiz(int& questionCount)
 	int size = document.root->childCount();
 
 
-	static std::vector<int> selectedResults(6, 0);
+	static std::vector<int> selectedResults(maxQuestionOptions, 0);
 	std::vector<int> result{};
 	std::string statusLabel = std::format("Question {}/{}", currentQuestion + 1, questionCount);
 
@@ -291,16 +291,11 @@ void Application::displayQuiz(int& questionCount)
 			}
 		}
 	}
-
 	ImGui::Spacing();
 
 	float windowWidth = ImGui::GetContentRegionAvail().x;
 	ImGui::SetCursorPosX((windowWidth - 200.0f) * 0.5f);
 
-	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.85f, 0.82f, 0.94f, 1.00f));
-	ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.78f, 0.74f, 0.90f, 1.00f));
-	ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.68f, 0.62f, 0.85f, 1.00f));
-	ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.20f, 0.20f, 0.30f, 1.00f));
 	if (ImGui::Button("Previous", ImVec2(100.0f, 30.0f)))
 	{
 		if (currentQuestion > 0)
@@ -330,6 +325,7 @@ void Application::displayQuiz(int& questionCount)
 			{
 				grade[selector[currentQuestion]] = 1;
 			}
+			selectionCache[selector[currentQuestion]] = selectedResults;
 			std::ranges::fill(selectedResults, 0);
 		}
 	}
@@ -349,10 +345,10 @@ void Application::displayQuiz(int& questionCount)
 			}
 			if (correct == true)
 			{
-				std::cerr << selector[currentQuestion];
 				grade[selector[currentQuestion]] = 1;
 			}
 
+			selectionCache[selector[currentQuestion]] = selectedResults;
 			if (currentQuestion < questionCount - 1)
 			{
 				currentQuestion += 1;
@@ -360,7 +356,6 @@ void Application::displayQuiz(int& questionCount)
 			std::ranges::fill(selectedResults, 0);
 		}
 	}
-	ImGui::PopStyleColor(4);
 }
 
 void Application::displayQuizResults(int& questionCount)
@@ -382,14 +377,35 @@ void Application::displayQuizResults(int& questionCount)
 		{
 			ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.90f, 0.20f, 0.20f, 0.40f));
 		}
-		if (ImGui::CollapsingHeader(questionData.c_str(), ImGuiTreeNodeFlags_DefaultOpen))
+
+		if (ImGui::CollapsingHeader(questionData.c_str()))
 		{
 			ImGui::Indent(20.0f);
+
+			int optionIdx{};
 			for (const auto& option : document.root->children[current]->children)
 			{
-				ImGui::Selectable(option->getData().c_str());
+				if (optionIdx < maxQuestionOptions && selectionCache[current][optionIdx] == -1)
+				{
+					if (grade[current] == 1)
+					{
+						ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.15f, 1.0f, 0.30f, 0.8f));
+					}
+					else
+					{
+						ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.20f, 0.20f, 0.8f));
+					}
+				}
+
+				ImGui::TextWrapped("%s", option->getData().c_str());
+
+				if (optionIdx < maxQuestionOptions && selectionCache[current][optionIdx] == -1)
+				{
+					ImGui::PopStyleColor();
+				}
+				++optionIdx;
 			}
-			ImGui::Unindent();
+			ImGui::Unindent(20.0f);
 		}
 		ImGui::PopStyleColor(1);
 	}
@@ -571,7 +587,7 @@ void Application::randomizeSet(const int& size)
 
 std::vector<int> Application::parseResultLine(const std::string& string)
 {
-	std::vector<int> result(6, 0);
+	std::vector<int> result(maxQuestionOptions, 0);
 
 	for (const auto& c : string)
 	{
