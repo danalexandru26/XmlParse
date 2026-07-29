@@ -70,6 +70,8 @@ bool Renderer::initializeImGui()
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
 	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
+	io.ConfigDebugHighlightIdConflicts = false;
+
 	if (!ImGui_ImplGlfw_InitForOpenGL(window, true))
 	{
 		std::cerr << "ImGui GLFW Implementation cannot be initialized\n";

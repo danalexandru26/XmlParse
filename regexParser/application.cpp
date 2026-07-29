@@ -123,13 +123,22 @@ void Application::displayDropDown()
 						ImGui::Indent(20.0f);
 						for (const auto& option : child->children)
 						{
-							ImGui::PushID(currentLoopID);
 							if ((option->getTag() == "R" && state != ApplicationState::QUIZ_EXEC) || option->getTag() !=
 								"R")
 							{
-								ImGui::Selectable(option->getData().c_str());
+								float wrapWidth = ImGui::GetContentRegionAvail().x;
+								ImVec2 textSize =
+									ImGui::CalcTextSize(option->getData().c_str(), NULL, false, wrapWidth);
+
+								ImVec2 cursorPos = ImGui::GetCursorPos();
+
+								if (ImGui::Selectable("##selectableId", false, 0, ImVec2(wrapWidth, textSize.y)))
+								{
+								}
+
+								ImGui::SetCursorPos(cursorPos);
+								ImGui::TextWrapped("%s", option->getData().c_str());
 							}
-							ImGui::PopID();
 						}
 						ImGui::Unindent(20.0f);
 					}
