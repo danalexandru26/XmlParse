@@ -161,6 +161,11 @@ void Application::displayMainWindow()
 				displayQuiz(questionCount);
 			}
 			break;
+		case ApplicationState::QUIZ_FINISH:
+			{
+				displayQuizResults(questionCount);
+			}
+			break;
 		}
 	}
 	ImGui::End();
@@ -212,15 +217,18 @@ void Application::displayQuizSelection(int& questionCount)
 void Application::displayQuiz(int& questionCount)
 {
 	static int currentQuestion{};
-	size_t size{document.root->childCount()};
+	int size = document.root->childCount();
+
 
 	static std::vector<int> selectedResults(6, 0);
+	std::vector<int> result{};
 	std::string statusLabel = std::format("Question {}/{}", currentQuestion + 1, questionCount);
 
 	ImGui::TextEx(statusLabel.c_str());
 	ImGui::Spacing();
 
-	for (size_t i = 0; i < size; ++i)
+
+	for (int i = 0; i < size; ++i)
 	{
 		if (selector[currentQuestion] == i)
 		{
@@ -229,7 +237,6 @@ void Application::displayQuiz(int& questionCount)
 
 			if (ImGui::CollapsingHeader(questionText.c_str(), ImGuiTreeNodeFlags_DefaultOpen))
 			{
-				std::vector<int> result{};
 				size_t resultIdx{};
 
 				ImGui::Indent(20.0f);
@@ -271,15 +278,132 @@ void Application::displayQuiz(int& questionCount)
 	}
 
 	ImGui::SameLine();
-	if (ImGui::Button("Next", ImVec2(100.0f, 30.0f)))
+	if (currentQuestion + 1 == questionCount)
 	{
-		if (currentQuestion < questionCount - 1)
+		if (ImGui::Button("Finish", ImVec2(100.0f, 30.0f)))
 		{
-			currentQuestion += 1;
+			state = ApplicationState::QUIZ_FINISH;
+			bool correct{true};
+
+			for (auto& n : result)
+			{
+				std::cout << n << ' ';
+			}
+			std::cout << '\n';
+
+			for (auto& n : selectedResults)
+			{
+				std::cout << n << ' ';
+			}
+			std::cout << '\n';
+
+			for (size_t i = 0; i < result.size() && correct; ++i)
+			{
+				if (result[i] != selectedResults[i])
+				{
+					grade[selector[currentQuestion]] = 0;
+					correct = false;
+				}
+			}
+			if (correct == true)
+			{
+				grade[selector[currentQuestion]] = 1;
+			}
+
+			std::ranges::fill(selectedResults, 0);
 		}
-		std::ranges::fill(selectedResults, 0);
+	}
+	else
+	{
+		if (ImGui::Button("Next", ImVec2(100.0f, 30.0f)))
+		{
+			bool correct{true};
+
+			for (auto& n : result)
+			{
+				std::cout << n << ' ';
+			}
+			std::cout << '\n';
+
+			for (auto& n : selectedResults)
+			{
+				std::cout << n << ' ';
+			}
+			std::cout << '\n';
+
+			for (size_t i = 0; i < result.size() && correct; ++i)
+			{
+				if (result[i] != selectedResults[i])
+				{
+					grade[selector[currentQuestion]] = 0;
+					correct = false;
+				}
+			}
+			if (correct == true)
+			{
+				std::cerr << selector[currentQuestion];
+				grade[selector[currentQuestion]] = 1;
+			}
+
+			if (currentQuestion < questionCount - 1)
+			{
+				currentQuestion += 1;
+			}
+
+			std::ranges::fill(selectedResults, 0);
+		}
 	}
 	ImGui::PopStyleColor(4);
+}
+
+void Application::displayQuizResults(int& questionCount)
+{
+	int size = document.root->childCount();
+
+	for (int i = 0; i < selector.size(); ++i)
+	{
+		int current = selector[i];
+
+		std::string questionTag = document.root->children[current]->getTag();
+		std::string questionData = document.root->children[current]->getData();
+
+		if (grade[current] == 1)
+		{
+			ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.78f, 0.90f, 0.80f, 1.0f));
+			ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(0.70f, 0.85f, 0.73f, 1.0f));
+		}
+		else
+		{
+			ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.95f, 0.78f, 0.78f, 1.0f));
+			ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(0.90f, 0.68f, 0.68f, 1.0f));
+		}
+		if (ImGui::CollapsingHeader(questionData.c_str(), ImGuiTreeNodeFlags_DefaultOpen))
+		{
+			ImGui::Indent(20.0f);
+			for (const auto& option : document.root->children[current]->children)
+			{
+				ImGui::Selectable(option->getData().c_str());
+			}
+			ImGui::Unindent();
+		}
+		ImGui::PopStyleColor(2);
+	}
+
+	int correct{};
+	for (const auto& n : grade)
+	{
+		if (n == 1)
+		{
+			correct += 1;
+		}
+	}
+
+	std::string summary = std::format("{}/{}. {} Correct out of {} Total", correct, questionCount, correct,
+	                                  questionCount);
+
+	ImGui::Spacing();
+	ImGui::TextEx(summary.c_str());
+	ImGui::Separator();
 }
 
 void Application::randomizeSet(const int& size)
@@ -288,7 +412,7 @@ void Application::randomizeSet(const int& size)
 	{
 		selector.clear();
 	}
-	selector = std::vector<size_t>(1028);
+	selector = std::vector<int>(1028);
 	std::iota(selector.begin(), selector.end(), 0);
 
 	std::random_device rnd{};

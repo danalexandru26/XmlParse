@@ -18,7 +18,8 @@ constexpr std::array<float, 4> defaultColor{0.1f, 0.1f, 0.1f, 1.0f};
 enum class ApplicationState
 {
 	QUIZ_SELECT,
-	QUIZ_EXEC
+	QUIZ_EXEC,
+	QUIZ_FINISH
 };
 
 class Application
@@ -40,13 +41,14 @@ private:
 
 	void displayQuizSelection(int& questionCount);
 	void displayQuiz(int& questionCount);
+	void displayQuizResults(int& questionCount);
 
 	void randomizeSet(const int& size);
 	std::vector<int> parseResultLine(const std::string& string);
 
 private:
 	std::array<int, 1028> grade;
-	std::vector<size_t> selector;
+	std::vector<int> selector;
 	std::string title;
 
 	ApplicationState state;
