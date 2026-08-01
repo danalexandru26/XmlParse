@@ -13,13 +13,13 @@
 constexpr size_t width = 1280;
 constexpr size_t height = 720;
 
-int WinMain()
+int main()
 {
 	Application app({3, 3}, width, height, "QuizGen");
 
 	if (!app.start())
 	{
-		std::cerr << "Critical error\n";
+		std::cerr << "Application failed to start\n";
 		return 1;
 	}
 

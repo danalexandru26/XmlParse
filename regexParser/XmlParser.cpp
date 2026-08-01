@@ -103,7 +103,7 @@ std::unique_ptr<XmlNode> XmlParser::txtToXml()
 					break;
 				default:
 					{
-						std::cerr << "Invalid document formatting for question text or option identification\n";
+						std::cerr << line<< "Invalid document formatting for question text or option identification\n";
 						return nullptr;
 					}
 				}
@@ -160,7 +160,7 @@ std::unique_ptr<XmlNode> XmlParser::txtToXml()
 					break;
 				default:
 					{
-						std::cerr << "Invalid document formatting for option text or answer identification\n";
+						std::cerr << line<<"Invalid document formatting for option text or answer identification\n";
 						return nullptr;
 					}
 				}

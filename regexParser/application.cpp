@@ -8,6 +8,9 @@ Application::Application(std::pair<int, int> version, const int& width, const in
                          const std::string& title)
 	: title{title}
 {
+	currentQuestion = 0;
+	questionCount = minimumQuestionCount;
+
 	state = ApplicationState::QUIZ_SELECT;
 	renderer = Renderer(version, width, height, title);
 
@@ -115,6 +118,17 @@ void Application::displayMainMenuBar()
 
 			ImGui::EndMenu();
 		}
+
+		ImGui::PushStyleColor(ImGuiCol_Button, ImColors::RedHeader);
+		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImColors::GreenHeader);
+		ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImColors::GreenHeader);
+		if (ImGui::Button("Restart"))
+		{
+			resetQuizData();
+			state = ApplicationState::QUIZ_SELECT;
+		}
+		ImGui::PopStyleColor(3);
+
 		ImGui::EndMainMenuBar();
 	}
 }
@@ -176,25 +190,23 @@ void Application::displayDropDown()
 
 void Application::displayMainWindow()
 {
-	static int questionCount{1};
-
 	if (ImGui::Begin("Quiz"))
 	{
 		switch (state)
 		{
 		case ApplicationState::QUIZ_SELECT:
 			{
-				displayQuizSelection(questionCount);
+				displayQuizSelection();
 			}
 			break;
 		case ApplicationState::QUIZ_EXEC:
 			{
-				displayQuiz(questionCount);
+				displayQuiz();
 			}
 			break;
 		case ApplicationState::QUIZ_FINISH:
 			{
-				displayQuizResults(questionCount);
+				displayQuizResults();
 			}
 			break;
 		}
@@ -211,7 +223,7 @@ void Application::displayStatusWindow()
 }
 
 
-void Application::displayQuizSelection(int& questionCount)
+void Application::displayQuizSelection()
 {
 	float textWidth = ImGui::CalcTextSize("Quiz Configuration").x;
 	float windowWidth = ImGui::GetContentRegionAvail().x;
@@ -266,9 +278,8 @@ void Application::displayQuizSelection(int& questionCount)
 	ImGui::PopStyleColor();
 }
 
-void Application::displayQuiz(int& questionCount)
+void Application::displayQuiz()
 {
-	static int currentQuestion{};
 	int size = document.root->childCount();
 
 
@@ -395,7 +406,7 @@ void Application::displayQuiz(int& questionCount)
 	}
 }
 
-void Application::displayQuizResults(int& questionCount)
+void Application::displayQuizResults()
 {
 	int size = document.root->childCount();
 
@@ -408,11 +419,11 @@ void Application::displayQuizResults(int& questionCount)
 
 		if (grade[current] == 1)
 		{
-			ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.15f, 0.75f, 0.30f, 0.40f));
+			ImGui::PushStyleColor(ImGuiCol_Header, ImColors::GreenHeader);
 		}
 		else
 		{
-			ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.90f, 0.20f, 0.20f, 0.40f));
+			ImGui::PushStyleColor(ImGuiCol_Header, ImColors::RedHeader);
 		}
 
 		if (ImGui::CollapsingHeader(questionData.c_str(), false))
@@ -432,6 +443,10 @@ void Application::displayQuizResults(int& questionCount)
 					{
 						ImGui::PushStyleColor(ImGuiCol_Header, ImColors::RedHeader);
 					}
+				}
+				else if (option->getTag() == "R")
+				{
+					ImGui::PushStyleColor(ImGuiCol_Header, ImColors::OrangeHeader);
 				}
 				else
 				{
@@ -473,14 +488,6 @@ void Application::displayQuizResults(int& questionCount)
 
 	ImGui::Spacing();
 	ImGui::TextEx(summary.c_str());
-
-	if (ImGui::Button("Restart"))
-	{
-		resetQuizData();
-		state = ApplicationState::QUIZ_SELECT;
-	}
-
-	ImGui::Separator();
 }
 
 void Application::randomizeSet(const int& size)
@@ -527,6 +534,9 @@ void Application::resetQuizData()
 	{
 		selectionCache = {};
 	}
+
+	questionCount = minimumQuestionCount;
+	currentQuestion = 0;
 }
 
 std::vector<int> Application::parseResultLine(const std::string& string)

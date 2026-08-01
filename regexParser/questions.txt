@@ -1268,7 +1268,7 @@ b. manipularea cu echipamente de protecție personală
 c. depozitarea deșeurilor în containere transparente
 d. eliminarea acestora prin ardere în condiții controlate
 e. toate cele de mai sus
-Răspunsuri corecte :a,b,d.(Vol.I, Cap. 2.3, Pag. 295)
+R: a,b,d.(Vol.I, Cap. 2.3, Pag. 295)
 152. Colectarea deseurile chimice si farmaceutice se face in?
 a. recipiente speciale cu maracajul( Inflamabil)
 b. recipiente speciale cu marcajul(Coroziv, Toxic)
@@ -1610,7 +1610,7 @@ b. este deschis la feedback-ul echipei și al pacienților
 c. evită conflictele și nu permite divergențele de opinie
 d. păstrează controlul total asupra deciziilor
 e. focalizează doar pe atingerea obiectivelor financiare
-Răspuns corecte:a, b. (Vol.I,,Cap. 2.5, Pag. 355)
+R: a, b. (Vol.I,,Cap. 2.5, Pag. 355)
 198. Care sunt instrumentele cheie pentru a menține un climat pozitiv în comunicarea
 dintre personalul medical?
 a. crearea unui mediu de încredere și respect reciproc
@@ -1626,7 +1626,7 @@ b. crește eficiența tratamentului prin comunicare clară
 c. reduce riscurile de erori în procesul medical
 d. permite o mai bună gestionare a conflictelor
 e. nu este importantă pentru gestionarea echipelor de lucru
-Răspuns corecte:a, b, c, d. (Vol.I, Cap. 2.5, Pag. 360)
+R:a, b, c, d. (Vol.I, Cap. 2.5, Pag. 360)
 200. *Ce tip de leadership este recomandat în situații de criză în spitale?
 a. leadership autoritar
 b. leadership democratic
@@ -1641,7 +1641,7 @@ b. reducerea motivației echipei din cauza criticii
 c. creșterea satisfacției și a încrederii în activitatea profesională
 d. crearea unui climat tensionat și competitiv
 e. creșterea abilității de a rezolva conflictele
-Răspuns corecte: a, c, e. (Vol.I, Cap. 2.5, Pag. 365)
+R: a, c, e. (Vol.I, Cap. 2.5, Pag. 365)
 202. *Ce impact are comunicarea clară asupra rezultatelor îngrijirii pacientului?
 a. crește eficiența tratamentului
 b. reduce riscurile de erori medicale
@@ -1655,7 +1655,7 @@ b. stabilirea unor obiective clare și realizabile
 c. ignorarea contribuțiilor individuale
 d. împărțirea echipei în subgrupuri pentru a stimula competiția
 e. toate cele de mai sus
-Răspuns corecte: a, b. (Vol.I, Cap. 2.5, Pag. 367)
+R: a, b. (Vol.I, Cap. 2.5, Pag. 367)
 204. Care sunt provocările întâlnite în aplicarea leadership-ului participativ în
 spitale?
 a. neînțelegerile între lideri și membrii echipei
@@ -1663,14 +1663,14 @@ b. lipsa timpului pentru implicarea echipei în procesul decizional
 c. dependența de deciziile rapide în crize
 d. focalizarea prea mult pe delegarea responsabilităților
 e. toate cele de mai sus
-Răspuns corecte: a, b, c .(Vol.I, Cap. 2.5, Pag. 350)
+R: a, b, c .(Vol.I, Cap. 2.5, Pag. 350)
 205. Care este importanța educației pentru liderii din domeniul sănătății?
 a. îmbunătățirea abilității de a gestiona conflictele
 b. creșterea capacității de a implementa schimbări eficiente
 c. îmbunătățirea relațiilor cu pacienții
 d. reducerea eficienței în conducerea echipelor
 e. scăderea satisfacției echipei
-Răspuns corecte: a, b .(Vol.I, Cap. 2.5, Pag. 355)
+R: a, b .(Vol.I, Cap. 2.5, Pag. 355)
 206. Care este rolul unui lider în facilitarea comunicării eficiente între diferite
 departamente dintr-un spital?
 a. promovarea colaborării între departamentele medicale și administrative
@@ -1678,7 +1678,7 @@ b. asigurarea unei viziuni clare și comune pentru toate echipele
 c. impunerea unui control strict asupra resurselor financiare
 d. încurajarea izolării echipelor pentru o mai mare eficiență
 e. toate cele de mai sus
-Răspuns corecte: a, b .(Vol.I, Cap. 2.5, Pag. 358)
+R: a, b .(Vol.I, Cap. 2.5, Pag. 358)
 207. *Care este scopul principal al comunicării non-verbale în cadrul interacțiunilor
 din spitale?
 a. îmbunătățirea înțelegerii între membri echipei
@@ -1693,7 +1693,7 @@ b. reducerea conflictelor în cadrul echipelor
 c. îmbunătățirea relațiilor între personalul medical și pacienți
 d. creșterea autorității liderului în fața echipei
 e. toate cele de mai sus
-Răspuns corecte: a, b, c. (Vol.I, Cap. 2.5, Pag. 359)
+R: a, b, c. (Vol.I, Cap. 2.5, Pag. 359)
 209. *Care sunt pașii necesari pentru a crea un plan de comunicare eficient în cadrul
 unui spital?
 a. stabilirea unui obiectiv clar pentru fiecare departament
@@ -1701,7 +1701,7 @@ b. alinierea mesajelor între echipe și personalul medical
 c. încurajarea comunicării informale pentru a evita rigiditatea
 d. monitorizarea feedback-ului și ajustarea strategiei
 e. toate cele de mai sus
-Răspuns corecte: e. (Vol.I, Cap. 2.5, Pag. 361)
+R: e. (Vol.I, Cap. 2.5, Pag. 361)
 210. Care sunt principiile de bază ale unui lider eficient în managementul echipelor
 din domeniul sănătății?
 a. flexibilitatea și adaptabilitatea la schimbări
@@ -1709,7 +1709,7 @@ b. impunerea autorității pentru a menține disciplina
 c. crearea unui mediu de încredere și susținere
 d. focalizarea pe obiective financiare
 e. ignorarea nevoilor emoționale ale echipei
-Răspuns corecte: a, c. (Vol.I, Cap 2.5, Pag. 362)
+R: a, c. (Vol.I, Cap 2.5, Pag. 362)
 211. Care sunt principalele abilități de leadership necesare pentru gestionarea unei
 crize medicale într-un spital?
 a. capacitatea de a lua decizii rapide și informate
@@ -1717,14 +1717,14 @@ b. menținerea unei comunicări clare și coerente în echipă
 c. ignorarea opiniilor echipei pentru eficiență
 d. stabilirea unor planuri de rezervă pentru situații de urgență
 e. toate cele de mai sus
-Răspuns corecte:a, b, d. (Vol.I, Cap. 2.5, Pag. 365)
+R:a, b, d. (Vol.I, Cap. 2.5, Pag. 365)
 212. Ce rol joacă tehnologia în îmbunătățirea comunicării în spitale?
 a. simplificarea procesului de transmitere a informațiilor între echipe
 b. îmbunătățirea documentației și trasabilității informațiilor
 c. reducerea riscurilor de erori de comunicare în timpul procedurilor
 d. creșterea interacțiunilor față în față între personalul medical
 e. toate cele de mai sus
-Răspuns corecte: a, b, c. (Vol.I, Cap. 2.5, Pag. 367)
+R: a, b, c. (Vol.I, Cap. 2.5, Pag. 367)
 213. *Care sunt principalele obstacole în crearea unei culturi organizaționale
 sănătoase în spitale?
 a. lipsa unui leadership clar și motivant
@@ -1732,7 +1732,7 @@ b. comunicarea ineficientă între departamente
 c. conflictul între membri echipelor
 d. absența unei strategii de educație continuă pentru personal
 e. toate cele de mai sus
-Răspuns corecte: e. (Vol.I, Cap. 2.5, Pag. 367)
+R: e. (Vol.I, Cap. 2.5, Pag. 367)
 2.6. Tehnici de evidență și mișcare a bolnavilor: internarea,
 transferul, externarea, decesul pacientului în spital.
 214. Internarea pacientului - obiectivele sunt:
@@ -1742,21 +1742,21 @@ c. obținerea de informații despre starea de sănătate trecută și prezentă 
 și familiei acestuia
 d. asigurarea unei îngrijiri de calitate peste așteptările pacientului/familiei
 e. păstrarea confidențialității datelor cu caracter personal
-Răspuns: a, b, e. (Vol.I, Cap. 2.6, Pag. 368)
+R: a, b, e. (Vol.I, Cap. 2.6, Pag. 368)
 215. Materialele necesare pentru transferul pacientului sunt:
 a. biletul de transfer, semnat și parafat de medic
 b. obiectele pacientului (geanta sau sacoșa cu acestea)
 c. biletul de transfer cu sau fără semnătura și parafa medicului
 d. dosarul de îngrijire/foaia de observație clinică
 e. fotoliu rulant, brancarda sau căruciorul rulant
-Răspuns: a, b, d, e .(Vol. I, Cap. 2.6, Pag. 369)
+R: a, b, d, e .(Vol. I, Cap. 2.6, Pag. 369)
 216. Materialele necesare pentru externarea pacientului sunt:
 a. registrul de ieșiri al secției
 b. rețeta medicală, dacă e cazul
 c. fotoliul rulant, brancarda sau căruciorul rulant
 d. rețeta medicală, obligatoriu
 e. biletul de internare semnat și parafat de medic
-Răspuns: a, b, c. (Vol. I, Cap.2.6, Pag.370)
+R: a, b, c. (Vol. I, Cap.2.6, Pag.370)
 217. Expertiza medico-legală se face atunci când:
 a. cauza morții nu este suspectă
 b. cauza morții este cunoscută
@@ -1764,7 +1764,7 @@ c. cauza morții nu este cunoscută
 d. cauza morții este suspectă
 e. moartea a fost violentă, chiar si atunci când există o anumită perioadă între
 evenimentele cauzale și deces
-Răspuns: c, d, e. (Vol.I, Cap. 2.6, Pag. 372)
+R: c, d, e. (Vol.I, Cap. 2.6, Pag. 372)
 218. Un deces este considerat moarte suspectă, în următoarele situații:
 a. decesul pacientului în urma unui accident rutier
 b. decesul pacientului care a survenit în timpul sau la scurt timp după o
@@ -1773,21 +1773,21 @@ c. decesul unei persoane a cărei sănătate era bună
 d. decesul unei persoane a cărei sănătate nu este verificată periodic din punct de
 vedere medical, prin natura serviciului
 e. moarte subită
-Răspuns: b, e .(Vol. I, Cap. 2.6, Pag. 372)
+R: b, e .(Vol. I, Cap. 2.6, Pag. 372)
 219. Cererea de scutire de autopsie va trebui vizată de:
 a. registratorul medical
 b. medicul curant
 c. medicul șef de secție
 d. medicul anatomo-patolog
 e. directorul spitalului
-Răspuns: b, c, d, e. (Vol. I, Cap.2.6, Pag. 373)
+R: b, c, d, e. (Vol. I, Cap.2.6, Pag. 373)
 220. Materialele necesare schimbarii lenjeriei de pat cu pacientul imobilizat sunt:
 a. cearceaf de pat
 b. cearceaf plic
 c. pătură
 d. 4-5 scaune cu spătar
 e. aleza, mușama
-Răspuns: a, b, c, e. (Vol. I, Cap. 2.6, Pag. 376)
+R: a, b, c, e. (Vol. I, Cap. 2.6, Pag. 376)
 221. Pentru pacientul care se poate ridica în poziție șezândă (se folosește schimbarea
 în lățime):
 a. igiena mâinilor
@@ -1796,21 +1796,21 @@ c. îndepărtarea noptierei de lângă pat
 d. poziționarea scaunului pentru lenjeria murdară în partea proximală a patului
 e. așezarea scaunului/scaunelor cu spătar (spate în spate) lânga patul pacientului,
 lateral, în partea stângă distală
-Răspuns: a , b, c. (Vol.I, Cap. 2.6, Pag. 376)
+R: a , b, c. (Vol.I, Cap. 2.6, Pag. 376)
 222. Pentru pacientul imobilizat complet (se folosește schimbarea în lungime):
 a. îndepărtarea cearceafului murdar de sub saltea
 b. poziționarea pernei sub capul pacientului spre marginea laterală a patului
 c. rularea cearceafului murdar și derularea celui curat
 d. reașezarea noptierei la locul ei de lângă pat
 e. igienizarea mănușilor
-Răspuns: a, b, c, d. (Vol.I, Cap. 2.6, Pag.377)
+R: a, b, c, d. (Vol.I, Cap. 2.6, Pag.377)
 223. Materialele necesare schimbării alezei:
 a. aleză curată (aleză cu material impermeabil)
 b. alcool
 c. alcool tehnic
 d. talc
 e. mănuși de unică folosință
-Răspuns: a, b, d, e. (Vol. I, Cap. 2.6, Pag. 378)
+R: a, b, d, e. (Vol. I, Cap. 2.6, Pag. 378)
 224. Materialele necesare pentru schimbarea lenjeriei de corp în cazul pacientului
 imobilizat la pat sunt:
 a. pudră de talc
@@ -1818,42 +1818,42 @@ b. alcool
 c. sac pentru lenjeria murdară
 d. mănuși de unică folosință
 e. materiale pentru igiena mâinilor
-Răspuns: a, c, d, e. (Vol.I, Cap. 2.6, Pag. 379)
+R: a, c, d, e. (Vol.I, Cap. 2.6, Pag. 379)
 225. Dezbrăcarea cămășii la bolnava care se poate ridica în poziție șezândă:
 a. ridicare șezut pacientă și tragere în sus pentru a dezbraca cămașa
 b. ridicare pacientă în poziție șezândă dacă este posibil
 c. rulare cămașă până la ceafă și trecere cămașă peste cap
 d. scoatere mâneci prin ridicarea brațelor
 e. se freacă ușor spatele pacientei, se aplică pudră de talc
-Răspuns: a, b, c, e . (Vol. I, Cap. 2.6, Pag. 382)
+R: a, b, c, e . (Vol. I, Cap. 2.6, Pag. 382)
 226. Îmbrăcarea cămășii la bolnava care se poate ridica în poziție șezândă:
 a. rulare cămașă curată de la guler spre poale
 b. rulare cămașă curată de la poale către guler
 c. rulare pe rând fiecare mânecă și îmbrăcarea brațelor
 d. încheiere nasturi, dacă prezintă
 e. întindere și fixare cearceaf de pat
-Răspuns: b, c, d, e. (Vol. I, Cap. 2.6, Pag. 382)
+R: b, c, d, e. (Vol. I, Cap. 2.6, Pag. 382)
 227. Dezbrăcarea cămășii la bolnava imobilizată complet:
 a. așezarea pacientei în poziție comodă
 b. scoaterea mănușilor
 c. dezbrăcare brațe
 d. introducere cămașă murdară în sac
 e. se masează usor spatele pacientei, se aplică pudră de talc
-Răspuns: c, d, e .(Vol. I, Cap. 2.6, Pag. 382)
+R: c, d, e .(Vol. I, Cap. 2.6, Pag. 382)
 228. Îmbrăcarea cămășii la bolnava imobilizată complet:
 a. întindere și fixare cearceaf pe pat
 b. aerisirea salonului
 c. scoaterea mănușilor
 d. igienizarea mâinilor
 e. se masează ușor spatele pacientei, se aplică pudră de talc
-Răspuns: a, b, c, d. (Vol. I, Cap. 2.6, Pag. 382)
+R: a, b, c, d. (Vol. I, Cap. 2.6, Pag. 382)
 229. Obiectivele efectuării igienei pe regiuni la pacientul imobilizat la pat:
 a. măsurarea funcțiilor vitale
 b. asigurarea stării de igienă și confort
 c. îmbunătățirea imaginii de sine în cazul pacientului imobilizat la pat
 d. prevenirea complicațiilor la pacientul imobilizat
 e. obținerea consimțământului informat
-Răspuns: b, c, d. (Vol. I, Cap. 2.6, Pag. 383)
+R: b, c, d. (Vol. I, Cap. 2.6, Pag. 383)
 230. Pregătirea fizică a pacientului imobilizat la pat constă în:
 a. informare pacient despre modul de desfășurare a procedurii și contribuția sa la
 realizarea acesteia
@@ -1861,7 +1861,7 @@ b. evaluarea stării fizice a pacientului
 c. măsurarea funcțiilor vitale
 d. obținerea consimțământului informat
 e. păstrarea intimității
-Răspuns: b, c, e. (Vol. I, Cap.2.6, Pag. 383)
+R: b, c, e. (Vol. I, Cap.2.6, Pag. 383)
 231. Pregătirea psihică a pacientului imobilizat la pat constă în:
 a. informare pacient despre modul de desfășurare a procedurii și contribuția sa la
 realizarea acesteia
@@ -1869,14 +1869,14 @@ b. evaluarea stării fizice a pacientului
 c. măsurarea funcțiilor vitale
 d. obținerea consimțământului informat
 e. păstrarea intimității
-Răspuns: a, d. (Vol.I, Cap.2.6, Pag. 383)
+R: a, d. (Vol.I, Cap.2.6, Pag. 383)
 232. Igiena pacientului imobilizat la pat - față, gât și urechi:
 a. spălare frunte de la mijloc spre tâmple
 b. spălare frunte de la tâmple spre mijloc
 c. spălare cu mișcări circulare regiunea periorală și perinazală
 d. spălare cu mișcări liniare regiunea periorală și perinazală
 e. spălare urechi în șanțurile pavilionului și în regiunea retroauriculară
-Răspuns: a, c, e. (Vol.I, Cap. 2.6, Pag. 384)
+R: a, c, e. (Vol.I, Cap. 2.6, Pag. 384)
 233. Igiena pacientului imobilizat la pat - față, gât și urechi:
 a. spălare gât, limpezire
 b. uscare prin tamponare cu prosopul
@@ -1885,7 +1885,7 @@ d. îmbrăcare prima mănușă de baie, se umezește, se spală ochii de la comi
 externă la cea internă
 e. îmbrăcare prima mănușă de baie, se umezește, se spală ochii de la comisura
 internă la cea externă
-Răspuns: a, b, c, d .(Vol. I, Cap. 2.6, Pag. 384)
+R: a, b, c, d .(Vol. I, Cap. 2.6, Pag. 384)
 234. Igiena pacientului imobilizat la pat - membre superioare:
 a. spălare prin mișcări lungi și blânde; începând de la articulația scapulo-
 humerală spre articulația pumnului, stimulând circulația venoasă
@@ -1895,21 +1895,21 @@ c. spălare prin mișcări lungi și blânde; începând de la articulația pumn
 umăr, stimulând circulația venoasă
 d. tăiere unghii
 e. acoperire membre
-Răspuns: c, d, e. (Vol. I, Cap.2.6, Pag. 384)
+R: c, d, e. (Vol. I, Cap.2.6, Pag. 384)
 235. Igiena pacientului imobilizat la pat - membre inferioare:
 a. înlocuire apă, mănușă de baie și prosop cu altele curate
 b. readucere pacient în decubit dorsal
 c. aplicare pudră de talc într-un strat foarte subțire în plicile naturale
 d. aplicare pudră de talc în strat gros în plicile naturale
 e. acoperire membre
-Răspuns: a, b, c, e .(Vol. I, Cap. 2.6, Pag. 385)
+R: a, b, c, e .(Vol. I, Cap. 2.6, Pag. 385)
 236. Care sunt obiectivele în schimbarea poziției pacientului imobilizat, adinamic ?
 a. asigurarea stării de confort
 b. îmbunătățirea imaginii de sine în cazul pacientului imobilizat la pat
 c. prevenirea complicațiilor date de imobilizare
 d. îndepărtarea mirosului neplăcut din încăpere
 e. măsurarea funcțiilor vitale
-Răspuns: a, b, c. (Vol.I, Cap. 2.6, Pag.390)
+R: a, b, c. (Vol.I, Cap. 2.6, Pag.390)
 237. Care sunt materialele necesare pentru schimbarea poziției pacientului
 imobilizat, adinamic?
 a. aleză
@@ -1917,63 +1917,63 @@ b. perne
 c. pătură făcută sul
 d. sprijinitor pentru picioare
 e. materiale pentru igiena mâinilor
-Răspuns: b, c, d, e .(Vol.I, Cap. 2.6, Pag.390)
+R: b, c, d, e .(Vol.I, Cap. 2.6, Pag.390)
 238. Captarea urinei la pat - obiective:
 a. evacuarea vezicii urinare în cazul pacientului imobilizat
 b. observarea aspectului urinei
 c. măsurarea cantității de urină eliminate
 d. recoltarea a minim 800 ml de urină pentru examinare
 e. recoltarea unei probe de urină pentru examinare
-Răspuns: a, b, c, e. (VoL.I, Cap.2.6, Pag. 395)
+R: a, b, c, e. (VoL.I, Cap.2.6, Pag. 395)
 239. Captarea materiilor fecale la pat - obiective:
 a. evacuarea materiilor fecale în cazul pacientului imobilizat
 b. observarea aspectului materiilor fecale
 c. măsurarea cantității de materii fecale eliminate
 d. recoltarea unei probe de scaun pentru examinare
 e. recoltarea a minim două probe de scaun pentru examinare
-Răspuns: a, b, c, d .(Vol. I, Cap. 2.6, Pag. 396)
+R: a, b, c, d .(Vol. I, Cap. 2.6, Pag. 396)
 240. Captarea, măsurarea și notarea sputei (expectorației) - obiective:
 a. evacuarea sputei în cazul pacientului imobilizat
 b. observarea aspectului sputei
 c. recoltarea unei probe de spută pentru examinare
 d. prevenirea transmiterii unei infecții
 e. recoltarea a minim 60 ml de spută pentru examinare
-Răspuns: a, b, c, d. (Vol. I, Cap.2.6, Pag. 397)
+R: a, b, c, d. (Vol. I, Cap.2.6, Pag. 397)
 241. Captarea, măsurarea și notarea vărsăturilor - obiective:
 a. observarea aspectului vărsăturii
 b. notarea calității de vărsătură eliminată
 c. recoltarea unei probe de vărsătură pentru exminare
 d. prevenirea aspirării vărsăturii în căile respiratorii
 e. măsurarea calității de vărsătură eliminată
-Răspuns: a, c, d .(Vol. I, Cap. 2.6, Pag. 398)
+R: a, c, d .(Vol. I, Cap. 2.6, Pag. 398)
 242. Alimentarea activă și pasivă a bolnavului - obiective:
 a. identificarea pacientului care prezintă deficit/exces nutrițional
 b. elaborarea unei diete bazate pe necesitățile individuale
 c. elaborarea unei diete fără carbohidrați
 d. furnizarea aportului nutrițional în funcție de preferințele bolnavului
 e. furnizarea aportului nutrițional în funcție de vârstă și starea organismului
-Răspuns: a, b, e. (Vol. I, Cap. 2.6, Pag. 400)
+R: a, b, e. (Vol. I, Cap. 2.6, Pag. 400)
 243. Care sunt căile de alimentație enterală ?
 a. sondă gastrică: nasogastrică, orogastrică
 b. sondă nasoduodenală
 c. sondă nasojejunală (plasată intraoperator)
 d. sondă nasocecală
 e. jejunostomă chirurgicală
-Răspuns: a, b, c, e. (Vol.I, Cap.2.6, Pag. 402)
+R: a, b, c, e. (Vol.I, Cap.2.6, Pag. 402)
 244. Mai rar pot fi căi de alimentație enterală:
 a. faringostomă
 b. esofagostomă
 c. gastrostomă chirurgicală
 d. larigostomă
 e. gastrostomă endoscopică percutană (P.E.G)
-Răspuns: a, b, c, e .(Vol. I, Cap. 2.6, Pag.402)
+R: a, b, c, e .(Vol. I, Cap. 2.6, Pag.402)
 245. Materialele necesare pentru alimentarea prin gastrostomă sunt:
 a. pâlnie din plastic
 b. pâlnie din inox
 c. baghetă pentru propulsarea alimentelor pe sondă
 d. leucoplast
 e. pâlnie de sticlă
-Răspuns: a, c, d. (Vol.I, Cap. 2.6, Pag. 404)
+R: a, c, d. (Vol.I, Cap. 2.6, Pag. 404)
 246. Alimentația parenterală (nutriția parenterală) - precauții speciale:
 a. necesită prescripția medicului
 b. se poate administra și fără prescripția medicului
@@ -1983,7 +1983,7 @@ d. necesită respectarea asepsiei pe toată perioada pregătirii echipamentului 
 soluțiilor
 e. necesită respectarea asepsiei la începutul pregătirii echipamentului și a
 soluțiilor
-Răspuns: a, c, d. (Vol. I, Cap. 2.6, Pag.405)
+R: a, c, d. (Vol. I, Cap. 2.6, Pag.405)
 247. Alimentația parenterală (nutriția parenterală) - precauții speciale:
 a. nu necesită prescripția medicului
 b. necesită prescripția medicului și se va administra exclusiv în prezența acestuia
@@ -1992,35 +1992,35 @@ d. dacă este întreruptă mai mult de 4 ore, soluțiile vor fi evacuate din
 echipamentul de administrare
 e. dacă este întreruptă mai mult de 10 ore, soluțiile vor fi evacuate din
 echipamentul de administrare
-Răspuns: c, d. (Vol.I, Cap.2.6, Pag. 405)
+R: c, d. (Vol.I, Cap.2.6, Pag. 405)
 248. Materialele necesare alimentației parenterale sunt:
 a. echipamentul personal de protecție
 b. perfuzor și stativ
 c. echipament pentru cateterizare arterială
 d. paduri alcoolizate
 e. recipient pentru deșeuri medicale
-Răspuns: a, b, d, e. (Vol. I, Cap. 2.6, Pag. 405 / 406)
+R: a, b, d, e. (Vol. I, Cap. 2.6, Pag. 405 / 406)
 249. Materialele necesare alimentației parenterale sunt:
 a. perfuzor și stativ
 b. echipament pentru cateterizare venoasă
 c. paduri nealcoolizate
 d. recipient pentru deșeuri medicale
 e. echipament pentru cateterizare arterială
-Răspuns: a, b, d. (Vol.I, Cap. 2.6, Pag. 405 / 406)
+R: a, b, d. (Vol.I, Cap. 2.6, Pag. 405 / 406)
 250. Gradele febrei:
 a. subfebrilitate 37ºC-38ºC
 b. subfebrilitate 36,3ºC-36,9ºC
 c. febra moderată 38ºC-39ºC
 d. hiperpirexie peste 39,5ºC
 e. hiperpirexie peste 40ºC
-Răspuns: a, c, e. (Vol. I, Cap. 2.6, Pag. 407)
+R: a, c, e. (Vol. I, Cap. 2.6, Pag. 407)
 251. Valorile normale ale pulsului sunt:
 a. nou-născut 120-160 b/min
 b. nou-născut 140-180 b/min
 c. 2 ani-6 ani 75-110b/min
 d. adult 75-125 b/min
 e. adult 60-80 b/min
-Răspuns: a, c, e. (Vol.I, Cap.2.6, Pag.411)
+R: a, c, e. (Vol.I, Cap.2.6, Pag.411)
 252. Obiectivele măsurării și înregistrării temperaturii corpului sunt:
 a. informarea pacientului despre modul de desfăşurare a procedurii şi contribuţia
 sa la realizarea acesteia
@@ -2030,42 +2030,42 @@ c. determinarea modificărilor de temperatură pe parcursul evoluţiei unei boli
 d. observarea răspunsului pacientului la măsurile de scădere/creştere a
 temperaturii corpului
 e. obţinerea consimţământului informat
-Răspuns: b, c, d. (Vol.I, Cap. 2.6, Pag.411)
+R: b, c, d. (Vol.I, Cap. 2.6, Pag.411)
 253. Valorile normale ale tensiunii arteriale la adult sunt:
 a. TA max = 140-160 mmHg
 b. TA max = 130-150 mmHg
 c. TA max = 115-140 mmHg
 d. TA min = 60-75 mmHg
 e. TA min = 75-90 mmHg
-Răspuns: c, e. (Vol. I, Cap. 2.6, Pag.414)
+R: c, e. (Vol. I, Cap. 2.6, Pag.414)
 254. Materialele necesare pentru măsurarea tensiunii arteriale:
 a. tensiometru cu manșetă adaptată vârstei
 b. foaie de temperatura (FT)
 c. materiale pentru igiena mâinilor
 d. tăviță renală
 e. termometru
-Răspuns: a, b, c, d.(Vol. I, Cap. 2.6, Pag.414 )
+R: a, b, c, d.(Vol. I, Cap. 2.6, Pag.414 )
 255. Materialele necesare pentru măsurarea tensiunii arteriale:
 a. pix, cariocă, creion de culoare roșie
 b. tensiometru cu manșetă adaptată vârstei
 c. materiale pentru igiena mâinilor
 d. tăviță renală
 e. pix, cariocă, creion de culoare verde
-Răspuns: b, c, d .(Vol. I, Cap. 2.6, Pag.414)
+R: b, c, d .(Vol. I, Cap. 2.6, Pag.414)
 256. Materialele necesare pentru măsurarea tensiunii arteriale:
 a. pix, cariocă, creion de culoare neagră
 b. materiale pentru igiena mâinilor
 c. tăviță renală
 d. pix, cariocă, creion de culoare verde
 e. tensiometru cu manșetă adaptată vârstei
-Răspuns: a, b, c, e. (Vol. I, Cap. 2.6, Pag. 414)
+R: a, b, c, e. (Vol. I, Cap. 2.6, Pag. 414)
 257. Indicele de masă corporală (IMC):
 a. normal intre 18,5-24,9
 b. normal intre 18-24
 c. supraponderal 25
 d. supraponderal 24,1
 e. obez grad III mai mare sau egal cu 40
-Răspuns: a, c, e. (Vol.I, Cap. 2.6, Pag. 417)
+R: a, c, e. (Vol.I, Cap. 2.6, Pag. 417)
 258. Diureza reprezintă cantitatea de urină eliminată în 24 de ore, având o valoare
 normală cuprinsă între 1200-1800 ml, dar patologic:
 a. polakiurie - durere, jenă la urinat
@@ -2073,7 +2073,7 @@ b. polakiurie - micțiuni frecvente cu cantități mici
 c. disurie - absența urinii în vezică
 d. poliurie - urina eliminată este în cantitate mai mare de 3000 ml
 e. ischiurie - imposibilitatea de a urina
-Răspuns: b, d, e. (Vol.I, Cap. 2.6, Pag.417)
+R: b, d, e. (Vol.I, Cap. 2.6, Pag.417)
 259. Diureza reprezintă cantitatea de urină eliminată în 24 de ore, având o valoare
 normală cuprinsă între 1200-1800 ml, dar patologic:
 a. polakiurie - micțiuni frecvente cu cantități mici
@@ -2081,7 +2081,7 @@ b. ischiurie - imposibilitatea de a urina
 c. poliurie - urina eliminată este în cantitate mai mare de 5000 ml
 d. poliurie - urina eliminată este in cantitate mai mare de 3000 ml
 e. disurie - durere, jenă la urinat
-Răspuns: a, b, d, e. (Vol. I, Cap. 2.6, Pag.417)
+R: a, b, d, e. (Vol. I, Cap. 2.6, Pag.417)
 260. Scaune considerate patologice, în functie de număr, cantitate, culoare,
 consistență și compoziție:
 a. diaree - scaune frecvente 3-10/zi
@@ -2090,7 +2090,7 @@ c. ileus - întreruperea eliminărilor de gaze și a scaunului
 d. rectoragia - scaune negre, lucioase, moi, ca păcura - în hemoragia digestivă
 superioară (sânge digerat)
 e. melena - scaune cu sânge roșu - în hemoragia digestivă inferioară
-Răspuns: a, b, c. (Vol.I, Cap. 2.6, Pag. 418/ 419)
+R: a, b, c. (Vol.I, Cap. 2.6, Pag. 418/ 419)
 261. Scaune considerate patologice, în functie de număr, cantitate, culoare,
 consistență și compoziție:
 a. diaree - scaune frecvente 3-10/zi
@@ -2099,77 +2099,77 @@ c. melena - scaune negre, lucioase, moi, ca păcura - în hemoragia digestivă
 superioară (sânge digerat)
 d. rectoragia - scaune cu sânge roșu - în hemoragia digestivă inferioară
 e. constipație - scaun la 5-10 zile
-Răspuns: a, b, c, d. (Vol.I, Cap. 2.6, Pag. 418 / 419)
+R: a, b, c, d. (Vol.I, Cap. 2.6, Pag. 418 / 419)
 262. Materialele necesare spălăturii gastrice:
 a. sonda Faucher sau sonde gastrice mai mici sterile, adaptate vârstei
 b. vas colector gradat
 c. pahar cu apă
 d. paduri alcoolizate
 e. pensă
-Răspuns: a, b, c, e. (Vol. I, Cap.2.6, Pag.422)
+R: a, b, c, e. (Vol. I, Cap.2.6, Pag.422)
 263. Materialele necesare spălăturii gastrice:
 a. prosop
 b. materiale pentru igiena mâinilor
 c. mănuși de unică folosință
 d. 2 șorturi impermeabile
 e. termometru
-Răspuns: a, b, c, d. (Vol.I, Cap. 2.6, Pag.422)
+R: a, b, c, d. (Vol.I, Cap. 2.6, Pag.422)
 264. Materialele necesare sondajului (tubajului) duodenal:
 a. sonda Einhorn sterilă
 b. sonda Einhorn nesterilă
 c. pensă
 d. vas colector gradat
 e. tăviță renală
-Răspuns: a, c, e. (Vol.I, Cap. 2.6, Pag. 424)
+R: a, c, e. (Vol.I, Cap. 2.6, Pag. 424)
 265. Materialele necesare sondajului vezical la bărbat:
 a. sonde urinare sterile (Foley, Nelaton) de diferite dimensiuni
 b. tăviță renală
 c. 1-2 eprubete sterile
 d. pungi colectoare
 e. prosop
-Răspuns: a, b, c, d. (Vol. I, Cap. 2.6, Pag.426)
+R: a, b, c, d. (Vol. I, Cap. 2.6, Pag.426)
 266. Tipuri de clismă:
 a. clismă evacuatorie simplă
 b. clismă înaltă
 c. clismă uleioasă
 d. clismă purgativă
 e. clismă joasă
-Răspuns: a, b, c, d. (Vol. I, Cap.2.6, Pag. 430)
+R: a, b, c, d. (Vol. I, Cap.2.6, Pag. 430)
 267. Materialele necesare pentru introducerea tubului de gaze:
 a. muşama, aleză
 b. alcool steril
 c. tub de gaze steril
 d. mănuși de unică folosință
 e. comprese de tifon
-Răspuns: a, c, d, e. (Vol.I, Cap. 2.6, Pag.431)
+R: a, c, d, e. (Vol.I, Cap. 2.6, Pag.431)
 268. Locuri de elecție pentru recoltarea de sânge capilar - puncția capilară:
 a. pulpa degetului inelar sau mediu
 b. pulpa halucelui sau a policelui
 c. lobul urechii
 d. pavilionul urechii
 e. fața plantară a halucelui și călcâi la copil
-Răspuns: a, c, e. (Vol. I, Cap.2.6, Pag. 443)
+R: a, c, e. (Vol. I, Cap.2.6, Pag. 443)
 269. Obiectivele recoltării sângelui capilar:
 a. determinarea glicemiei
 b. determinarea hemoleucogramei
 c. determinarea TS (timp sângerare) și TC (timp de coagulare)
 d. determinare grup sanguin și Rh
 e. determinare indicelui de masă corporală
-Răspuns: a, b, c, d. (Vol. I, Cap. 2.6, Pag. 443)
+R: a, b, c, d. (Vol. I, Cap. 2.6, Pag. 443)
 270. Materialele necesare pentru recoltarea de sânge capilar:
 a. lanțetă sau ac de puncție steril/stilet special steril de unică folosință
 b. antiseptic pentru tegument (alcool sanitar)
 c. tampoane sterile cu alcool
 d. mănuși de protecție
 e. pix, creion sau carioacă de culoare verde
-Răspuns: a,b,c,d. (Vol. I, Cap. 2.6, Pag. 443)
+R: a,b,c,d. (Vol. I, Cap. 2.6, Pag. 443)
 271. Modificările macroscopice ale sputei care sugerează o anumită afecțiune:
 a. sputa perlată se întâlnește în astmul bronșic
 b. sputa mucopurulentă în neoplasm pulmonar
 c. sputa purulentă în abcese pulmonare, bronșiectazii
 d. sputa sangvinolentă în TBC și neoplasm pulmonar
 e. sputa mucopurulentă în bronhopneumonii
-Răspuns: a, c, d, e. (Vol.I, Cap. 2.6, Pag. 450)
+R: a, c, d, e. (Vol.I, Cap. 2.6, Pag. 450)
 272. Recoltarea sputei pentru examen bacteriologic:
 a. se recoltează proba de spută dimineața prin tuse spontană și profundă
 b. se recoltează înaintea începerii tratamentului cu antibiotice
@@ -2178,7 +2178,7 @@ d. se face toaleta cavitătii bucale și clătirea cavitătii bucale cu apă, î
 recoltare
 e. se aşează pacientul pe un scaun sau la marginea patului în pozitie șezândă (în
 cazuri grave în poziție Fowler)
-Răspuns: a, b, d, e .(Vol. I, Cap. 2.6, Pag. 450)
+R: a, b, d, e .(Vol. I, Cap. 2.6, Pag. 450)
 273. Căi de administrare a medicamentelor - căi naturale:
 a. digestivă, enterală sau per os (prin înghițire) este cea mai frecvent folosită,
 comodă, avantajul fiind autoadministrarea
@@ -2187,7 +2187,7 @@ c. pulmonară reprezintă administrarea prin inhalație pentru efecte locale sau
 efecte sistemice
 d. intradermică
 e. intracardiacă pentru resuscitare
-Răspuns: a, c . (Vol.I, Cap. 2.6, Pag. 459)
+R: a, c . (Vol.I, Cap. 2.6, Pag. 459)
 274. Căi de administrare a medicamentelor - căi artificiale sau parenteral:
 a. căi extravasculare: intradermic, subcutanat, intramuscular
 b. căi intravasculare: intravenoasă, intraarterială
@@ -2195,7 +2195,7 @@ c. calea intracardiacă pentru resuscitare
 d. pulmonară reprezintă administrarea prin inhalație pentru efecte locale sau
 efecte sistemice
 e. la nivelul măduvei osoase, se folosește în pediatrie pentru efecte sistemice
-Răspuns: a, b, c, e. (Vol.I, Cap. 2.6, Pag. 459)
+R: a, b, c, e. (Vol.I, Cap. 2.6, Pag. 459)
 275. * Una dintre contraindicațiile utilizarii căii orale este:
 a. medicamentul este inactivat de secrețiile digestive și nu se resoarbe pe cale
 digestivă
@@ -2203,7 +2203,7 @@ b. medicamentul este activat de secrețiile digestive
 c. medicamentul se resoarbe pe cale digestivă
 d. medicamentul nu prezintă proprietăți iritante asupra mucoasei gastrice
 e. pacientul nu refuză medicamentele
-Răspuns: a. (Vol. I, Cap. 2.6, Pag. 460)
+R: a. (Vol. I, Cap. 2.6, Pag. 460)
 276. * Următoarea afirmație este adevarată:
 a. mixturile nu se agită înainte de administrare
 b. înaintea administrării se verifică medicamentul
@@ -2211,7 +2211,7 @@ c. mixturile se agită cu 6 ore înainte de administrare
 d. ceaiurile medicinale se prepară înainte de administrare pentru a se degrada
 substanțele active
 e. înaintea administrării nu se verifică medicamentul
-Răspuns: b .(Vol.I, Cap. 2.6, Pag. 460)
+R: b .(Vol.I, Cap. 2.6, Pag. 460)
 277. * Injecția intravenoasă (I.V.):
 a. injecția intravenoasă reprezintă introducerea soluțiilor medicamentoase în
 circulația venoasă, prin intermediul unui ac nesteril atașat la o seringă sterilă
@@ -2223,7 +2223,7 @@ d. injecția intravenoasă reprezintă introducerea soluțiilor medicamentoase �
 circulația arterială, prin intermediul unui ac nesteril atașat la o seringă sterilă
 e. injecția intravenoasă reprezintă introducerea soluțiilor medicamentoase în
 circulația arterială, prin intermediul unui ac steril atașat la o seringă nesterilă
-Răspuns: c. (Vol.I, Cap. 2.6, Pag. 466)
+R: c. (Vol.I, Cap. 2.6, Pag. 466)
 278. * Locul injecției intramusculare poate fi:
 a. mușchiul trapez (mai frecvent indicat în cazul administrării vaccinurilor
 pacientul fiind poziționat cu mâna în șold)
@@ -2232,7 +2232,7 @@ vaccinurilor pacientul fiind poziționat în decubit ventral)
 c. la sugari injecția se face la nivelul regiunii mijlocii a coapsei
 d. regiunea supero-internă fesieră
 e. treimea proximală a feței antero-interne a coapsei
-Răspuns: c. (Vol.I, Cap. 2.6, Pag.471)
+R: c. (Vol.I, Cap. 2.6, Pag.471)
 279. * Care dintre următoarele afirmații referitoare la locul injecției intramusculare
 este falsă:
 a. la sugari injecția se face la nivelul regiunii mijlocii a coapsei
@@ -2243,7 +2243,7 @@ extern fesier)
 d. treimea medie a feței antero-externe a coapsei (pacientul fiind poziționat în
 decubit dorsal)
 e. regiunea supero-internă fesieră
-Răspuns: e .(Vol. I, Cap. 2.6, Pag.471)
+R: e .(Vol. I, Cap. 2.6, Pag.471)
 280. * Care dintre următoarele afirmații referitoare la injecțiile intramusculare este
 falsă:
 a. nu se injectează în regiuni infiltrate, zone cu abcese tegumentare, acnee,
@@ -2254,7 +2254,7 @@ d. verificarea poziției acului pentru soluțiile colorate se face prin detașar
 seringii
 e. cantitatea maximă de medicament injectat este de 5 ml - pentru a nu se mari
 riscul de infecții - abces postinjectabil
-Răspuns: c. (Vol.I, Cap. 2.6, Pag.473)
+R: c. (Vol.I, Cap. 2.6, Pag.473)
 281. * Care dintre următoarele afirmații referitoare la injecțiile intramusculare este
 falsă:
 a. nu se injectează în regiuni infiltrate, zone cu abcese tegumentare, acnee,
@@ -2266,7 +2266,7 @@ d. cantitatea maximă de medicament injectat este de 75 ml - pentru a nu se mari
 riscul de infecții - abces postinjectabil
 e. cantitatea maximă de medicament injectat este de 5 ml - pentru a nu se mari
 riscul de infecții - abces postinjectabil
-Răspuns: d. (Vol.I, Cap. 2.6, Pag.473)
+R: d. (Vol.I, Cap. 2.6, Pag.473)
 282. * Care dintre următoarele afirmații referitoare la complicațiile după
 administrarea injecțiilor intradermice este falsă:
 a. revărsat lichidian (când acul a intrat parțial în derm)
@@ -2274,7 +2274,7 @@ b. tumefacția stratului subcutanat
 c. lipotimie
 d. flegmonul
 e. reacție anafilactică sau chiar șoc (când se introduc soluții alergene)
-Răspuns: d. (Vol.I, Cap. 2.6, Pag. 475)
+R: d. (Vol.I, Cap. 2.6, Pag. 475)
 283. * Care dintre urmatoarele afirmatii referitoare la administrarea cortizolului este
 falsă:
 a. oral (prednison, medrol)
@@ -2282,7 +2282,7 @@ b. prin injecție intramusculară, intraarticulară
 c. administrare peridurală: injecție în cavitatea peridurală
 d. sub formă de aerosoli (spray, pulberi pentru inhalație)
 e. prin injecție subcutanată
-Răspuns: e. (Vol. I, Cap.2.6, Pag.479)
+R: e. (Vol. I, Cap.2.6, Pag.479)
 VOLUMUL II Nursing în medicină internă și specialități
 înrudite
 Cap.1.1.- Nursing în afecțiunile aparatului respirator.
@@ -2297,91 +2297,91 @@ gazos între organism și mediu.
 d. este funcțională, asigurată de artera pulmonară care ia naștere din ventriculul
 drept și se capilarizează la nivelul alveolelor pulmonare.
 e. este tributară ganglionilor hilari şi ganglionilor traheobronșici.
-Raspuns : d. (Vol. II, Cap. 1.1, Pag.3)
+R : d. (Vol. II, Cap. 1.1, Pag.3)
 285. Respirația cuprinde următoarele etape:
 a. etapa pulmonară
 b. etapa sanguină
 c. etapa circulatorie
 d. etapa tisulară
 e. etapa bronșică
-Raspuns : a,b,c,d. (Vol. II, Cap.1.1, Pag. 4)
+R : a,b,c,d. (Vol. II, Cap.1.1, Pag. 4)
 286. Frecvența respiratorie variază în funcție de:
 a. circulaţie
 b. sex
 c. dieta
 d. hidratare
 e. vârstă
-Raspuns : b,e. (Vol.II, Cap.1.1, Pag. 4)
+R : b,e. (Vol.II, Cap.1.1, Pag. 4)
 287. *Ce este tusea?
 a. tusea reprezintă un act de protecție, reflex, involuntar
 b. tusea reprezintă o afectiune.
 c. tusea reprezintă un act de protecție, reflex, voluntar
 d. tusea reprezintă un act de sensibilizare.
 e. tusea reprezintă o emoție.
-Raspuns : c .(Vol. II, Cap. 1.1, Pag. 7)
+R : c .(Vol. II, Cap. 1.1, Pag. 7)
 288. *Ce este hemoptizia?
 a. scăderea rapidă a nivelului de zahăr din sânge.
 b. formarea de cheaguri de sânge în ureche.
 c. transformarea sângelui în spumă în timpul febrei.
 d. eliminarea de sânge roşu, aerat, proaspăt, provenit din căile aeriene.
 e. hemoptizia reprezinta scaunul negru.
-Raspuns : d. (Vol. II, Cap.1.1, Pag. 8)
+R : d. (Vol. II, Cap.1.1, Pag. 8)
 289. *Ce este cianoza?
 a. colorația albăstruie-violacee a tegumentelor și mucoaselor
 b. scaunul negru
 c. eliminarea de sânge roşu, aerat.
 d. coloratia roşie a tegumentelor.
 e. colorația neagra a tegumentelor și mucoaselor
-Raspuns: a. (Vol. II, Cap. 1.1, Pag. 9)
+R: a. (Vol. II, Cap. 1.1, Pag. 9)
 290. Caracteristicile durerii toracice sunt:
 a. creează disconfort
 b. poate fi modificată de efort
 c. este provocată de creșterea rapidă a inimii.
 d. limitează mișcările pacientului
 e. nu difera ca localizare, intensitate si mod de aparitie.
-Raspuns: a,b,d .(Vol.II, Cap.1.1, Pag. 9)
+R: a,b,d .(Vol.II, Cap.1.1, Pag. 9)
 291. *Bronșita acută:
 a. este tusea excesivă.
 b. este o alergie severă la aer rece din plămâni.
 c. este când lichidul din plămâni devine solid temporar.
 d. este o inflamație a oaselor toracice în timpul respirației.
 e. este o inflamație a peretelui bronșic.
-Raspuns: e. (Vol. II, Cap.1.1, Pag.11)
+R: e. (Vol. II, Cap.1.1, Pag.11)
 292. * Pneumoniile:
 a. sunt cauzate de o acumulare de sânge în plămâni
 b. sunt boli pulmonare inflamatorii acute
 c. sunt tulburări de respirație din cauza obezității.
 d. sunt infecții care afectează doar mușchii toracici.
 e. sunt infecții care afectează nu doar plamanii.
-Raspuns: b .(Vol. II, Cap.1.1, Pag.13)
+R: b .(Vol. II, Cap.1.1, Pag.13)
 293. Clasificarea pneumoniilor:
 a. clasificarea etiologică
 b. clasificarea cauzate de alergii și infecții.
 c. clasificarea anatomică.
 d. clasificarea intensitatii.
 e. clasificarea în funcţie de complicaţii
-Raspuns: a, c, e. (Vol.II, Cap.1.1, Pag.13)
+R: a, c, e. (Vol.II, Cap.1.1, Pag.13)
 294. Astmul bronșic
 a. este o afecţiune caracterizată prin reactivitatea bronşică anormal crescută
 b. se exprima prin bronșita.
 c. se exprimă clinic prin wheezing, dispnee, tuse.
 d. se manifestă fiziopatologic prin îngustarea căilor respiratorii.
 e. este sentimentul de tuse crescut.
-Raspuns: a,c,d .(Vol. II, Cap.1.1, Pag. 15)
+R: a,c,d .(Vol. II, Cap.1.1, Pag. 15)
 295. Complicaţiile astmului bronşic:
 a. emfizem pulmonar.
 b. pneumotorax spontan.
 c. cianoza.
 d. hemoptizie.
 e. fibroze pulmonare.
-Raspuns: a,b,e. (Vol.II, Cap. 1.1, Pag. 20 )
+R: a,b,e. (Vol.II, Cap. 1.1, Pag. 20 )
 296. * Bronhopneumopatia obstructivă cronică (BPOC):
 a. este o boală care afectează oasele și articulațiile.
 b. este o formă de cancer al pielii.
 c. este o boală respiratorie cronică caracterizată prin afectare bronșică.
 d. este o infecție virală a sistemului digestiv.
 e. este o boală a sistemului imunitar care distruge plămânii.
-Raspuns: c. (Vol. II, Cap. 1.1, Pag. 21 )
+R: c. (Vol. II, Cap. 1.1, Pag. 21 )
 297. Evaluarea severității BPOC-ului se realizează prin:
 a. explorările funcţionale respiratorii
 b. gazele sanguine indică prezenţa sau absenţa insuficienţei respiratorii
@@ -2389,49 +2389,49 @@ obstructive.
 c. radiografie pulmonară.
 d. verificarea tensiunii arteriale.
 e. pulsoximetrie.
-Raspuns: a,b,c,e .(Vol.II, Cap.1.1, Pag. 23 )
+R: a,b,c,e .(Vol.II, Cap.1.1, Pag. 23 )
 298. Managementul BPOC-ului stabil trebuie să se bazeze pe următoarele principii:
 a. adaptarea unei diete diferite.
 b. tratamentul farmacologic.
 c. implementarea unui plan de tratament în trepte.
 d. alegerea tratamentului adaptat recomandărilor naționale şi culturale.
 e. determinarea severității bolii.
-Raspuns: b,c,d,e. (Vol.II, Cap. 1.1, Pag. 24)
+R: b,c,d,e. (Vol.II, Cap. 1.1, Pag. 24)
 299. * Bronșiectazia:
 a. reprezintă dilatarea patologică şi reversibilă a bronhiilor.
 b. este o boală a oaselor care provoacă dureri severe.
 c. reprezintă dilatarea patologică şi ireversibilă a bronhiilor.
 d. este o infecție a pielii care provoacă fisuri adânci.
 e. reprezintă dilatarea patologică şi reversibilă a bronhiolelor.
-Raspuns : c. (Vol.II, Cap. 1.1, Pag.25 )
+R : c. (Vol.II, Cap. 1.1, Pag.25 )
 300. Tuberculoza pulmonară:
 a. nu este inflamatorie.
 b. este boala infecto-contagioasă.
 c. este deseori fatală.
 d. este cronică.
 e. nu este cronică.
-Raspuns: b,d . (Vol. II, Cap.1.1, Pag. 28 )
+R: b,d . (Vol. II, Cap.1.1, Pag. 28 )
 301. Suspiciunea diagnosticului de tuberculoză se bazează pe:
 a. existența contactului cu bolnavi confirmați cu tuberculoză pulmonară.
 b. eimptome generale și specifice în funcție de localizare.
 c. radiografia pulmonară.
 d. tuse excesiva.
 e. pneumotorax spontan.
-Raspuns : a,b,c. (Vol. II, Cap.1.1, Pag. 29)
+R : a,b,c. (Vol. II, Cap.1.1, Pag. 29)
 302. Grupe de risc ale tuberculozei:
 a. persoane expuse surselor de infecție.
 b. persoane imunodeprimate.
 c. persoane cu alergii severe.
 d. persoane marginalizate social.
 e. persoane cu un sistem imunitar puternic.
-Raspuns : a,b,d . (Vol. II, Cap. 1.1, Pag. 33)
+R : a,b,d . (Vol. II, Cap. 1.1, Pag. 33)
 303. Abcesul pulmonar:
 a. este o colectie de cancer.
 b. este localizat în parenchimul pulmonar.
 c. este o infecție a pielii care afectează plămânii.
 d. este o colecție purulentă de obicei unică.
 e. este o afecțiune a mușchilor toracici.
-Raspuns: b,d .(Vol. II, Cap.1.1, Pag. 34)
+R: b,d .(Vol. II, Cap.1.1, Pag. 34)
 304. Cancerul bronhopulmonar:
 a. durata evoluției este sub 4-6 săptămâni
 b. duce la ruptura abcesului în spaţiul pleural.
@@ -2439,14 +2439,14 @@ c. constă in bacteriemie cu însămânţări septice la distanţă
 d. reprezintă una din principalele cauze de mortalitate
 e. este un proces tumoral dezvoltat prin transformarea malignă a celulelor
 epiteliului bronşic
-Raspuns: d,e .(Vol.II, Cap.1.1, Pag. 37)
+R: d,e .(Vol.II, Cap.1.1, Pag. 37)
 305. Complicaţiile cele mai frecvente ale cancerului pulmonar sunt:
 a. compresia medulară spinală.
 b. complicaţii metabolice.
 c. compresia toracală.
 d. complicaţii digestive.
 e. complicaţii terapeutice.
-Raspuns : a,b,e. (Vol. II, Cap.1.1, Pag. 39)
+R : a,b,e. (Vol. II, Cap.1.1, Pag. 39)
 306. Insuficiența respiratorie:
 a. se referă la incapacitatea sistemului toracopulmonar de a menţine un schimb
 gazos normal.
@@ -2456,70 +2456,70 @@ c. se caracterizează prin valori anormale ale oxigenului şi bioxidului de carb
 sângele arterial.
 d. se însoţeşte întotdeauna de hipoxemie.
 e. se însoţeşte întotdeauna de hipertensiune.
-Raspuns: a,c,d .(Vol. II, Cap.1.1, Pag. 40)
+R: a,c,d .(Vol. II, Cap.1.1, Pag. 40)
 307. Pleurezia tuberculoasă:
 a. este acumularea de lichid în cavitatea pleurală.
 b. este cea mai frecventă determinare pe seroase a tuberculozei.
 c. este acumularea de sânge în cavitatea pleurală..
 d. este cea mai putin frecventă determinare pe seroase a tuberculozei.
 e. este cel mai frecvent întâlnită la adultul tânăr
-Raspuns: a, b,e. (Vol. II, Cap.1.1, Pag. 43)
+R: a, b,e. (Vol. II, Cap.1.1, Pag. 43)
 308. Tratamentul pleureziei tuberculoase:
 a. tratamentul simptomatic.
 b. tratament tuberculostatic.
 c. tratamentul asimptomatic.
 d. kineziterapia.
 e. tratament chirurgical.
-Raspuns: a,b,d. (Vol. II, Cap. 1.1, Pag. 44)
+R: a,b,d. (Vol. II, Cap. 1.1, Pag. 44)
 309. Pleurezii de cauze cardio-vasculare:
 a. apar în general la un pacient cu istoric de insuficienţă cardiacă.
 b. radiografia toracică arată pleurezie+cardiomegalie.
 c. apar in general la un pacient fără istoric de insuficienţă cardiacă.
 d. pleureziile sunt de obicei bilaterale.
 e. radiografia toracică arată doar pleurezie.
-Raspuns: a,b,d. (Vol.II, Cap.1.1, Pag. 48)
+R: a,b,d. (Vol.II, Cap.1.1, Pag. 48)
 310. Examene morfologice sau imagistica a aparatului respirator sunt:
 a. radiografia.
 b. CT toracic cu sau fără substanță de contrast.
 c. rezonanţă magnetică nucleară – RMN.
 d. analize de sânge .
 e. testarea pentru alergii.
-Raspuns:a,b,c. (Vol. II, Cap.1.1, Pag. 49)
+R:a,b,c. (Vol. II, Cap.1.1, Pag. 49)
 311. Computer tomografia toracică (CT):
 a. este o explorare medicală diagnostică, neinvazivă.
 b. este foarte rapidă nativă.
 c. radiaţiile X emise sub diferite unghiuri penetrează diferit ţesuturile.
 d. nu are radiatii X.
 e. este de obicei mai lentă.
-Raspuns: a,b,c. (Vol.II, Cap. 1.1, Pag. 49)
+R: a,b,c. (Vol.II, Cap. 1.1, Pag. 49)
 312. Examinările de laborator cuprind:
 a. examenul ocular.
 b. examenul pentru a măsura cantitatea de apă din corp.
 c. examenul sângelui.
 d. examinări pentru a evalua forța mușchilor.
 e. examenul sputei.
-Raspuns: c,e . (Vol.II, Cap.1.1, Pag. 52)
+R: c,e . (Vol.II, Cap.1.1, Pag. 52)
 313. Volumele pulmonare statice:
 a. se determină prin masurarea temperaturii corpului.
 b. se determină prin spirometrie.
 c. se determină daca avem lichide la nivelul pleurei.
 d. sunt valori care măsoară forța de comprimare a pieptului.
 e. se determină prin tehnica diluției.
-Raspuns: b,e .(Vol.II, Cap. 1.1, Pag.56)
+R: b,e .(Vol.II, Cap. 1.1, Pag.56)
 314. * Volumul rezidual este calculat prin :
 a. capacitatea reziduală forțată - Volumul expirator de rezervă.
 b. volumul curent + Volumul expirator de rezervă.
 c. capacitatea reziduală forțată + Volumul expirator de rezervă.
 d. volumul curent + Capacitatea reziduală forțată.
 e. volumul inspirator de rezervă - Capacitatea reziduală forțată.
-Raspuns: a .(Vol. II, Cap.1.1, Pag. 57)
+R: a .(Vol. II, Cap.1.1, Pag. 57)
 315. * Capacitatea pulmonara totala este calculata prin:
 a. volumul rezidual + Capacitatea vitală forțată.
 b. capacitatea inspiratorie + Capacitatea vitală.
 c. volumul rezidual + Capacitatea vitală.
 d. capacitatea inspiratorie - Capacitatea vitală.
 e. volumul rezidual - Capacitatea vitală.
-Raspuns: c . (Vol. II, Cap. 1.1, Pag. 57)
+R: c . (Vol. II, Cap. 1.1, Pag. 57)
 316. * Spirometria:
 a. este un test simplu ce măsoară cantitatea de aer pe care o persoană o poate
 inspira sau expira într-o unitate de timp.
@@ -2531,21 +2531,21 @@ d. este un test dificil ce măsoară cantitatea de aer pe care o persoană o poa
 inspira într-o unitate de timp.
 e. este un test simplu ce măsoară cantitatea de aer pe care mai multe persoane le
 poate inspira sau expira într-o unitate de timp.
-Raspuns: a. (Vol. II, Cap.1.1, Pag. 57)
+R: a. (Vol. II, Cap.1.1, Pag. 57)
 317. Testarea cutanată tuberculinică se face adesea la :
 a. copii contacti din focarele de tuberculoză.
 b. pacienți HIV pozitivi.
 c. copii simptomatici la care se ridică suspiciunea de tuberculoză.
 d. pacienți HIV negativi.
 e. copii care au hemoptizie.
-Raspuns: a,b,c. (Vol. II, Cap. 1.1, Pag. 62)
+R: a,b,c. (Vol. II, Cap. 1.1, Pag. 62)
 318. Administrarea oxigenului:
 a. nu se oferă pentru diminuarea hemoglobinei.
 b. reprezintă administrarea de oxigen pe cale inhalatorie.
 c. nu se oferă pentru tulburări în sistemul circulator.
 d. se cunoaste si sub numele de Oxigenoterapie.
 e. se realizează pentru asigurarea unei cantităţi corespunzătoare de oxigen.
-Raspuns: b,d,e. (Vol. II, Cap. 1.1, Pag. 66)
+R: b,d,e. (Vol. II, Cap. 1.1, Pag. 66)
 319. * Terapia inhalatorie - aerosoloterapia:
 a. este o parte a tratamentului de fond dar şi a celui ,,acut”, în afecțiunile
 autoimune.
@@ -2557,21 +2557,21 @@ d. este o parte a tratamentului de fond dar şi a celui ,,cronic”, în afecți
 pulmonare.
 e. este o parte a tratamentului de fond dar şi a celui ,,cronic”, în cancere
 pulmonare.
-Raspuns: c. (Vol.II, Cap.1.1, Pag. 68 )
+R: c. (Vol.II, Cap.1.1, Pag. 68 )
 320. Avantajele administrării a medicaţiei inhalatorii sunt:
 a. doze mai mari de medicament
 b. poate vindeca instantaneu orice afecțiune pulmonară cronică
 c. reducerea expunerii sistemice
 d. previne orice tip de alergie la medicamente.
 e. doze mai mici de medicament
-Raspuns: c,e .(Vol. II, Cap. 1.1, Pag. 68)
+R: c,e .(Vol. II, Cap. 1.1, Pag. 68)
 321. Intervenţiile asistentului medical in ineficiența cailor respiratorii:
 a. eliberarea căilor respiratorii prin aspirare.
 b. masajul abdominal pentru a stimula funcția pulmonară.
 c. monitorizarea amplitudinii respiraţiei, frecvenței şi ritmului respirator.
 d. aplicarea de comprese reci pe piept pentru a facilita respirația
 e. auscultația sunetelor respiratorii.
-Raspuns : a, c, e. (Vol. II, Cap. 1.1, Pag. 77 )
+R : a, c, e. (Vol. II, Cap. 1.1, Pag. 77 )
 1.2. Nursing in afectiunile aparatului cardiovascular.
 322. * Sistemul circulator:
 a. este constituit din inimă şi vase de sânge, care prezintă legături funcţionale unele
@@ -2582,56 +2582,56 @@ funcţionale unele cu altele.
 d. este constituit din inimă şi vase de sânge, care nu prezintă legături funcţionale
 unele cu altele.
 e. este alcătuit din o rețea de mușchi care ajută la circulația sângelui.
-Raspuns : a .(Vol.II, Cap.1.2, Pag. 78 )
+R : a .(Vol.II, Cap.1.2, Pag. 78 )
 323. Inima :
 a. este un organ musculo-cavitar
 b. este situată la nivelul cavităţii toracice
 c. este organul responsabil pentru producerea de oxigen în corp.
 d. este alcătuită doar din mușchi netezi
 e. transmite impulsuri nervoase.
-Raspuns : a,b. (Vol.II, Cap.1.2, Pag. 78 )
+R : a,b. (Vol.II, Cap.1.2, Pag. 78 )
 324. Mica circulație:
 a. începe din ventriculul drept.
 b. se numeste si circulația pulmonară.
 c. începe din atriul drept.
 d. începe din ventriculul stâng.
 e. se numeste si circulația cerebrală.
-Raspuns : a,b .(Vol.II, Cap. 1.2, Pag. 79)
+R : a,b .(Vol.II, Cap. 1.2, Pag. 79)
 325. Marea circulație:
 a. se numeste si circulația sistemică.
 b. începe din atriul stâng.
 c. se sfârșește în atriul drept.
 d. începe din ventriculul stâng.
 e. transportă substanţele nutritive şi O2 la ţesuturi.
-Raspuns : a, d, e. (Vol. II, Cap.1.2, Pag. 79)
+R : a, d, e. (Vol. II, Cap.1.2, Pag. 79)
 326. Frecvenţa cardiacă:
 a. reprezintă numărul de cicluri cardiace pe secundă.
 b. se determină prin măsurarea pulsului arterial.
 c. este presiunea exercitată de sânge asupra pereților ventriculari.
 d. este presiunea exercitată de sânge asupra pereților arteriali.
 e. reprezintă numărul de cicluri cardiace pe minut.
-Raspuns : b, e. (Vol. II, Cap.1.2, Pag. 79)
+R : b, e. (Vol. II, Cap.1.2, Pag. 79)
 327. * Valorile frecvenţei pulsului normal:
 a. 60 – 100 bătăi/minut.
 b. 50 – 80bătăi/minut.
 c. 90 – 120 bătăi/minut.
 d. 100 – 120bătăi/minut.
 e. 40 – 60bătăi/minut.
-Raspuns : a .(Vol.II, Cap.1.2, Pag.79 )
+R : a .(Vol.II, Cap.1.2, Pag.79 )
 328. Presiunea arterială:
 a. se măsoară la nivelul arterei brahiale.
 b. reprezintă presiunea hidrostatică a sângelui din ventricule.
 c. se măsoară la nivelul arterei carotide.
 d. se măsoară cu ajutorul tensiometrului.
 e. se măsoară cu ajutorul pulsoximetrului.
-Raspuns : a,d . (Vol.II, Cap. 1.2, Pag.80 )
+R : a,d . (Vol.II, Cap. 1.2, Pag.80 )
 329. Bolile congenitale ale inimii:
 a. sunt afecțiuni cauzate de lipsa totală a sângelui în corp.
 b. sunt anomalii ale inimii ori ale marilor vase.
 c. sunt apărute în timpul vieţii intrauterine.
 d. cei mai frecvenţi factori sunt virozele.
 e. sunt boli care apar exclusiv la persoanele în vârstă.
-Raspuns: b, c, d. (Vol. II, Cap.1.2, Pag. 97)
+R: b, c, d. (Vol. II, Cap.1.2, Pag. 97)
 330. Infarctul miocardic:
 a. este un sindrom clinic provocat de necroza ischemică a unei porţiuni din
 miocard.
@@ -2640,56 +2640,56 @@ pericard.
 c. cauza principală este ateroscleroza.
 d. în general apare la bărbaţi trecuţi de 40 de ani.
 e. în general apare la tineri sub 25 de ani.
-Raspuns: a,c,d. (Vol.II, Cap.1.2, Pag.108)
+R: a,c,d. (Vol.II, Cap.1.2, Pag.108)
 331. În evoluţia infarctului miocardic se deosebesc:
 a. perioada postdromală.
 b. perioada prodromală.
 c. perioada de debut, de stare.
 d. perioada de final.
 e. perioada de convalescenţă.
-Raspuns: b,c,e .(Vol. II, Cap.1.2, Pag.108)
+R: b,c,e .(Vol. II, Cap.1.2, Pag.108)
 332. * Hipertensiunea arterială:
 a. este un sindrom caracterizat prin cresterea doar a presiunii diastolice.
 b. este un sindrom caracterizat prin scaderea presiunii sistolice.
 c. este un sindrom caracterizat prin scaderea presiunii diastolice.
 d. este un sindrom caracterizat prin cresterea doar a presiunii sistolice.
 e. este un sindrom caracterizat prin cresterea presiunii sistolice si a celei diastolice.
-Raspuns: e. (Vol. II, Cap.1.2, Pag. 111)
+R: e. (Vol. II, Cap.1.2, Pag. 111)
 333. Orientări în tratamentul hipertensiunii arteriale:
 a. diureticele sunt utilizate în majoritatea hipertensiunilor arteriale
 b. hidralazina a redevenit un hipotensiv de bază
 c. beta blocantele sunt hipotensoare de bază
 d. consum crescut de sare pentru a stabiliza tensiunea.
 e. administrarea zilnică de analgezice pentru reducerea valorilor tensionale.
-Raspuns: a,b,c .(Vol. II, Cap. 1.2, Pag.117)
+R: a,b,c .(Vol. II, Cap. 1.2, Pag.117)
 334. Hipotensiunea arterială:
 a. este un sindrom clinic caracterizat prin scăderea valorilor tensionale.
 b. hipotensiunea poate fi trecătoare sau permanentă.
 c. este un sindrom clinic caracterizat prin cresterea valorilor tensionale.
 d. hipotensiunea poate fi doar permanentă.
 e. hipotensiunea poate fi doar trecătoare.
-Raspuns: a,b. (Vol.II, Cap. 1.2, Pag.117)
+R: a,b. (Vol.II, Cap. 1.2, Pag.117)
 335. Hipotensiunea arterială simptomatică:
 a. este detectată în circulația periferică din cauza vasoconstricției excesive.
 b. se întâlneşte în insuficienţa suprarenală.
 c. se întâlneşte în intoxicaţia cu alcool sau nicotină.
 d. este detectată în circulația periferică din cauza vasodilatației excesive.
 e. se întâlneşte în boli cronice caşectizante.
-Raspuns : b,c,e . (Vol.II, Cap. 1.2, Pag.118)
+R : b,c,e . (Vol.II, Cap. 1.2, Pag.118)
 336. Șocul:
 a. este un sindrom clinic cu etiologie variată
 b. are ca expresie clinică prăbuşirea tensiunii arteriale.
 c. este caracterizat printr-o insuficienţă circulatorie acută.
 d. are ca expresie clinică ridicarea tensiunii arteriale.
 e. este caracterizat printr-o insuficienţă circulatorie cronică.
-Raspuns : a,b,c .(Vol. II, Cap. 1.2, Pag.119)
+R : a,b,c .(Vol. II, Cap. 1.2, Pag.119)
 337. Șocul poate fi de mai multe feluri:
 a. șocul hipovolemic.
 b. șocul aseptic.
 c. șocul neurogen.
 d. șocul enterogen.
 e. șocul septic.
-Raspuns: a,c,e .(Vol. II, Cap. 1.2, Pag.119)
+R: a,c,e .(Vol. II, Cap. 1.2, Pag.119)
 338. * Sincopa:
 a. este un sindrom clinic, caracterizat prin pierderea lenta, de scurtă durată, a
 cunoştinţei şi funcţiilor vitale.
@@ -2700,7 +2700,7 @@ a cunoştinţei.
 d. este un sindrom clinic, caracterizat prin pierderea lenta, de lungă durată, a
 cunoştinţei.
 e. este o pierdere de conştienţă uşoară incompletă, care apare la personae emotive
-Raspuns: b .(Vol.II, Cap. 1.2, Pag. 121)
+R: b .(Vol.II, Cap. 1.2, Pag. 121)
 339. * Lipotimia:
 a. este o pierdere de conştienţă uşoară incompletă, care apare la persoane emotive
 b. este un sindrom clinic, caracterizat prin pierderea bruscă, de scurtă durată, a
@@ -2710,14 +2710,14 @@ d. este un sindrom clinic, caracterizat prin pierderea lenta, de lungă durată,
 cunoştienţei.
 e. este o pierdere de conştienţă uşoară incompletă, care apare la persoanele in
 varsta.
-Raspuns: a. (Vol. II, Cap.1.2, Pag.121)
+R: a. (Vol. II, Cap.1.2, Pag.121)
 340. Cauze ale leşinurilor, sincopelor şi pierderilor de conştientă repetate sunt:
 a. debit cardiac mediu.
 b. reducerea mecanică a întoarcerii venoase.
 c. debit cardiac redus.
 d. aritmii.
 e. debit cardiac ridicat.
-Raspuns: b,c,d. (Vol. II, Cap.1.2, Pag.121)
+R: b,c,d. (Vol. II, Cap.1.2, Pag.121)
 341. * Colapsul cardiovascular și moartea subită:
 a. sunt cel mai adesea rezultatul fibrilaţiei ventriculare la pacienţi fără boli.
 b. apare din cauza unui exces de vitamine.
@@ -2725,14 +2725,14 @@ c. survine atunci când inima bate prea rapid.
 d. sunt cel mai adesea cauzate de o infecție bacteriană severă.
 e. sunt cel mai adesea rezultatul fibrilaţiei ventriculare la pacienţi cu boli
 coronariene.
-Raspuns: e. (Vol. II, Cap.1.2, Pag.123)
+R: e. (Vol. II, Cap.1.2, Pag.123)
 342. Moartea subită:
 a. apare într-un timp foarte scurt.
 b. poartă denumirea de stop cardio-respirator.
 c. este oprirea rapidă a vieţii.
 d. poartă denumirea de stop cardio-circulator.
 e. apare într-un timp îndelungat.
-Raspuns: a,c,d. (Vol.II, Cap.1.2, Pag.123)
+R: a,c,d. (Vol.II, Cap.1.2, Pag.123)
 343. Ateroscleroza:
 a. boala nu este foarte frecventă şi afectează în special femeile.
 b. este generată de un complex de factori, veriga principală fiind tulburarea
@@ -2740,77 +2740,77 @@ betabolismului lipidic.
 c. boala este foarte frecventă şi afectează în special bărbaţii.
 d. există o predispoziţie ereditară, genetică, în apariţia bolii.
 e. este o boală generală metabolică, cronică.
-Raspuns: b,c,d,e. (Vol. II, Cap.1.2, Pag.124)
+R: b,c,d,e. (Vol. II, Cap.1.2, Pag.124)
 344. Formele clinice ale aterosclerozei:
 a. ateroscleroză aortică.
 b. ateroscleroză coronariană.
 c. ateroscleroză ventriculară.
 d. ateroscleroză cerebrală.
 e. ateroscleroza arterelor renale.
-Raspuns: a,b,d,e. (Vol.II, Cap. 1.2, Pag.126 )
+R: a,b,d,e. (Vol.II, Cap. 1.2, Pag.126 )
 345. * Anevrismul arterial:
 a. este o dilatare totală a peretelui arterial.
 b. este o comprimare parţială a peretelui arterial.
 c. este o dilatare parţială a peretelui arterial.
 d. este o comprimare totală a peretelui arterial.
 e. este o dilatare parţială a peretelui ventricular.
-Raspuns: c .(Vol. II, Cap. 1.2, Pag.127)
+R: c .(Vol. II, Cap. 1.2, Pag.127)
 346. Bolile arterelor periferice:
 a. sunt tulburări fără modificări anatomice
 b. pot fi de origine funcţională sau organică.
 c. sunt tulburări cu modificări anatomice
 d. se datorează unor leziuni inflamatorii sau degenerative.
 e. pot fi de origine anorganică sau organică
-Raspuns: a,b,d. (Vol. II, Cap. 1.2, Pag.128)
+R: a,b,d. (Vol. II, Cap. 1.2, Pag.128)
 347. Boala Raynauld:
 a. este o afecţiune rară, care se întâlneşte de obicei la bărbați tineri.
 b. este o afecţiune comună, care se întâlneşte de obicei la bărbați în vârstă.
 c. este o afecţiune rară, care se întâlneşte de obicei la femei tinere
 d. este localizată, de obicei, la nivelul membrelor toracice.
 e. este o tulburare paroxistică a circulaţiei periferice.
-Raspuns: c,d, e .(Vol. II, Cap. 1.2, Pag.128)
+R: c,d, e .(Vol. II, Cap. 1.2, Pag.128)
 348. Sindromul de ischemie arterială acută:
 a. apare prin obliterare arterială, cu suprimarea fluxului arterial.
 b. se datorează trombozei, emboliei sau traumatismului unei artere.
 c. există forme severe şi moderate.
 d. se datorează trombozei, emboliei sau traumatismului unui ventricol.
 e. există doar forme severe.
-Raspuns: a,b,c .(Vol.II, Cap. 1.2, Pag. 129)
+R: a,b,c .(Vol.II, Cap. 1.2, Pag. 129)
 349. Bolile venelor:
 a. constă doar în obstrucţia parţială a unei vene.
 b. este cunoscuta si sub numele de tromboflebită.
 c. constă în obstrucţia totală sau parţială a unei vene.
 d. constă doar în obstrucţia totală a unei vene.
 e. este cunoscuta si sub numele de sincopă.
-Raspuns: b,c. (Vol.II, Cap.1.2, Pag.132)
+R: b,c. (Vol.II, Cap.1.2, Pag.132)
 350. Varicele:
 a. sunt dilatări permanente, neregulate, ale venelor superficiale ale gambei.
 b. sunt dilatări permanente, regulate, ale venelor superficiale ale mâinii.
 c. există varice primitive sau idiopatice.
 d. sunt dilatări semipermanente, regulate, ale venelor superficiale ale gambei
 e. apar în anumite profesii ce reclamă ortostatismul prelungit.
-Raspuns: a,c,e. (Vol. II, Cap.1.2, Pag.134 )
+R: a,c,e. (Vol. II, Cap.1.2, Pag.134 )
 351. Durerile cardiace:
 a. durerea din infarctul miocardic este mai ușoară.
 b. durează câteva minute.
 c. durerea din infarctul miocardic este mai intensă
 d. sunt dureri organice întâlnite în pericardite.
 e. durează ore sau chiar zile şi nu cedează la nitroglicerină.
-Raspuns: c, d, e. (Vol. II, Cap.1.2, Pag. 135)
+R: c, d, e. (Vol. II, Cap.1.2, Pag. 135)
 352. Astmul cardiac
 a. este o formă de dispnee paroxistică.
 b. îmbrăcă aspectul edemului pulmonar cronic.
 c. apare în accese şi survine de obicei noaptea.
 d. este urmată de cianoză.
 e. apare în accese şi survine de obicei ziua.
-Raspuns: a, c. (Vol. II, Cap. 1.2, Pag.135)
+R: a, c. (Vol. II, Cap. 1.2, Pag.135)
 353. Obiectivele îngrijirii pacientului cu angina pectorală:
 a. să fie calmată durerea pacientului;
 b. pacientul să- şi recapete toleranţa la efort.
 c. pacientul să respire eficient.
 d. să fie îmbunătăţita circulaţia arterială a pacientului.
 e. pacientul să nu depună efort.
-Raspuns: a,b,c,d. (Vol.II, Cap.1.2, Pag.140 )
+R: a,b,c,d. (Vol.II, Cap.1.2, Pag.140 )
 1.3 Nursing în afecțiunile aparatului digestiv.
 354. Care sunt componente ale tubului digestiv ?
 a. esofag
@@ -3315,140 +3315,140 @@ b. secretate direct in lumenul vaselor sangvine
 c. sectretate direct in lumenul vasele limfatice
 d. stimueaza activitatea organelor sau tesuturilor
 e. nu inhiba activitatea organelor sau tesuturilor
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.7, Pag.259)
+R: a, b, c, d. ( Vol.II, Cap.1.7, Pag.259)
 424. Glande endocrine mai sunt:
 a. hipotalamusul
 b. hipofiza anterioara
 c. pancreas endocrin
 d. parotida
 e. testiculele
-Raspuns: a, b, c, e .( Vol.II, Cap.1.7, Pag.259-260)
+R: a, b, c, e .( Vol.II, Cap.1.7, Pag.259-260)
 425. Organe cu rol de glande endocrine:
 a. cordul
 b. plamanul
 c. retina
 d. stomacul
 e. adipocitele
-Raspuns: a, d, e .( Vol.II, Cap.1.7 , Pag.260 )
+R: a, d, e .( Vol.II, Cap.1.7 , Pag.260 )
 426. Faciesul hipertiroidian:
 a. exprima spaima
 b. exprima nelinistea
 c. clipeste rar
 d. buze ingrosate
 e. pleoape edematiate
-Raspuns: a, b, c .( Vol.II, Cap.1.7, Pag.260 )
+R: a, b, c .( Vol.II, Cap.1.7, Pag.260 )
 427. *Facies cushingoid:
 a. are aspect de “luna plina”
 b. aspect pufos
 c. aspect buhait
 d. limba edematiata
 e. piele ingroșată
-Raspuns: a. ( Vol.II,Cap.1.7 ,Pag.261 )
+R: a. ( Vol.II,Cap.1.7 ,Pag.261 )
 428. Acromegalia este un sindrom clinic caracterizat prin:
 a. cresterea deformanta in grosime a oaselor si a tesuturilor moi
 b. cresterea deformanta in latime a oaselor si a tesuturilor moi
 c. cresterea exagerata in inaltime
 d. craniul este mare, dar proportionat fata de restul corpului
 e. toate variantele sunt corecte
-Raspuns: a, b. ( Vol.II, Cap.1.7, Pag.263 )
+R: a, b. ( Vol.II, Cap.1.7, Pag.263 )
 429. Gigantismul :
 a. consecista hipersecretiei de hormon somatotrop
 b. consecinta secretiei insuficiente de hormon somatotrop
 c. boala apare cu precadere intre 30-50 ani
 d. craniul este marea, dar proportionat fata de restul corpului
 e. se produc modificari ale scheletului
-Raspuns: a, d, e .( Vol.II, Cap.1.7 ,Pag.264 )
+R: a, d, e .( Vol.II, Cap.1.7 ,Pag.264 )
 430. *Eliminarea cantitatii de urina in diabet insipid / zi :
 a. elimina intre 5-20 l de urina /zi
 b. elimina intre 5-10 l / zi
 c. elimina peste 2 l / zi
 d. elimina intre 2-10 l / zi
 e. elimina intre 2-4 l / zi
-Raspuns: a. ( Vol.II, Cap.1.7 ,Pag.266 )
+R: a. ( Vol.II, Cap.1.7 ,Pag.266 )
 431. Boala Basedow, simptome:
 a. gusa
 b. tireotoxicoza
 c. exoftalmia
 d. tetania
 e. disartrie
-Raspuns: a, b, c. ( Vol.II, Cap.1.7, Pag.266 )
+R: a, b, c. ( Vol.II, Cap.1.7, Pag.266 )
 432. *Hiperparatiroidismul cauzeaza:
 a. Boala Recklinghausen
 b. Tetania paratiroidiana
 c. Boala Cusching
 d. Boala Addison
 e. Cretinism endemic
-Raspuns: a. ( Vol.II, Cap.1.7, Pag.268 )
+R: a. ( Vol.II, Cap.1.7, Pag.268 )
 433. Manifestari tipice in tetanie:
 a. contractura spastica simetrica a membrelor
 b. contractura spastica asimetrica a membrelor
 c. crampe a membrelor
 d. amorteli a membrelor
 e. spasm laringeam la copii
-Raspuns: a, c, d, e. ( Vol.II, Cap.1.7,Pag.269 )
+R: a, c, d, e. ( Vol.II, Cap.1.7,Pag.269 )
 434. Tulburari frecvente in tetanie:
 a. anxietate
 b. depresie
 c. delir
 d. cataracta
 e. oboseala musculara si hipotonie
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.7, Pag.269 )
+R: a, b, c, d. ( Vol.II, Cap.1.7, Pag.269 )
 435. In tetania acuta bolnavul trebuie:
 a. scos rapid din criza
 b. injectii i.v. de clorurara sau de gluconat de calciu
 c. sedative
 d. indepartarea tumorii paratiroidinene
 e. se administreaza solutie de iodura de potasiu
-Raspuns: a, b, c. ( Vol.II, Cap.1.7,Pag.269 )
+R: a, b, c. ( Vol.II, Cap.1.7,Pag.269 )
 436. *Hipersecretia de cortizol produce:
 a. sindromul Cushing
 b. sindromul adeno-genital
 c. sindromul de feminizare
 d. sindromul Conn
 e. boala Addison
-Raspuns: a .( Vol.II, Cap.1.7, Pag.270 )
+R: a .( Vol.II, Cap.1.7, Pag.270 )
 437. *Boala Cushing este mai des intalnita la:
 a. barbati
 b. baieti, sub influenta hormonilor androgeni
 c. copii
 d. barbati si femei, indiferent de varsta
 e. la bolnavii care au primit doze mari si prelungite de cortizon
-Raspuns: e.( Vol.II, Cap.1.7,Pag.270 )
+R: e.( Vol.II, Cap.1.7,Pag.270 )
 438. Manifestari si complicatii in Boala Cushing:
 a. la 50% din bolnavi exista tulburari psihice
 b. osteoporoza
 c. diabet zaharat
 d. insuficienta renala
 e. cretinism
-Raspuns: a, b, c, d .( Vol.II, Cap.1.7,Pag.270 )
+R: a, b, c, d .( Vol.II, Cap.1.7,Pag.270 )
 439. Simptome in Boala Addison:
 a. oboseala si pierdere de energie
 b. greata, varsaturi
 c. diaree
 d. vertij in ortostatism
 e. amenoree la femei
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.7,Pag.271 )
+R: a, b, c, d. ( Vol.II, Cap.1.7,Pag.271 )
 440. Afectiunile glandelor sexuale ( gonadelor) se impart in urmatoarele categorii:
 a. stari de intersexualitate
 b. hipogonadism
 c. sindrom de precocitate sexuala
 d. anomalii in diferentierea sexuala
 e. Criptorhidia
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.7,Pag.272 )
+R: a, b, c, d. ( Vol.II, Cap.1.7,Pag.272 )
 441. Explorari imagistice ale glandelor endocrine:
 a. radiografia craniana fata / profil
 b. pneumoencefalografia
 c. tomografia computerizata
 d. radiografia scheletului
 e. radioiodocaptare
-Raspuns: a, b, c, d .( Vol.II, Cap.1.7, Pag.274 )
+R: a, b, c, d .( Vol.II, Cap.1.7, Pag.274 )
 442. Explorarea functionala a pancreasului endocrin se bazeaza pe:
 a. determinarea corpilor cetonici in urina
 b. hiperglicemia provocata
 c. determinarea glucozei in urina
 d. determinarea glucozei in sange
 e. testul Thorn
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.7.Pag.275 )
+R: a, b, c, d. ( Vol.II, Cap.1.7.Pag.275 )
 443. Educarea cu privire la tratament a pacientilor privind prevenirea afectiunilor
 endocrine:
 a. denumirea medicamentelor
@@ -3456,21 +3456,21 @@ b. doze
 c. orar
 d. cale de administrare
 e. evitarea surmenajului
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.7,Pag.276 )
+R: a, b, c, d. ( Vol.II, Cap.1.7,Pag.276 )
 444. Probleme de dependenta / de ingrijire in bolile endocrine:
 a. comunicare ineficienta la nivel afectic
 b. alterarea proceselor de gandire
 c. alterarea confortului
 d. alterarea imaginii de sine
 e. nepasare
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.7,Pag.277-278 )
+R: a, b, c, d. ( Vol.II, Cap.1.7,Pag.277-278 )
 445. *Pancreasul este:
 a. glanda mixta
 b. glanda mixta, anexata tubului digestiv, cu secretie exocrina
 c. glanda mixta, anexata tubului digestiv, cu secretie atat exocrina cat si endocrina
 d. glanda mixta, cu secretie atat endocrina cat si exocrine
 e. nu este glanda exocrina
-Raspuns: c. ( Vol.II, Cap.1.8,Pag.287)
+R: c. ( Vol.II, Cap.1.8,Pag.287)
 1.8. Nursing in boli metabolice si de nutritie
 446. Pancreasul este :
 a. asezat retroperitoneal
@@ -3478,42 +3478,42 @@ b. situat profund in etajul superior al abdomenului
 c. lung de 15-20cm
 d. lung de 18-22cm
 e. impartit in: cap, gat, corp si coada
-Raspuns: a, b, c, e. ( Vol.II, Cap.1.8,Pag.287-288 )
+R: a, b, c, e. ( Vol.II, Cap.1.8,Pag.287-288 )
 447. Sucul pancreatic :
 a. este un lichid clar
 b. este un lichid tulbure
 c. este un lichid clar, transparent cu Ph 8 - 8,5
 d. contine substante anorganice si substante organice
 e. este secretat discontinuu
-Raspuns: a, c, d, e. ( Vol.II, Cap.1.8, Pag.289 )
+R: a, c, d, e. ( Vol.II, Cap.1.8, Pag.289 )
 448. Insulina :
 a. este un polipeptit alcatuit din 59 aminoacizi
 b. este secretata de celulele B din insulele Langerhans
 c. este secretata de celulele A din insulele Langerhans
 d. are efect inhibitor asupra lipolizei
 e. stimuleaza lipogeneza
-Raspuns: a, b, d, e. ( Vol.II, Cap.1.8,Pag.289 )
+R: a, b, d, e. ( Vol.II, Cap.1.8,Pag.289 )
 449. Sindromul diabetului pancreatic consta in:
 a. hiperglicemie constanta
 b. glicozurie
 c. tulburari de insuficienta pancreatica externa
 d. tulburari metabolice generale
 e. astenie musculara si nervoasa
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.8, Pag.289 )
+R: a, b, c, d. ( Vol.II, Cap.1.8, Pag.289 )
 450. Tablou clinic al sindromului hipoglicemic include:
 a. senzatie de foame imperioasa
 b. tulburari vizuale
 c. transpiratii
 d. vertij
 e. gust metalic continuu
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.8,Pag.289 )
+R: a, b, c, d. ( Vol.II, Cap.1.8,Pag.289 )
 451. Tablou clinic al sindromului hipoglicemic in situatii severe:
 a. stari sincopale
 b. tremor
 c. convulsii
 d. delir
 e. coma
-Raspuns: a, b, c, e. ( Vol.II, Cap.1.8, Pag.289 )
+R: a, b, c, e. ( Vol.II, Cap.1.8, Pag.289 )
 452. Diabetul zaharat este:
 a. o boala metabolica cronica
 b. o boala metabolica acuta
@@ -3521,28 +3521,28 @@ c. determinat de capacitatea pancreasului de a creste productia de insulina
 d. determinat de incapacitatea pancreasului de a produce insulina suficienta sau nu
 produce deloc
 e. atunci cand organismal nu mai poate utiliza eficient insulina produsa
-Raspuns: a,d, e. ( Vol.II, Cap.1.8, Pag.291)
+R: a,d, e. ( Vol.II, Cap.1.8, Pag.291)
 453. Factori etiologici favorizanti ai diabetului zaharat:
 a. ereditatea
 b. alimentatia
 c. profesia
 d. infectii virale cu visuri coxackie
 e. ingestia de bauturi alcoolice
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.8, Pag.291)
+R: a, b, c, d. ( Vol.II, Cap.1.8, Pag.291)
 454. Clasificarea actuala a diabetului zaharat dupa OMS este:
 a. insulinodependent ( juvenil ), diabet zaharat tip 1
 b. insulinodependent (de maturitate), diabet zaharat tip 2
 c. insulinonecesitatnt ( juvenile ), diabet zaharat tip 2
 d. diabet gestational
 e. insulinonecesitatnt ( de maturitate), diabet zaharat tip 2
-Raspuns: a, b, d. ( Vol.II, Cap.1.8, Pag.292)
+R: a, b, d. ( Vol.II, Cap.1.8, Pag.292)
 455. Simptomele diabetului zaharat tip 1 sunt:
 a. polifagie
 b. polidipsie
 c. poliurie
 d. vedere incetosata
 e. crestere brusca in greutate
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.8, Pag.292)
+R: a, b, c, d. ( Vol.II, Cap.1.8, Pag.292)
 456. *Diabetul Gestational este:
 a. o forma de diabet care consta in nivele crescute de glucoza in sange, in timpul
 sarcinii
@@ -3551,7 +3551,7 @@ sarcinii
 c. o forma de diabet insulinodependent (de maturitate), diabet zaharat tip 2
 d. o forma de diabet controlata alimentar
 e. o forma de diabet ireversibila
-Raspuns: a. ( Vol.II, Cap.1.8, Pag.292)
+R: a. ( Vol.II, Cap.1.8, Pag.292)
 457. Starea de prediabet se caracterizeaza prin prezenta unuia dintre urmatoarele
 criterii:
 a. glicemia ”a jeun”:110-125 mg / dL
@@ -3559,28 +3559,28 @@ b. glicemia la doua ore:140-199 mg / dL in cadrul testului TTGO
 c. hemoglobina glicozilata: 5,7-6,4%
 d. d.glicemia ”a jeun”:120-135 mg / dL
 e. glicemia la doua ore:140-199 mg / dL
-Raspuns: a, b, c. ( Vol.II, Cap.1.8., Pag.293)
+R: a, b, c. ( Vol.II, Cap.1.8., Pag.293)
 458. Complicatiile acute in diabetul zaharat:
 a. coma cetoacidozica
 b. coma cetoacidozica ( in diabet zaharat tip1 )
 c. coma hiperosmolara ( in diabet zaharat tip 1 )
 d. coma hiperosmolara ( in diabet zaharat tip 2 )
 e. hipoglicemia, scaderea glicemiei < 70md / dl
-Raspuns: b, d, e. ( Vol.II, Cap.1.8, Pag.293-294)
+R: b, d, e. ( Vol.II, Cap.1.8, Pag.293-294)
 459. Complicatii cronice in diabetul zaharat:
 a. microvasculare (microangiopatia)
 b. macrovasculare
 c. infectioase
 d. ulcerul piciorului
 e. acidoza lactica
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.8, Pag.295)
+R: a, b, c, d. ( Vol.II, Cap.1.8, Pag.295)
 460. Interventiile autonome ale asistentului medical in diabet zaharat:
 a. monitorizarea functiilor vitale si vegetative de doua ori pe zi
 b. asigurarea igienei
 c. alimentarea
 d. mobilizarea
 e. ingrijirea piciorului diabetic
-Raspuns: a, b, c, d .( Vol.II, Cap.1.8, Pag.297)
+R: a, b, c, d .( Vol.II, Cap.1.8, Pag.297)
 461. *Interventiile delegate ale asistentului medical in diabet zaharat:
 a. observarea pacioentului pentru depistarea anxietatii
 b. observa si evalueaza temparatura picioarelor
@@ -3588,14 +3588,14 @@ c. administrarea medicatiei adjuvante fara recomandare medicului
 d. administrarea medicatiei: insulina, medicatia hipoglicemianta orala, medicatia
 adjuvanta
 e. educatie pentru sanatate
-Raspuns: d. ( Vol.II, Cap.1.8, Pag.297)
+R: d. ( Vol.II, Cap.1.8, Pag.297)
 462. Tratament specific cu insulina:
 a. administrarea subcutanata cea mai folosita
 b. administrarea subcutanata tot mai putin folosita
 c. administrarea intravenoasa
 d. administrarea intramusculara
 e. administrarea intraperitoneala
-Raspuns: a, c, d, e .( Vol.II, Cap.1.8, Pag.297)
+R: a, c, d, e .( Vol.II, Cap.1.8, Pag.297)
 463. *Obezitatea este:
 a. stare patologica caracterizata prin cresterea greutatii corporale ideale
 b. stare patologica caracterizata prin cresterea greutatii corporale ideale cu peste 20-
@@ -3605,63 +3605,63 @@ c. stare patologica caracterizata prin cresterea greutatii corporale ideale cu p
 d. stare patologica caracterizata prin sporirea masei tesutului adipos
 e. stare patologica caracterizata prin cresterea greutatii corporale ideale cu peste 20-
 25% si sporirea masei tesutului adipos
-Raspuns: e. ( Vol.II, Cap.1.8, Pag.300)
+R: e. ( Vol.II, Cap.1.8, Pag.300)
 464. Factori de risc si / sau cauzali ai obezitatii :
 a. factorul genetic este implicat 25-75%
 b. factorul genetic este implicat intr-un procent scazut
 c. dieta nesanatoasa
 d. nivel socioeconomic si educational
 e. fumatul
-Raspuns: a, c, d, e .( Vol.II, Cap.1.8, Pag.300)
+R: a, c, d, e .( Vol.II, Cap.1.8, Pag.300)
 465. Complicatii si boli asociate in obezitate sunt :
 a. complicatii cardiovasculare
 b. complicatii respitratorii
 c. complicatii genitourinare
 d. cancer
 e. hernie inghinala
-Raspuns : a, b, c, d. ( Vol.II, Cap.1.8, Pag.300)
+R : a, b, c, d. ( Vol.II, Cap.1.8, Pag.300)
 466. Fractiunile lipidice sunt reprezentate de:
 a. trigliceride
 b. colesterol total
 c. HDL-colesterol-
 d. LDL-colesterol-
 e. LDH
-Raspuns: a, b, c, d. ( Vol.II, Cap.1.8, Pag.308)
+R: a, b, c, d. ( Vol.II, Cap.1.8, Pag.308)
 467. Guta este:
 a. o forma de artrita
 b. o forma de poliartrita
 c. caracterizata prin episoade dureroase osoase
 d. caracterizata prin impotenta functionala a articulatiei
 e. caracterizata prin episoade dureroase secundare inflamatiei articulatiilor
-Raspuns: a, d, e .( Vol.II, Cap.1.8, Pag.309)
+R: a, d, e .( Vol.II, Cap.1.8, Pag.309)
 468. Simptomatologia gutei cuprinde:
 a. cresterea temperaturii locale
 b. febra
 c. edem si sensibilitate crescuta la nivelul articulatiei (de obicei police)
 d. durere nocturna intensa
 e. prurit tegumentar
-Raspuns : a, b, d, e .( Vol.II, Cap.1.8, Pag.310)
+R : a, b, d, e .( Vol.II, Cap.1.8, Pag.310)
 469. Terapia comportamentala in guta cuprinde:
 a. scaderea in greutate ( in cazul pacientilor supraponderali )
 b. regim hipolipidic, hipoproteic, hipoglucidic
 c. dieta hipolipemianta
 d. evitarea consumului de alcool
 e. evitarea ortostatismului
-Raspuns: a, c, d. ( Vol.II, Cap.1.8,Pag.310)
+R: a, c, d. ( Vol.II, Cap.1.8,Pag.310)
 470. Intoleranta la gluten este:
 a. boala celiaca
 b. presupune declansarea unei reactii imunitare anormale la nivelul intestinului subtire
 c. este doar o afectiune a intestinului
 d. nu este o boala multisistemica
 e. o boala multisistemica insotita de numeroase simptome
-Raspuns: a, b, e. ( Vol.II, Cap.1.8, Pag.311 )
+R: a, b, e. ( Vol.II, Cap.1.8, Pag.311 )
 471. Recoltarea sangelui pentru hemoglobina glicozilata :
 a. se realizeza prin punctie venoasa
 b. se realizeza prin punctie capilara
 c. se realizeaza pe nemancate (a jeun)
 d. se realizeaza post prandial (dupa masa)
 e. pe vacutainer cu citrate
-Raspuns: a, c, d. ( Vol.II, Cap.1.8, Pag.316 )
+R: a, c, d. ( Vol.II, Cap.1.8, Pag.316 )
 472. Testul de toleranta la glucoza :
 a. test ce evalueaza capacitatea organismului de a metaboliza administrarea unei doze
 masurate de glucoza
@@ -3669,7 +3669,7 @@ b. utilizat in special pentru diagnosticarea diabetului zaharat tip1, in mod spe
 c. utilizat in special pentru diagnosticarea diabetului zaharat
 d. utilizat in special pentru diagnosticarea diabetului zaharat tip2, exclusiv
 e. test ce evalueaza capacitatea organismului de a metaboliza glucidele
-Raspuns : a, c .( Vol.II, Cap.1.8,Pag.317 )
+R: a, c .( Vol.II, Cap.1.8,Pag.317 )
 Capitolul 2. Nursingul in chirurgie si specialitati inrudite
 2.1.Nursing in chirurgie generala
 473. Sectia de chirurgie cuprinde urmatoarele spatii functionale :
@@ -3678,21 +3678,21 @@ b. salile necesare activitatii personalului medical
 c. blocul operator
 d. salile de pansament
 e. grupurile sanitare
-Raspuns : a, c, d. ( Vol.II, Cap.2.1, Pag.334 )
+R: a, c, d. ( Vol.II, Cap.2.1, Pag.334 )
 474. Instrumentarul chirurgical, clasificare:
 a. instrumente de taiat
 b. instrumente pentru hemostaza
 c. instrumente pentru sutura
 d. departatoare
 e. instrumente de unica folosinta
-Raspuns : a, b, c, d. ( Vol.II, Cap.2.1, Pag.335 )
+R: a, b, c, d. ( Vol.II, Cap.2.1, Pag.335 )
 475. *Clasificarea hemoragiilor dupa tipul vasului de sange :
 a. arteriale, venoase, capilare
 b. externe, interne, interne exteriorizate
 c. interstitiala
 d. interna, care nu se exteriorizeaza
 e. arteriale, venoase, capilare, mixte
-Raspuns : e .( Vol.II, Cap.2.1,Pag.344 )
+R: e .( Vol.II, Cap.2.1,Pag.344 )
 476. Hemostaza reprezinta totalitatea mecanismelor care intervin in oprirea
 sangerarii la nivelul:
 a. vaselor mici
@@ -3700,14 +3700,14 @@ b. capilare
 c. arteriole
 d. venule
 e. artere
-Raspuns: a, b, c, d. ( Vol.II, Cap.2.1, Pag.345 )
+R: a, b, c, d. ( Vol.II, Cap.2.1, Pag.345 )
 477. Medicatie coagulanta in hemostaza medicamentoasa consta in:
 a. adrenaliza
 b. efedrina
 c. noradrenalina
 d. apa oxigenata
 e. heparina
-Raspuns: a, b, c, d .( Vol.II, Cap.2.1,Pag.346 )
+R: a, b, c, d .( Vol.II, Cap.2.1,Pag.346 )
 478. *Erizipelul este :
 a. infectie cutanata care apare la persoanele cu imunitate scazuta
 b. infectie cutanata, localizata care apare la persoanele cu imunitate scazuta
@@ -3716,21 +3716,21 @@ d. infectie cutanata produsa de streptococul beta-hemolitic de tip A, multiplica
 sistemul limfatic reticular local
 e. infectie cutanata, localizata, produsa de streptococul beta-hemolitic de tip B,
 multiplicat in sistemul limfatic reticular local
-Raspuns: d .( Vol.II, Cap.2.1,Pag.347 )
+R: d .( Vol.II, Cap.2.1,Pag.347 )
 479. Etiopatogenia flegmonului:
 a. steptococ
 b. stafilococ auriu
 c. colibacil
 d. steptococ beta-hemolitic de tip A
 e. anaerobi
-Raspuns: a, b, c, e. ( Vol.II, Cap.2.1, Pag.349 )
+R: a, b, c, e. ( Vol.II, Cap.2.1, Pag.349 )
 480. Tablou clinic in ocluzia intestinala :
 a. durere - brusca, intensa, continua, sincopala, localizata la nivelul obstacolului
 b. varsaturi
 c. greturi
 d. sughit si eructatii
 e. tranzit intestinal lent
-Raspuns : a, b, c, d. ( Vol.II, Cap.2.1, Pag.352-353 )
+R: a, b, c, d. ( Vol.II, Cap.2.1, Pag.352-353 )
 481. Echipa de asistenti medicali de la sala de operatie asigura :
 a. pregatirea aparaturii, instrumentelor si medicamentelor pentru anestezia si
 reanimarea pacientului
@@ -3739,14 +3739,14 @@ c. identificarea pacientului: daca a fost adus pacientul ce trebuie operat
 d. pregatirea aparaturii, instrumentelor si medicamentelor pentru efectuarea operatiei
 laparoscopice
 e. consiliere psihologica a bolnavului
-Raspuns: a, b, d. ( Vol.II, Cap.2.1, Pag.367-368 )
+R: a, b, d. ( Vol.II, Cap.2.1, Pag.367-368 )
 482. Opiaceele pot fi administrate sub forma :
 a. injectabila ( i.m., i.v.)
 b. injectabila ( strict i.v.)
 c. supozitoare
 d. oral
 e. respirator
-Raspuns : a, c, d. ( Vol.II, Cap.2.1, Pag.371 )
+R: a, c, d. ( Vol.II, Cap.2.1, Pag.371 )
 2.2 Nursing in ortopedie si traumatologie
 483. Pozitii active ale corpului :
 a. ortostatism
@@ -3754,21 +3754,21 @@ b. clinostatism (decubit)
 c. sezand
 d. semisezand
 e. pozitii antalgice
-Raspuns : a, b, c, d. ( Vol.II, Cap.2.2,Pa.g.384 )
+R: a, b, c, d. ( Vol.II, Cap.2.2,Pa.g.384 )
 484. Simptomatologia luxatiilor :
 a. durere intensa
 b. impotenta functionala
 c. echimoze subcutanate
 d. parestezii, paralizii
 e. hemoragie locala
-Raspuns: a, b, c, d ( Vol.II, Cap.2.2,Pag.388 )
+R: a, b, c, d ( Vol.II, Cap.2.2,Pag.388 )
 485. Complicatiile imediate in cazul fracturilor :
 a. transformarea unei fracturi inchise intr-o fractura deschisa
 b. infectia focarului de fractura
 c. calusul vicios
 d. lezarea vaselor sanguine
 e. lezarea nervilor aflati in vecinatate
-Raspuns: a, b, d, e .( Vol.II, Cap.2.2,Pag.391 )
+R: a, b, d, e .( Vol.II, Cap.2.2,Pag.391 )
 486. *Osteomielitele sunt:
 a. infectii bacteriene, in care agentul patogen s-a localizat la nivelul osului
 b. infectii bacteriene, in care agentul patogen este adus prin sange de la un focar de
@@ -3777,14 +3777,14 @@ c. infectii bacteriene, in care agentul patogen a ajuns la os prin intermediul u
 d. infectii bacteriene, in care agentul patogen a ajuns la os prin sange
 e. infectii bacteriene, in care agentul patogen s-a localizat la nivelul osului fiind adus
 prin sange de la un focar de infectie situat la distanta
-Raspuns : e. ( Vol.II, Cap.2.2,Pag.395 )
+R: e. ( Vol.II, Cap.2.2,Pag.395 )
 487. Factori ce pot duce la instalarea osteoporozei :
 a. imbatranirea este asociata cu demineralizarea osoasa
 b. factori ereditari
 c. dieta saraca in calciu
 d. greutate crescuta si stil de viata sedentar
 e. fumatul si consumul excesiv de alcool
-Raspuns : a, b , c, e. ( Vol.II, Cap.2.2,Pag.397 )
+R: a, b , c, e. ( Vol.II, Cap.2.2,Pag.397 )
 488. Interventiile proprii ale asistentului medical in ingrijirea pacientului cu afectiuni
 ortopedice sunt:
 a. incurajarea bolnavului
@@ -3792,35 +3792,35 @@ b. alimentarea si hidratarea pasiva a pacientilor dependenti
 c. asigurarea conditiilor de a se recrea si de a socializa
 d. aplicarea tratamentului medicamentos prescris de medic
 e. pregatirea preoperatorie
-Raspuns : a, b, c. ( Vol.II, Cap.2.2,Pag.401 )
+R: a, b, c. ( Vol.II, Cap.2.2,Pag.401 )
 489. Complicatiile imobilizarii :
 a. cauzate de circulatia sanguina inadecvata
 b. cauzate de inactivitatea musculara si articulara
 c. respiratorii
 d. digestive
 e. renourinare
-Raspuns : a, b, c, d. ( Vol.II, Cap.2.2,Pag.404 )
+R: a, b, c, d. ( Vol.II, Cap.2.2,Pag.404 )
 490. Care sunt materialele utilizate la realizarea unui aparat gipsat ?
 a. manusi
 b. fesi : de bumbac, gipsate sau din rasini sintetice
 c. vata din bumbac
 d. leucoplast
 e. betadina si alcool
-Raspuns : a, b, c, d. ( Vol.II, Cap.2.2,Pag.407 )
+R: a, b, c, d. ( Vol.II, Cap.2.2,Pag.407 )
 491. Complicatiile tratamentului cu aparate gipsate :
 a. dererea
 b. infectarea
 c. edemul
 d. deplasarea
 e. paralizia
-Raspuns : a, b, c, d. ( Vol.II, Cap.2.2,Pag.408 )
+R: a, b, c, d. ( Vol.II, Cap.2.2,Pag.408 )
 492. Punctia articulara, tehnica de lucru, rolul asistentului medical :
 a. spalarea si dezinfectarea mainilor
 b. imbracarea manusilor sterile
 c. monitorizarea pacientului
 d. suprimarea acului de punctie
 e. dezinfectarea locului punctiei dupa retragerea acului
-Raspuns : a, b, c, e. ( Vol.II, Cap.2.2,Pag.411 )
+R: a, b, c, e. ( Vol.II, Cap.2.2,Pag.411 )
 2.3. Nursing în urologie
 493. Caracteristicile rinichiilor sunt:
 a. sunt localizatii in cavitatea toracica
@@ -3828,112 +3828,112 @@ b. au forma unui bob de mazare
 c. sunt organe pereche
 d. sunt situati de o parte si de alta a coloanei lombare
 e. au forma unui bob de fasole
-Raspuns corect;c,d,e.(Vol. II, Cap. 2.3, Pag.416)
+R:c,d,e.(Vol. II, Cap. 2.3, Pag.416)
 494. Functiile de baza ale rinichilor sunt:
 a. functia de epurare sanguina
 b. functia de conducere
 c. functia de mentinere a echilibrului acido-bazic
 d. functia de reproducere
 e. functia de mentinere a echilibrului osmotic
-Raspuns corect: a, c,e. (Vol. II, Cap. 2.3, Pag.418)
+R: a, c,e. (Vol. II, Cap. 2.3, Pag.418)
 495. * Incontinenta urinara este:
 a. cresterea frecventei urinare
 b. scaderea frecventei urinare
 c. emisia involuntara de urina
 d. lipsa urinei
 e. eliminarea urinei numai in timpul zilei
-Raspuns corect: c. (Vol. II, Cap. 2.3, Pag. 420)
+R: c. (Vol. II, Cap. 2.3, Pag. 420)
 496. *Glomerulonefrita acuta difuza este produsa de:
 a. streptococul beta hemolitic grupa A
 b. stafilococul beta hemolitic grupa B
 c. streptococul beta hemolitic grupa B
 d. enterococul faecalis
 e. streptococul pneumoniae
-Raspuns corect: a. (Vol.II, Cap. 2.3, Pag.420)
+R: a. (Vol.II, Cap. 2.3, Pag.420)
 497. Principale semen clinice ale sindromului nefrotic sunt:
 a. hiperproteinurie
 b. edeme localizate sau generalizate
 c. constipatie
 d. dureri toracice
 e. piurie
-Raspuns corect: a, b. ( Vol.II. Cap. 2.3, Pag.422)
+R: a, b. ( Vol.II. Cap. 2.3, Pag.422)
 498. Regimul igienico-dietetic in sindromul nefrotic consta in;
 a. repaus la pat
 b. aport glucidic bogat
 c. regim hipercaloric
 d. aport scazut de lichide
 e. pierdere ponderala rapida
-Raspuns correct: a,b,c,e. (Vol. II. Cap. 2.3. Pag.423)
+R: a,b,c,e. (Vol. II. Cap. 2.3. Pag.423)
 499. * Simptomul renal cheie in insuficienta renala acuta este:
 a. constipatia
 b. scadere ponderala
 c. cianoza
 d. tahicardie
 e. oligoanurie
-Raspuns corect: e. (Vol. II. Cap. 2.3. Pag.425)
+R: e. (Vol. II. Cap. 2.3. Pag.425)
 500. Care dintre valorile crescute poate indica insuficienta renala cronica:
 a. ureea
 b. colesterol LDH
 c. creatinine
 d. acid uric
 e. glicemia postprandiala
-Raspuns corect: a, c, d. ( Vol. II. Cap. 2.3. Pag.425)
+R: a, c, d. ( Vol. II. Cap. 2.3. Pag.425)
 501. Care din urmatoarele analize poate diagnostic o infectie urinara:
 a. urocultura
 b. glicemie
 c. colesterol LDH
 d. antibiograma
 e. examenul de urina
-Raspuns corect: a, d, e. (Vol.II. Cap. 2.3. Pag 431)
+R: a, d, e. (Vol.II. Cap. 2.3. Pag 431)
 502. In infectia urinara tabloul clinic este reprezentat de:
 a. disurie, polachiurie
 b. dureri in zona lombara
 c. urina tulbure, urat mirositoare
 d. sensibilitate in abdomenul inferior
 e. constipatie
-Raspuns corect: a, b,c, d.( Vol. II. Cap. 2.3. Pag. 431)
+R: a, b,c, d.( Vol. II. Cap. 2.3. Pag. 431)
 503. Diagnosticul pozitiv in litiaza renala se pune prin:
 a. RMN
 b. radiogarafie simpla
 c. urografie
 d. biopsie
 e. scintigrafie
-Raspuns corect; b, c. (Vol. II. Cap. 2.3. Pag. 432)
+R: b, c. (Vol. II. Cap. 2.3. Pag. 432)
 504. Tratamentul medicamentos al liteazei renale consta in:
 a. antispastice
 b. analgezice
 c. antibiotice
 d. diuretice
 e. hipotensoare
-Raspuns corect: a, b. ( Vol. II. Cap. 2.3. Pag. 432)
+R: a, b. ( Vol. II. Cap. 2.3. Pag. 432)
 505. *Care sunt semnele caracteristice in adenomul de prostata:
 a. polakiurie si disurie
 b. febra constanta
 c. durere lombara acuta
 d. hipertensiune arterial
 e. inapetenta
-Raspuns corect; a. (Vol. II. Cap. 2.3. Pag. 433)
+R: a. (Vol. II. Cap. 2.3. Pag. 433)
 506. Explorarile folosite in diagnosticarea cancerul de prostata sunt;
 a. PSA, PAP (fosfataza acida specifica prostate), uree, creatinine, ionograma
 b. biopsia de prostate
 c. radioscopie
 d. uretrocistografia, urografia standard
 e. radiaografie
-Raspuns corect:a,b,d. (Vol.II. Cap. 2.3. Pag.434)
+R:a,b,d. (Vol.II. Cap. 2.3. Pag.434)
 507. Tratamentul cancerului de prostata consta in:
 a. antibioterapie
 b. hormonoterapie
 c. radioterapie
 d. interventie chirurgicala
 e. tratament igienico-dietetic
-Raspuns corect: b, c, d. ( Vol. II. Cap. 2.3. Pag.434)
+R: b, c, d. ( Vol. II. Cap. 2.3. Pag.434)
 508. Din categoria tumorilor renale benigne face parte;
 a. adenomul renal
 b. sarcomul renal
 c. adenocarcinomul renal
 d. oncocitomul renal
 e. angiomiolipomul renal
-Raspuns corect: a, d, e. (Vol. II. Cap. 2.3. Pag.436)
+R: a, d, e. (Vol. II. Cap. 2.3. Pag.436)
 509. Interventiile proprii si delegate ale asistentului medical in ingrijirea bolnavului
 cu afectiuni renale sunt:
 a. administrarea medicatiei fara recomandarea medicului
@@ -3943,21 +3943,21 @@ vegetative
 d. recoltarea produselor biologice si patologice pentru examenul de laborator
 e. recunoaste la pacient semnele de insuficienta renala pentru a putea anunta
 medicul
-Raspuns corect:b, c, d, e. (Vol. II. Cap. 2.3, Pag.442)
+R:b, c, d, e. (Vol. II. Cap. 2.3, Pag.442)
 510. Rolul asistentului medical la efectuarea punctiei vezici urinare este:
 a. pregatirea fizica a pacientului
 b. pregatirea psihica a pacientului
 c. pregateste locul punctiei, dezinfectia lui
 d. executa punctia si aspirarea urinii
 e. dezinfecteaza locul punctiei dupa retragerea acului
-Raspuns corect; a,b,c,e. ( Vol.II, Cap. 2.3, Pag.444/445)
+R: a,b,c,e. ( Vol.II, Cap. 2.3, Pag.444/445)
 511. *Care este scopul principal in efectuarea biopsiei renale:
 a. imbunatatirea functiei renale
 b. prelevarea fragmentuli de tesut pentru diagnostic
 c. reducerea inflamatiei renale
 d. eliminarea calculilor renal
 e. stoparea tumori renale
-Raspuns corect: b.( Vol. II, Cap. 2.3. Pag.445)
+R: b.( Vol. II, Cap. 2.3. Pag.445)
 2.4. Nursing in chirurgie toracica si acardiovasculara
 512. Abcesul pulmonar este:
 a. o colectie purulenta de obicei multipla
@@ -3965,35 +3965,35 @@ b. o colectie hemoragica de obicei unica
 c. are localizare in paranchimul pulmonar
 d. o colectie purulenta de obicei unica
 e. se evacueaza prin caile respiratorii
-Raspuns corect: c, d, e. (Vol. II, Cap. 2.4, Pag.454)
+R: c, d, e. (Vol. II, Cap. 2.4, Pag.454)
 513. Complicatiile abcesului pulmonar pot fi:
 a. fibroza pleurala
 b. fistula bronhopleurala
 c. infard miocardic
 d. pneumotorax
 e. tamponata cardiac
-Raspuns corect: a, b. ( Vol. II. Cap. 2.4. Pag.456)
+R: a, b. ( Vol. II. Cap. 2.4. Pag.456)
 514. *Pneumotoraxul se defineste ca fiind:
 a. acumularea de lichid la nivelul pleurei
 b. acumularea de sange la nivelul pleurei
 c. prezența aerului intre cele doua foite pleurale
 d. acumulare de puroi la nivelul cavitati pleurale
 e. acumulare de secretii la nivelul pleurei
-Raspuns corect: c. (Vol. II, Cap. 2.4. Pag.459)
+R: c. (Vol. II, Cap. 2.4. Pag.459)
 515. Principalele simptome in pneumothorax sunt:
 a. durere toracica
 b. dispnee
 c. cianoza
 d. hipertensiune arterial
 e. alterarea acuitati vizuale
-Raspuns corect: a, b, c. ( Vol. II. Cap. 2.4, Pag.460-461)
+R: a, b, c. ( Vol. II. Cap. 2.4, Pag.460-461)
 516. Tabloul clinic ala tromboembolismul pulmonar este dat de:
 a. embolia pulmonara
 b. insuficienta renala acuta
 c. infartul pulmonar
 d. hipertensiune pulmonara cronica tromboembolitica
 e. anemie secundara
-Raspuns corect: a, c,d.( Vol.II. Cap. 2.4, Pag.465)
+R: a, c,d.( Vol.II. Cap. 2.4, Pag.465)
 517. *Care este cel mai important tratament medicamentos in tromboembolismul
 pulmonar?
 a. antibiotic
@@ -4001,14 +4001,14 @@ b. antihistaminic
 c. anticoagulant
 d. hipertensiv
 e. vasodilatator
-Raspuns corect: c. ( Vol. II, Cap. 2.4, Pag. 467)
+R: c. ( Vol. II, Cap. 2.4, Pag. 467)
 518. Care sunt gradele stenozei aortice:
 a. stenoza medie
 b. stenoza severa
 c. stenoza moderata
 d. stenoza inalta
 e. stenoza joasa
-Raspuns correct: a, b, c.(Vol. II, Cap. 2.4, Pag. 471
+R: a, b, c.(Vol. II, Cap. 2.4, Pag. 471
 519. *Care dintre metodele de diagnosticare a anevrismului arterial fac parte, cu
 exceptia:
 a. electrocardiograma
@@ -4016,28 +4016,28 @@ b. aortografia retrograde
 c. cateterismul cardiac
 d. ecografia
 e. examenul radiologic
-Raspuns corect: d. (Vol.II, Cap. 2.4, Pag.476)
+R: d. (Vol.II, Cap. 2.4, Pag.476)
 520. Tromboza venoasa este:
 a. o dilatare patologica a unui vas sanguine
 b. prezenta trombusului intr-o vena superficiala sau profunda
 c. raspuns inflamator concomitent al peretelui vascular
 d. o dilatare fiziologica a uni artere pulmonare
 e. o afectiune congenitala
-Raspuns corect: b, c. (Vol. II, Cap. 2.4.Pag. 478)
+R: b, c. (Vol. II, Cap. 2.4.Pag. 478)
 521. Care sunt cele mai importante consecinte ale trombozei venoase:
 a. embolia pulmonara
 b. sindrom de insuficienta venoasa cronica
 c. stenoza hepatica
 d. endocardita infectioasa
 e. hipoglicemie severa
-Raspuns corect:a, a, b . (Vol.II, Cap. 2.4, Pag.478
+R:a, a, b . (Vol.II, Cap. 2.4, Pag.478
 522. Ce masuri de preventie se iau in cazul insuficientei venoase cronice:
 a. purtarea ciorapilor elastici
 b. efort fizic prelungit
 c. ridicarea membrelor inferioare
 d. la aparitia ulceratiilor se practica aplicati umede pe pansamentul uscat
 e. evitarea ortostatismului si pozitiei sezande prelungite
-Raspuns corect: a, c, d, e. (Vol.II, Cap. 2.4, Pag. 480)
+R: a, c, d, e. (Vol.II, Cap. 2.4, Pag. 480)
 523. Care sunt manifestari de independenta ale pacientului cu afectiuni chirurgicale
 toracice si cardiovasculare:
 a. mobilitate pastrata
@@ -4045,7 +4045,7 @@ b. comunicare defectuasa
 c. somn si odihna corespunzatoare
 d. lipsa durerii
 e. pacient inconstient
-Raspuns corect: a, c,d. (Vol. II, Cap, 2.4, Pag.481)
+R: a, c,d. (Vol. II, Cap, 2.4, Pag.481)
 524. Care sunt diagnosticele de nursing intalnite la pacienti cu afectiuni toracice si
 cardiovasculare:
 a. alterarea schimburilor respiratorii- dispneea
@@ -4053,7 +4053,7 @@ b. risc de constipatie
 c. alterarea starii generale
 d. incapacitatea de adaptare la conditiile de boala
 e. deficit de cunoaștere
-Rasouns corect: a, c, d. (Vol. II, Cap. 2.4, Pag.482-483)
+R: a, c, d. (Vol. II, Cap. 2.4, Pag.482-483)
 525. Care sunt obiectivele de ingrijire postoperatorie ale pacientului cu drenaj pleural
 (toracostomie) de catre asitentul medical?
 a. aseaza bolnavul in poziteie antalgica ( rididcat pe 3 perne la 45)
@@ -4061,14 +4061,14 @@ b. verifica pozitia tubului de dren in borcanul de aspiratie
 c. monitorizarea durerii si nivelul de anxietate
 d. suprima drenului pleural
 e. sectionarea firelor ce fixeaza drenul la piele cu o foarfeca sterile
-Raspuns corect: a,b,c. (Vol. II, Cap. 2.4, Pag. 487-488)
+R: a,b,c. (Vol. II, Cap. 2.4, Pag. 487-488)
 526. *Pansamentele pot fi cu exceptia:
 a. neted
 b. protector
 c. compresiv
 d. ocluziv
 e. absorbant
-Rsapuns corect: a. (Vol. II, Cap. 2.4, Pag.491)
+R: a. (Vol. II, Cap. 2.4, Pag.491)
 527. Care sunt regulile unui pansament corect:
 a. orice pensament se face cu pacientul in decubit dorsal, rareori in pozitie
 sezanda
@@ -4076,7 +4076,7 @@ b. pansamentul se poate face in oricare incapere a sectiei
 c. pansamantul va fi efectuat cu ajutorul unei singure pense
 d. pansamentul se executa de catre medic si asistentul medical
 e. se face stoarcerea , masajul , apasarea plagii sau regiunii invecinate
-Raspuns corect: a, d (Vol.II, Cap. 2.4, Pag. 492)
+R: a, d (Vol.II, Cap. 2.4, Pag. 492)
 528. *Care sunt interventile autonome ale asistentului medical in ingrijirea
 pacientului cu afectiuni chirurgicale toracice si cardiovasculare, cu exceptia:
 a. monitorizarea functiilor vitale
@@ -4085,7 +4085,7 @@ c. aplica masuri de prevenire a complicatiilor postoperatorii
 d. administreaza medicatia : antibiotice,bronhodilatatoare, hemostatice
 e. asigura o hidratare si alimentare corespunzatoare prevenind dezechilibrul
 hidro-electrolitic
-Raspuns corect: d. (Vol. II, Cap. 2.4, Pag.500)
+R: d. (Vol. II, Cap. 2.4, Pag.500)
 2.5. Nursing in otorinolaringologie( ORL)
 529. Factorii favorizanti in rinita sunt:
 a. alcoolul
@@ -4093,28 +4093,28 @@ b. fumatul
 c. imunitatea scazuta
 d. variatiile de temperatura si umiditate
 e. diabetul
-Raspuns corect: b,c , d. (Vol. II, Cap. 2.5, Pag.502)
+R: b,c , d. (Vol. II, Cap. 2.5, Pag.502)
 530. Rinita cronica catarala are ca simptomatologie:
 a. rinoree moderata cu aspect gelatinos
 b. obstructie nazala in bascule
 c. ropote de starnut
 d. disfagie
 e. epistaxis
-Raspuns corect:a, b, c. (Vol. II, Cap, 2.5, Pag.503)
+R:a, b, c. (Vol. II, Cap, 2.5, Pag.503)
 531. Tratamentul sinusitei consta in:
 a. pulberizari locale vasoconstrictoare; Bixtonim , Fedrocaina
 b. instilatii calde si mentolate
 c. administrarea de bauturi reci
 d. analgezice
 e. bronhodilatatoare
-Rspuns corect: a, b,d. (Vol. II, Cap, 2.5, Pag.505)
+R: a, b,d. (Vol. II, Cap, 2.5, Pag.505)
 532. * Laringita este o inflamatie:
 a. a mucoasei care captuseste cavitatea sinusurilor fetei
 b. acuta a mucoasei laringelui si a corzilor vocale
 c. cronica a mucoasei nazale
 d. care ajunge la atrofia mucoasei nazale
 e. in partea superioara a cavitatii nazale
-Raspuns corect: b. (Vol. II, Cap. 2.5, Pag.506)
+R: b. (Vol. II, Cap. 2.5, Pag.506)
 533. Care dintre următoarele sunt manifestări de dependență în rinite?
 a. obstrucția nazală
 b. rinoree uni sau bilaterală
@@ -5450,7 +5450,7 @@ b. profilaxia infecțiilor.
 c. administrarea medicației recomandate.
 d. controlul electroencefalografic.
 e. asigurarea regimului igieno-dietetic .
-Raspunsuri corecte :b,c,d,e. (Vol.III, Cap. 2.1, Pag. 283)
+R: b,c,d,e. (Vol.III, Cap. 2.1, Pag. 283)
 707. *Care dintre următoarele afirmații este corectă în contextul îngrijirii pacienților
 cu afecțiuni neurologice?
 a. imobilizarea prelungită este benefică pentru prevenirea complicațiilor.
@@ -5461,7 +5461,7 @@ vindecarea.
 d. pacienții pot fi plasați în poziții de decubit dorsal, fără pernă, cu capul înclinat în
 lateral sau în decubit lateral.
 e. activitățile de îngrijire nu necesită adaptare în funcție de nevoile pacientului.
-Raspuns corect: d. (Vol. III,Cap. 2.1, Pag .284)
+R: d. (Vol. III,Cap. 2.1, Pag .284)
 708. Care dintre următoarele măsuri sunt corecte pentru prevenirea complicațiilor la
 pacienții imobilizati ?
 a. se fac masajul extremităților și mișcări pasive pentru prevenirea complicațiilor
@@ -5471,14 +5471,14 @@ deja avansate.
 c. se schimbă poziția bolnavului din 2 în 2 ore pentru prevenirea escarelor.
 d. cearșaful trebuie să fie umed pentru a preveni apariția escarelor.
 e. nu se fac pudrări cu talc la nivelul regiunilor declive .
-Raspunsuri corecte: a,c. ( Vol .III,Cap.2.1, Pag. 285)
+R: a,c. ( Vol .III,Cap.2.1, Pag. 285)
 709. Combaterea hipertermiei se face prin administrare de antitermice:
 a. paracetamol
 b. aspirină 4 tb pe zi, oral.
 c. augumentin
 d. algocalmin - 2 fiole pe zi i.v.
 e. miofilin – 2 fiole pe zi i.v.
-Raspuns corect: a, b,d.( Vol.III Cap. 2.1 Pag .286)
+R: a, b,d.( Vol.III Cap. 2.1 Pag .286)
 710. Pregatirea preoperatorie a pacinetulului in neurochirurgie consta in :
 a. testarea sensibilității la anestezic.
 b. evacuarea conținutului intestinal prin aspirație nazogastrică și clismă
@@ -5486,7 +5486,7 @@ evacuatoare.
 c. aplicarea unei diete bogate înainte de intervenție.
 d. igiena tegumentelor.
 e. suprimarea dietei.
-Raspuns corect: a,b,d,e .(Vol.III, Cap. 2.1, Pag.289)
+R: a,b,d,e .(Vol.III, Cap. 2.1, Pag.289)
 711. Complicatiile postoperatorii neurochirugicale sunt urmataoarele :
 a. hemoragia postoperatorie
 b. infecția poate include supurația sau dehiscența plăgii.
@@ -5495,7 +5495,7 @@ hipovolemie.
 d. un sindrom respirator postoperator poate include hipoxie, hipercapnee
 și acidoză respiratorie.
 e. infecția urinară postoperatorie este mai frecventă la bolnavii vârstnici,
-Raspunsuri corecte ;a,b,d,e .(Vol.III, Cap.2.1, Pag.292)
+R: a,b,d,e .(Vol.III, Cap.2.1, Pag.292)
 712. Care sunt masurile necesare pentru pregătirea bolnavului înainte de
 oftalmoscopie?
 a. instilația cu 1-2 picături de homatropină 1% în sacul
@@ -5504,14 +5504,14 @@ b. aplicarea de atropină pentru dilatarea pupilei
 c. injectarea substanțelor radioopace
 d. dilatarea pupilei cu mydrium.
 e. utilizarea unei lentile biconvexe de 20D în timpul examinării.
-Raspunsuri corecte : a,d,e. ( Vol.III. Cap. 2.1, Pag.293)
+R: a,d,e. ( Vol.III. Cap. 2.1, Pag.293)
 713. Materialele necesare pentru punctia rahidiana sunt urmatoarele :
 a. ace subțiri cu mandrin
 b. eprubete sterile gradate
 c. tinctură de iod
 d. paravan pentru izolarea patului în salon
 e. medicamente antidepresive
-Raspunsuri corecte :a, b,c,d. (Vol.III, Cap.2.1, Pag. 294 )
+R:a, b,c,d. (Vol.III, Cap.2.1, Pag. 294 )
 714. Ce măsuri se aplica în procesul de pregătire a bolnavului pentru puncția
 lombara?
 a. bolnavul trebuie să fie informat despre procedură și să fie încurajat.
@@ -5522,7 +5522,7 @@ d. poziția „cocoș de pușcă” implică ca pacientul să stea cu coapsele f
 și bărbia în piept.
 e. în timpul pregătirii, asistenta medicală trebuie să aplice presiune moderată în zona
 epigastrică și la nivelul regiunii occipitale.
-Raspunsuri corecte :a,b,d .( Vol.III,Cap.2.1, Pag. 294)
+R:a,b,d .( Vol.III,Cap.2.1, Pag. 294)
 715. Incidente si accidente privind punctia rahidiana?
 a. hemoragii pe ac în timpul puncţiei
 b. sindromul postpuncțional poate include amețeli, cefalee și greață din cauza
@@ -5530,7 +5530,7 @@ hipotensiunii lichidiene.
 c. șocul reflex este o complicație frecventă și nu poate duce la sincope
 d. șoc reflex – poate duce la sincope mortale;
 e. dureri violente in membrele inferioare .
-Raspunsuri corecte: a, b,d,e. (Vol.III, Cap. 2.1, Pag. 295)
+R: a, b,d,e. (Vol.III, Cap. 2.1, Pag. 295)
 716. * În ce cazuri se recomandă ecografia Doppler carotidiană?
 a. când medicul suspectează că vasele de sânge de la nivelul picioarelor sunt
 îngustate.
@@ -5539,21 +5539,21 @@ c. când se suspectează îngustarea vaselor de la nivelul gâtului din cauza de
 de colesterol și alte materiale lipidice.
 d. când pacientul prezintă dureri de cap persistente.
 e. când se dorește măsurarea presiunii arteriale.
-Raspuns corect: c. (Vol.III,Cap. 2.1, Pag 301)
+R: c. (Vol.III,Cap. 2.1, Pag 301)
 717. Ce aspecte sunt evaluate cu ajutorul Scorului Glasgow?
 a. răspunsul ocular
 b. răspunsul motor
 c. răspunsul verbal
 d. timpul de reacție la stimuli externi
 e. ritmul respirator
-Raspuns corect: a,b,c. (Vol.III,Cap.2.1, Pag.302)
+R: a,b,c. (Vol.III,Cap.2.1, Pag.302)
 718. *Ce scor pe scala Glasgow indică moarte cerebrală?
 a. scor 15
 b. scor 13
 c. scor 8
 d. scor ≤7
 e. scor 3
-Raspuns corect :e .( Vol.III.Cap.2.1, Pag. 302)
+R:e .( Vol.III.Cap.2.1, Pag. 302)
 719. Ce tipuri de complicații pot fi prevenite prin recuperarea și reabilitarea neuro-
 motorie?
 a. escarele și boala tromboembolică.
@@ -5561,14 +5561,14 @@ b. atrofii musculare și osificările heterotopice.
 c. creșterea mobilității la pacienți.
 d. complicațiile respiratorii și impotența funcțională.
 e. infecții respiratorii virale.
-Raspuns corect: a, b, d. ( Vol.III,Cap.2.1, Pag. 304-305)
+R: a, b, d. ( Vol.III,Cap.2.1, Pag. 304-305)
 720. Care sunt scopurile fizioterapiei?
 a. tratamente pentru afecțiuni cardiovasculare exclusive.
 b. tratamentul bolilor care afectează mușchii, nervii și articulațiile.
 c. creșterea riscului de inflamație.
 d. relaxarea și îmbunătățirea funcției musculare și articulare.
 e. eliminarea completă a durerii prin metode chirurgicale.
-Raspuns corect: b,d. (Vol .III,Cap. 2.1, Pag. 305)
+R: b,d. (Vol .III,Cap. 2.1, Pag. 305)
 2.2.Nursing in sănătatea mintală și psihiatrie
 721. Care sunt caracteristicile sănătății mentale, conform definițiilor menționate?
 a. este o stare de echilibru dinamic între individ și mediu.
@@ -5576,14 +5576,14 @@ b. reprezintă absența completă a tulburărilor mintale.
 c. implică capacitatea de a restabili echilibrul după situații dificile.
 d. se definește ca o stare statică de bine.
 e. necesită armonie între structurile nervoase și mediul înconjurător.
-Raspuns corect :a, c ,e. (Vol.III.Cap.2.2, Pag. 306)
+R:a, c ,e. (Vol.III.Cap.2.2, Pag. 306)
 722. De ce sunt bolnavii psihici stigmatizați?
 a. pentru că suferința lor este dificil de înțeles și de descifrat.
 b. din cauza aparenței de răceală și indiferență.
 c. pentru că plâng mai des decât bolnavii somatici.
 d. din teama oamenilor de a se apropia de ei.
 e. din lipsa de fonduri alocate cercetării bolilor mintale
-Raspuns corect:a,b,d .(Vol. III,Cap. 2.2 ,Pag. 307-308)
+R:a,b,d .(Vol. III,Cap. 2.2 ,Pag. 307-308)
 723. Ce diferențiază boala psihică de retardul mental?
 a. boala psihică implică afectarea funcțiilor intelectuale, cum ar fi gândirea și
 emoțiile.
@@ -5591,14 +5591,14 @@ b. retardul mental presupune o insuficiență generală de dezvoltare intelectua
 c. boala psihică nu afectează memoria și percepția.
 d. retardul mental este o tulburare temporară a funcțiilor psihice.
 e. boala psihică are o componentă predominant somatică.
-Raspuns corect: a, b. (Vol.III,Cap. 2.2, Pag .307-308)
+R: a, b. (Vol.III,Cap. 2.2, Pag .307-308)
 724. *Ce caracterizează logoreea?
 a. încetinirea ritmului verbal.
 b. apariția de idei delirante.
 c. accelerarea ritmului verbal, mergând până la fuga de idei.
 d. pierderea totală a capacității de a vorbi.
 e. exagerarea atenției voluntare.
-Raspuns corect : c .( Vol.III,Cap. 2.2, Pag. 309 )
+R: c .( Vol.III,Cap. 2.2, Pag. 309 )
 725. *Ce reprezintă psihoterapia?
 a. o metodă farmacologică de influențare a comportamentului uman.
 b. o aplicare sistematică și conștientă a mijloacelor psihologice pentru influențarea
@@ -5606,63 +5606,63 @@ comportamentului uman.
 c. o metodă bazată pe manipularea hipnotică a pacientului.
 d. o tehnică folosită exclusiv în psihanaliză.
 e. o metodă utilizată pentru stimularea activității psihice.
-Raspuns corect : b. (Vol.III,Cap. 2.2, Pag. 312)
+R: b. (Vol.III,Cap. 2.2, Pag. 312)
 726. Tipuri de medicamente care fac parte din categoria psiholepticelor sunt :
 a. hipnotice.
 b. tranchilizante.
 c. neuroleptice.
 d. psihotone.
 e. psihostimulante.
-Raspunsuri corecte: a, b, c. ( Vol.III,Cap.2.2, Pag. 313)
+R: a, b, c. ( Vol.III,Cap.2.2, Pag. 313)
 727. Care sunt semnele clinice ale sevrajului etanolic precoce?
 a. tremor al extremităților.
 b. greață și vărsături.
 c. tahicardie.
 d. febră peste 40 de grade.
 e. bradicardie
-Raspunsuri corecte :a,b,c .(Vol.III,Cap.2.2, Pag. 315)
+R:a,b,c .(Vol.III,Cap.2.2, Pag. 315)
 728. Ce factori cresc riscul de delirium tremens?
 a. consumul excesiv de vitamine.
 b. apariției unei infecții
 c. consumul cronic de alcool timp de peste 5 ani.
 d. încetarea bruscă a consumului de alcool.
 e. alimentația echilibrată.
-Raspunsuri corecte :b,c,d. (Vol.III,Cap. 2.2, Pag. 315)
+R:b,c,d. (Vol.III,Cap. 2.2, Pag. 315)
 729. Care sunt simptomele frecvente ale intoxicației acute cu cocaină?
 a. tahicardie
 b. hipotensiune arterială
 c. halucinații tactile
 d. confuzie și dezorientare
 e. midriază
-Raspunsuri corecte : a,c,d,e. (Vol.III,Cap. 2.2, Pag. 318)
+R: a,c,d,e. (Vol.III,Cap. 2.2, Pag. 318)
 730. Manifestările clinice ale sindromului de sevraj la opiacee sunt :
 a. poftă și anxietate (gradul 0)
 b. lăcrimare, rinoree și transpirații (gradul 1)
 c. halucinații auditive
 d. midriază și dureri generalizate (gradul 2)
 e. creșterea temperaturii și pulsului (gradul 3-4)
-Raspuns corect : a, b,d ,e. (Vol.III,Cap. 2.2, Pag. 318)
+R: a, b,d ,e. (Vol.III,Cap. 2.2, Pag. 318)
 731. Simptomele pozitive în schizofrenie sunt ?
 a. halucinații
 b. anhedonie
 c. iluzii de persecuție
 d. comportament neobișnuit
 e. aplatizare emoțională
-Raspunsuri corecte : a, c, d .( Vol.III, Cap.2.2, Pag. 320)
+R: a, c, d .( Vol.III, Cap.2.2, Pag. 320)
 732. Care dintre următoarele simptome sunt specifice unui episod maniacal?
 a. fugă de idei
 b. energie fizică crescută
 c. tulburări de somn (insomnie)
 d. stare de spirit scăzută
 e. iritabilitate sau agitație facilă
-Raspunsuri corecte: a ,b , c , e. ( Vol.III, Cap.2.2, Pag. 321)
+R: a ,b , c , e. ( Vol.III, Cap.2.2, Pag. 321)
 733. Care dintre următoarele sunt simptomele de debut ale bolii Alzheimer?
 a. stare depresivă
 b. tulburări de caracter precum iritabilitate sau agresivitate
 c. insomnie cronică severă
 d. delir cronic de persecuție
 e. scăderea performanței intelectuale
-Raspunsuri corecte: a , b, d , e. ( Vol.III, Cap. 2.2, Pag. 326)
+R: a , b, d , e. ( Vol.III, Cap. 2.2, Pag. 326)
 734. Obiectivele in procesul de nursing în îngrijirea pacienților cu abuz de substanțe
 sunt :
 a. menținerea stabilității emoționale
@@ -5670,7 +5670,7 @@ b. creșterea dependenței pacientului de personalul medical
 c. dezvoltarea abilităților de relaționare interpersonală
 d. dezvoltarea speranței de recuperare
 e. încurajarea utilizării mecanismelor de apărare patologică
-Raspunsuri corecte :a,c ,d .( Vol.III, Cap. 2.2, Pag. 330)
+R:a,c ,d .( Vol.III, Cap. 2.2, Pag. 330)
 735. Intervenții recomandate pentru reducerea riscului de violență la pacienții cu
 schizofrenie:
 a. menținerea unui contact vizual și a unui limbaj calm
@@ -5678,7 +5678,7 @@ b. evitarea atingerilor, mai ales în cazul pacienților paranoici
 c. organizarea unui mediu cu puțini stimuli
 d. încurajarea pacientului să reacționeze liber la halucinații
 e. confruntarea agresivă a pacientului pentru a-l aduce la realitate
-Raspuns corect: a, b ,c. ( Vol. III,Cap. 2.2, ,Pag. 331)
+R: a, b ,c. ( Vol. III,Cap. 2.2, ,Pag. 331)
 736. *Intervenții recomandate pentru pacienții cu tulburări de personalitate sunt
 urmataorele cu exceptia ?
 a. se anticipează nevoile pacientului înainte ca acesta să solicite atenție
@@ -5712,42 +5712,42 @@ b. neutralizează mediul vaginal
 c. previne dezvoltarea microorganismelor patogene
 d. reglează secrețiile vaginale hormonale
 e. susține echilibrul hormonal al uterului
-Raspunsuri corecte: a, c. ( Vol.III.Cap. 3, Pag. 348)
+R: a, c. ( Vol.III.Cap. 3, Pag. 348)
 740. Care sunt funcțiile ovarelor?
 a. funcție exocrină – producția de ovule
 b. funcție endocrină – secreția de hormoni sexuali feminini
 c. producția de spermatozoizi
 d. reglarea ciclului menstrual
 e. funcție hematopoietică
-f. Raspunsuri corecte :a, b, d. ( Vol.III,Cap 3, Pag 351)
+R:a, b, d. ( Vol.III,Cap 3, Pag 351)
 741. Care sunt elementele principale care formează bazinul osos?
 a. oasele coxale (ilion, ischion și pubis)
 b. osul sacru și coccisul
 c. articulațiile sacro-iliace
 d. ligamentele sacro-sciatice
 e. mușchii psoas și iliac
-Raspunsuri corecte: a, b , c , d. ( Vol.III, Cap.3, Pag.353)
+R: a, b , c , d. ( Vol.III, Cap.3, Pag.353)
 742. Ce rol are placenta în dezvoltarea fetală?
 a. transportă oxigen și nutrienți de la mamă la făt
 b. protejează fătul de radiațiile externe
 c. permite schimbul de gaze și substanțe între mamă și făt
 d. suportă mișcările fătului
 e. produce hormoni necesari dezvoltării placentare
-Raspunsuri corecte: a, c, e. ( Vol .III, Cap 3, Pag.357)
+R: a, c, e. ( Vol .III, Cap 3, Pag.357)
 743. Ce caracteristici ale fătului se observă la 20 de săptămâni?
 a. lungimea fătului este de aproximativ 20 cm
 b. fătul are unghii și pleoape
 c. apar genele și sprâncenele
 d. fătul poate efectua mișcări de prindere
 e. se poate auzi bătăile inimii cu stetoscopul obstetrical
-Raspunsuri corecte : a, b, c , e .( Vol.III, Cap.3, Pag.356)
+R: a, b, c , e .( Vol.III, Cap.3, Pag.356)
 744. Care dintre modificările digestive sunt caracteristice sarcinii?
 a. motilitatea intestinului subțire este crescută
 b. secreția de acid gastric scade în sarcină
 c. vezica biliară devine atonă, predispunând la litiază biliară
 d. se reduce cantitatea de aciditate gastrică
 e. începe să apară un reflux gastroesofagian
-Raspuns corect : c, e. ( Vol.III, Cap.3 , Pag. 361 )
+R: c, e. ( Vol.III, Cap.3 , Pag. 361 )
 745. * Ce modificare apare la femeile însărcinate în trimestrul al treilea?
 a. amenoreea se oprește
 b. apar contracțiile Braxton-Hicks
@@ -5876,7 +5876,7 @@ b. frecvența mișcărilor respiratorii.
 c. funcționarea corectă a incubatorului
 d. vizitele rudelor.
 e. apariția eritemului fesier.
-Raspuns corect : a , b, c, e. ( Vol.III , Cap.4 , Pag.429)
+R: a , b, c, e. ( Vol.III , Cap.4 , Pag.429)
 763. Ce principii sunt importante în diversificarea alimentației sugarului?
 a. introducerea treptată a alimentelor noi
 b. respectarea ordinii introducerii alimentelor
@@ -5898,7 +5898,7 @@ b. 1 an
 c. 2-4 ani
 d. 1-7 ani
 e. 3-7 ani
-Raspuns corect : a.( Vol.III , Cap.4 ,Pag. 435)
+R: a.( Vol.III , Cap.4 ,Pag. 435)
 766. Care este cauza determinantă a rahitismului carențial?
 a. deficitul de vitamina C.
 b. deficitul de vitamina D.
@@ -6050,14 +6050,14 @@ b. scaunele diareice
 c. dureri abdominale difuze
 d. greturi
 e. varsaturi
-Raspuns: a .( Vol.III, Cap. 4,Pag.458 )
+R: a .( Vol.III, Cap. 4,Pag.458 )
 787. Tratamentul medicamentos in gastroenterite acute la copil mare:
 a. enterol
 b. colistin
 c. ercefuryl
 d. furazolidon
 e. imodium
-Raspuns : a, b, c,d. ( Vol.III, Cap. 4,Pag.460 )
+R: a, b, c,d. ( Vol.III, Cap. 4,Pag.460 )
 788. *Giardiaza este produsa de:
 a. un protozoar flagelat
 b. o helmintiaza produsa de un nematod cu sexe diferentiate
@@ -6065,63 +6065,63 @@ c. o helmintiaza cu sexe diferentiate, albicios, ascutit la ambele capete
 d. cestatode la care indivizii sunt bisexuali
 e. un protozoar flagelat cu sexe diferentiate, in forma de para, cu doi nuclei, cu 8
 flageli, foarte mobili
-Raspuns: a. ( Vol.III, Cap. 4, Pag.461 )
+R: a. ( Vol.III, Cap. 4, Pag.461 )
 789. Hepatita cronica, simptomatologie :
 a. astenie
 b. anorexie
 c. tranzit intestinal accelerat
 d. greturi
 e. nervozitate
-Raspuns: a, b, d. ( Vol.III, Cap. 4, Pag.463 )
+R: a, b, d. ( Vol.III, Cap. 4, Pag.463 )
 790. Glomerulonefrita difuza acuta are ca etiologie:
 a. infectii renale repetate
 b. infectia cu streptococul 𝛽-hemolitic grupa A
 c. infectia cu streptococul 𝛽-hemolitic grupa B
 d. infectii renale cu streptococul 𝛽-hemolitic grupa A
 e. cauze favorizante: frigul si amigdalofaringitele acute
-Raspuns: b, e .( Vol.III, Cap. 4, Pag.467 )
+R: b, e .( Vol.III, Cap. 4, Pag.467 )
 791. Infectiile tractului urinar, investigatii :
 a. examen de urina
 b. ecografia tractului urinar
 c. urografia cu substanta de contrast i.v.
 d. ionograma plasmatica
 e. ureterocistografia mictionala
-Raspuns: a, b, c, e. ( Vol.III, Cap. 4, Pag.469)
-792. 792. Insuficienta renala acuta are ca și tratament :
+R: a, b, c, e. ( Vol.III, Cap. 4, Pag.469)
+792. Insuficienta renala acuta are ca și tratament :
 a. aplicatii calde pe regiunea lombara
 b. antihipertensive daca sunt necesare
 c. hemodializa, de urgenta
 d. hemodializa nu este necesara in infectia renala acuta
 e. perfuzii endovenoase cu solutie glucoza 10%
-Raspuns: a, b, c, e. ( Vol.III, Cap. 4, Pag.470 )
-793. 793. Convulsiilor neepileptice se clasifică in :
+R: a, b, c, e. ( Vol.III, Cap. 4, Pag.470 )
+793. Convulsiilor neepileptice se clasifică in :
 a. convulsii febrile
 b. convulsii organice
 c. convulsii metabolice
 d. convulsii toxice
 e. convulsii partiale
-Raspuns: a, b, c, d. ( Vol.III, Cap. 4, Pag.473-474 )
+R: a, b, c, d. ( Vol.III, Cap. 4, Pag.473-474 )
 794. In criza de epilepsie majora, bolnavul trebuie:
 a. asezat in clinostatism
 b. indepartate sursele de pericol
 c. obligatoriu imobilizat
 d. asezat in pozitie de siguranta
 e. culcat pe o parte
-Raspuns: b, d, e. ( Vol.III, Cap. 4, Pag.473 )
+R: b, d, e. ( Vol.III, Cap. 4, Pag.473 )
 795. Anemia posthemoragica acuta, simptomatologie:
 a. paloare
 b. sete
 c. tahicardie
 d. hematemeza
 e. oscilarea tensiunii arteriale
-Raspuns: a, b, c, d. ( Vol.III, Cap. 4, Pag.474 )
+R: a, b, c, d. ( Vol.III, Cap. 4, Pag.474 )
 796. Anemia carentiala feripriva, etiologie:
 a. diarei repetate
 b. sindroame de malabsortie
 c. pneumopatii repetate
 d. otite repetate
 e. sangerari din tubul digestiv, in cantitati mici dar repetate
-Raspuns : a, b, c, d. ( Vol.III, Cap. 4, Pag.475 )
+R: a, b, c, d. ( Vol.III, Cap. 4, Pag.475 )
 797. *Prognosticul in diabetul zaharat infantil:
 a. rezervat, chiar daca va fi corect ingrijit si tinut sub contol, diabetul zaharat infantil
 va fi un obstacol in calea realizarii obiectivelor unui adolescent
@@ -6134,35 +6134,35 @@ calea realizarii obiectivelor si viitorului unui adolescent
 e. corect ingrijit si tinut sub contol, diabetul zaharat infantil nu va fi un obstacol in
 calea realizarii obiectivelor unui adolescent, monitorizandu-se functiile renale si
 pancreatice
-Raspuns: d. ( Vol.III, Cap. 4, Pag.479 )
+R: d. ( Vol.III, Cap. 4, Pag.479 )
 798. Etiologia reumatismului articular acut are ca și cauze favorizante :
 a. infectii respiratorii repetate
 b. varsta de scolar
 c. amigdalitele repetate
 d. frigul
 e. colectivitatea
-Raspuns: b, c, d .( Vol.III, Cap. 4 Pag.480 )
+R: b, c, d .( Vol.III, Cap. 4 Pag.480 )
 799. Tuberculoza la copil :
 a. infectie cronica produsa de bacilul Koch
 b. poarta de intrare cel mai frecvent pulmonara
 c. se poare localiza in oricare organ
 d. se poate imprastia in tot organismul
 e. poarta de intrare exclusiv pulmonara
-Raspuns: a, b, c, d. ( Vol.III, Cap. 4, Pag.481 )
+R: a, b, c, d. ( Vol.III, Cap. 4, Pag.481 )
 800. Comunicarea cu sugarul :
 a. foloseste tonul
 b. foloseste vocabularul timpuriu
 c. foloseste gesturile
 d. foloseste mimica
 e. contactul fizic mai putin important
-Raspuns: a, c, d. ( Vol.III, Cap. 4, Pag.483 )
+R: a, c, d. ( Vol.III, Cap. 4, Pag.483 )
 801. *Primele actiuni legate de igiena personala incep :
 a. odata cu prima baie generala
 b. incepe dupa varsta de 1 an cand este utilizata olita
 c. la varsta de prescolar cand trebuie invatat procesul de spalare a mainilor
 d. inaintea varstei de 2 ani, pentru a deveni o practica obisnuita
 e. la 14 zile, dupa detasarea spontana a bontului ombilical
-Raspuns : a. ( Vol.III, Cap. 4, Pag.487 )
+R: a. ( Vol.III, Cap. 4, Pag.487 )
 Cap.5. Epidemiologie și nursing în boli infecțioase
 802. Purtatorii de germeni se clasifica dupa urmatoarele criterii :
 a. fosti bolnavi, sanatosi
@@ -6171,28 +6171,28 @@ c. temporari si cronici
 d. excretori sau eliminatori de germeni si criptici
 e. dupa localizarea germenilor patogeni purtatorii pot fi urinari, intestinali, biliari,
 sanguini
-Raspuns: b, c, d, e. ( Vol.III, Cap.5 Pag.495 )
+R: b, c, d, e. ( Vol.III, Cap.5 Pag.495 )
 803. Transmiterea prin aer a germenilor patogeni poate fi impiedicata prin:
 a. aerisire
 b. stergere umeda
 c. aspirare
 d. dezinfectia obiectelor
 e. dezinfectie ciclica si terminala a a incaperilor
-Raspuns:a, b, c, d. ( Vol.III, Cap.5, Pag.497 )
+R:a, b, c, d. ( Vol.III, Cap.5, Pag.497 )
 804. Contaminarea obiectelor se poate face :
 a. direct cu produsele bolnavilor
 b. direct cu produsele purtatorilor ( fecale, urina, sputa)
 c. prin mijlocirea mainilor murdare
 d. prin mijlocirea mustelor
 e. indirect prin mijlocirea prafului
-Raspuns: a, b, c, d. ( Vol.III, Cap.5, Pag. 497 )
+R: a, b, c, d. ( Vol.III, Cap.5, Pag. 497 )
 805. Forme de manifestare ale procesului epidemic :
 a. sporadica
 b. endemica
 c. epidemica
 d. ciclica
 e. pandemia
-Raspuns: a, b, c , e. ( Vol.III, Cap.5, Pag.499-500 )
+R: a, b, c , e. ( Vol.III, Cap.5, Pag.499-500 )
 806. *Pandemia este :
 a. o forma amplificata a epidemiei
 b. o forma amplificata a epidemiei prin cuprinderea unui procent de 90-95 % a
@@ -6201,7 +6201,7 @@ c. extinderea pe teritorii marginite
 d. extinderea doar pe un continent
 e. o forma amplificata a endemiei, extinderea cuprinzand: tara, continent, intreaga
 lume
-Raspuns: a. ( Vol.III, Cap.5, Pag.500 )
+R: a. ( Vol.III, Cap.5, Pag.500 )
 807. *Infectia :
 a. se defineste prin ceea ce rezulta din patrunderea si multiplicarea agentului patogen
 in organismul gazda
@@ -6212,133 +6212,133 @@ de cultura
 d. se defineste prin ceea ce rezulta din multiplicarea germenilor in organismul gazda
 e. se defineste prin ceea ce rezulta din patrunderea, prezenta si multiplicarea
 germenilor in organismul gazda
-Raspuns: a. ( Vol.III, Cap.5, Pag.500 )
+R: a. ( Vol.III, Cap.5, Pag.500 )
 808. Bacteriile sunt:
 a. microorganisme unicelulare
 b. microorganisme ceva mai mari
 c. se multiplica prin diviziune binara intracelulara
 d. alcatuiesc regnul Procaryote
 e. exista trei specii cu importanta in patologia umana
-Raspuns: a, d. ( Vol.III, Cap.5, Pag.503 )
+R: a, d. ( Vol.III, Cap.5, Pag.503 )
 809. Fungii patogeni :
 a. sunt mii de specii de ciuperci
 b. numai cateva zeci sunt patogene pentru om
 c. toate sunt patogene pentru om
 d. produc infectii localizate minore
 e. produc micoze viscerale
-Raspuns: a, b, d, e. ( Vol.III, Cap.5, Pag.505 )
+R: a, b, d, e. ( Vol.III, Cap.5, Pag.505 )
 810. Virulenta este:
 a. insusirea unui agent patogen de a produce o forma grava de boala
 b. insusirea unui agent patogen de a produce o forma mai usoara de boala
 c. este dependenta de prezenta mai multor factori ai agentului patogen
 d. depinde de capacitatea de aparare a gazdei
 e. depinde de capacitatea de adaptare a gazdei
-Raspuns: a, c, d. ( Vol.III, Cap.5, Pag.506 )
+R: a, c, d. ( Vol.III, Cap.5, Pag.506 )
 811. Imunitatea este:
 a. este specifica , cu rol decisiv in apararea infectioasa
 b. este receptivitatea organismului fata de boli
 c. are suport in aparatul digestiv
 d. asigura distrugerea celulelor in care intra si se inmultesc germenii
 e. intervine in distrugerea celulelor tumorale
-Raspuns: a, b, d, e. ( Vol.III, Cap.5, Pag.507,508,510 )
+R: a, b, d, e. ( Vol.III, Cap.5, Pag.507,508,510 )
 812. Alergia :
 a. se manifesta prin modificari cutanate
 b. se manifesta prin modificari de organ
 c. se manifesta prin modificari cu cadere cardiovasculara
 d. se manifesta prin deces
 e. se manifesta prin dureri lombare acute
-Raspuns: a, b, c, d. ( Vol.III, Cap.5, Pag.508 )
+R: a, b, c, d. ( Vol.III, Cap.5, Pag.508 )
 813. Varicela este :
 a. o boala infectioasa acuta
 b. produsa si de virusul zosterian
 c. urmata de imunitate temporara
 d. apare in valuri
 e. produsa de virusul varicelo - zosterian
-Raspuns: a, d, e. ( Vol.III, Cap.5, Pag.510)
+R: a, d, e. ( Vol.III, Cap.5, Pag.510)
 814. Rujeola este :
 a. deosebit de contagioasa
 b. confera imunitate durabila
 c. urmata de imunitate definitiva
 d. imunitatea dupa boala este specifica de serotip
 e. incubatia este de 10 zile
-Raspuns : a, b, e. ( Vol.III, Cap.5, pag.510 )
+R: a, b, e. ( Vol.III, Cap.5, pag.510 )
 815. Parotidita epidemica se definește ca fiind :
 a. sau oreionul
 b. sau pojarul
 c. boala infectioasa transmisibila
 d. caracterizata prin afectarea pancreasului
 e. caracterizata prin afectarea glandelor salivare
-Raspuns: a, c, d, e. ( Vol.III, Cap.5, Pag.512 )
+R: a, c, d, e. ( Vol.III, Cap.5, Pag.512 )
 816. *Mononucleoza infectioasa este :
 a. produsa de virusul Epstein - Barr
 b. produsa de virusul urlian
 c. produsa de virusul rubeolic
 d. produsa de virusul zosteian
 e. produsa de variati egenti etiologici
-Raspuns: a. ( Vol.III, Cap.5, Pag.512)
+R: a. ( Vol.III, Cap.5, Pag.512)
 817. Mononucleoza infectioasa este :
 a. este boala infectioasa umana
 b. incubatia de 4 - 6 saptamani
 c. se transmite pe cale fecal - orala
 d. evolutie lenta
 e. clinic : angina, febra, modificari hematologice
-Raspuns: a, b, e. (Vol.III, Cap.5, Pag.512)
+R: a, b, e. (Vol.III, Cap.5, Pag.512)
 818. Forme de boala in difterie :
-b. angina difterica
-c. dermatita difterica
-d. difteria nazala
-e. difteria laringiana
-f. crupul difteric
-Raspuns: a, c, d, e .( Vol.III, Cap.5, Pag.514 )
+a. angina difterica
+b. dermatita difterica
+c. difteria nazala
+d. difteria laringiana
+e. crupul difteric
+R: a, c, d, e .( Vol.III, Cap.5, Pag.514 )
 819. Scarlatiana este și se c :
 a. boala acuta, infectiosa
 b. boala acuta, transmisibila pe cale fecal - orala
 c. clinic : exantem specific, febra, angina acuta
 d. clinic : micropapule congestive caracteristice
 e. clinic : enantem specific, exantem macular
-Raspuns: a, c, d ( Vol.III, Cap.5, Pag.513 )
+R: a, c, d ( Vol.III, Cap.5, Pag.513 )
 820. Tusea convulsiva, are urmatoarele stadii:
 a. stadiu cataral
 b. stadiul convulsiv
 c. stadiul de declin
 d. stadiul de convalescent
 e. stadiul de debut
-Raspuns: a, b, c, d. ( Vol.III, Cap.5, Pag.514 )
+R: a, b, c, d. ( Vol.III, Cap.5, Pag.514 )
 821. Sindromul infectios in meningitele acute infectioase este reprezentat de:
 a. febra
 b. fotofobie
 c. mialgii
 d. stare de curbatura
 e. hipoacuzie
-Raspuns: a,b, c, d. ( Vol.III, Cap.5, Pag.514 )
+R: a,b, c, d. ( Vol.III, Cap.5, Pag.514 )
 822. Toxinfectiile alimentare :
 a. sunt boli infectiose
 b. nu sunt boli infectiose
 c. apar in urma consumului de alimente contaminate cu bacterii
 d. apar in urma consumului de alimente contaminate cu virusi si bacterii
 e. apar in urma consumului de alimente contaminate cu bacterii sau toxinele acestora
-Raspuns: a, c, e. ( Vol.III, Cap.5, Pag.515)
+R: a, c, e. ( Vol.III, Cap.5, Pag.515)
 823. *Dizenteria bacilara este produsa de :
 a. bacterii din genul Shigella
 b. bacterii din genul Salmonella
 c. stafilococi enterotoxici
 d. alimente cu Stafilococ
 e. bacilul coli
-Raspuns: a. ( Vol.III, Cap.5, Pag.515 )
+R: a. ( Vol.III, Cap.5, Pag.515 )
 824. Holera are ca simptomatologie:
 a. colici abdominali
 b. debut insidios
 c. scaune diareice, apoase
 d. scaude afecaloide
 e. scaune fecaloide
-Raspuns: c, d. ( Vol.III, Cap.5, pag.515 )
+R: c, d. ( Vol.III, Cap.5, pag.515 )
 825. Poliomielita este:
 a. infectie bacteriana acuta
 b. infectie virala acuta
 c. debuteaza printr-un sindrom infectios necaracteristic
 d. poate fi urmat de paralizii de tip flasc
 e. poate fi urmat sau nu de paralizii de tip flasc
-Raspuns: b, c, e. ( Vol.III, Cap.5, Pag.515 )
+R: b, c, e. ( Vol.III, Cap.5, Pag.515 )
 826. *Febra tifoida:
 a. este o boala infectiosa acuta transmisibila
 b. este o boala infectiosa acuta sistemica
@@ -6346,28 +6346,28 @@ c. este o boala infectiosa acuta cu caracter sporadic
 d. este o boala infectiosa acuta transmisibila cu evolutie autolimitanta
 e. este o boala infectiosa acuta transmisibila, frecventa la scolari, adolescent si adulti
 tineri
-Raspuns: b. ( Vol.III, Cap.5, Pag.515 )
+R: b. ( Vol.III, Cap.5, Pag.515 )
 827. Simptomatologie in febra tifoida este:
-g. pusee febrile
-h. cefalee
-i. adinamie
-j. splenomegalie
-k. febra oscilanta
-Raspuns: b, c, d. ( Vol.III, Cap.5, Pag.515 )
+a. pusee febrile
+b. cefalee
+c. adinamie
+d. splenomegalie
+e. febra oscilanta
+R: b, c, d. ( Vol.III, Cap.5, Pag.515 )
 828. Febra tifoida se caracterizeaza prin :
-l. eruptie cutanata, maculopustule la debut
-m. eruptie cutanata, micropapule congestive la debut
-n. eruptie lenticulara la 7-8 zile de la debut
-o. macule congestive roz la 7-8 zile de la debut
-p. eruptia se remite dupa 3-4 zile fara urme
-Raspuns: c, d, e. ( Vol.III, Cap.5, Pag.515)
+a. eruptie cutanata, maculopustule la debut
+b. eruptie cutanata, micropapule congestive la debut
+c. eruptie lenticulara la 7-8 zile de la debut
+d. macule congestive roz la 7-8 zile de la debut
+e. eruptia se remite dupa 3-4 zile fara urme
+R: c, d, e. ( Vol.III, Cap.5, Pag.515)
 829. Ancheta epidemiologica stabileste:
 a. sursa de infectie
 b. antecedente heredocolaterale
 c. calea de transmitere
 d. cazuri internate
 e. starea imunologica
-Raspuns: a, c, e. ( Vol.III, Cap.5, Pag.516 )
+R: a, c, e. ( Vol.III, Cap.5, Pag.516 )
 830. Starea imunologica este:
 a. ancheta epidemiologica in care pacientul este intrebat daca a suferit de boli
 infectioase
@@ -6377,105 +6377,105 @@ c. ancheta epidemiologica in care se iau in calcul factorii epidemiologici secun
 d. ancheta epidemiologica in care se iau in calcul factorii climatici
 e. ancheta epidemiologica in care pacientul este intrebat daca a facut vaccinari, ce
 vaccinari si cand
-Raspuns: a, c, d, e. ( Vol.III, Cap.5, Pag.516 )
+R: a, c, d, e. ( Vol.III, Cap.5, Pag.516 )
 831. Angina :
 a. cuprinde amigdalele palatine
 b. cuprinde orofaringele intreg
 c. cuprinde rinofaringele
 d. cuprinse orofaringele partial
 e. cuprinde lueta uneori
-Raspuns: a, b, e. ( Vol.III, Cap.5, Pag 516 )
+R: a, b, e. ( Vol.III, Cap.5, Pag 516 )
 832. Curbele termice caracteristice unor boli infectioase sunt:
 a. febra recurenta
 b. febra continua
 c. febra de tip invers
 d. febra ondulanta
 e. febra convulsiva
-Raspuns: a, b, c, d. ( Vol.III, Cap.5, Pag.516 )
+R: a, b, c, d. ( Vol.III, Cap.5, Pag.516 )
 833. *In rujeola exantemul este :
 a. caracteristic cu macule
 b. caracteristic cu papule congestive
 c. caracteristic cu micropustule
 d. caracteristic cu micropustule si margini neregulate
 e. caracteristic cu macule, papule congestive cu margini neregulate, catifelate
-Raspuns:e. ( Vol.III, Cap.5, Pag.516 )
+R:e. ( Vol.III, Cap.5, Pag.516 )
 834. Semnul Koplick este reprezentat de :
 a. pete patognomotice care apar in rujeola
 b. pete patognomotice care apar in rubeola
 c. pete patognomotice care apar pe mucoasa bucala si orofaringe
 d. seamana cu granulele fine de nisip alb inconjurate de areola inflamatorie
 e. apare pe mucoasa bucala in dreptul molarilor superiori 1 si 2
-Raspuns: a, d, e. ( Vol.III, Cap.5, Pag.516 )
+R: a, d, e. ( Vol.III, Cap.5, Pag.516 )
 835. In scarlatina :
 a. apare exantemul de tip macropapule eritematoase
 b. apare exentemul de tip micropapulos congestiv aspru
 c. exantemul este dispus pe torace, abdomen, membre superioare, fese, coapse
 d. exantemul este macular cu elemente rotund - ovalare
 e. linii hemoragice la nivelul regiunii inghinale , axilare
-Raspuns : b, c, e. ( Vol.III, Cap.5, Pag.516 )
+R: b, c, e. ( Vol.III, Cap.5, Pag.516 )
 836. Varicela se caracterizeaza prin :
 a. exantemul cu aspect polimorf
 b. enantemul este caracteristic
 c. eruptia alcatuita din macule, papule, vezicule, cruste
 d. eruptia apare in valuri eruptive
 e. exantemul de tip macular pe fond eritematos
-Raspuns : a, b, c, d. ( Vol.III, Cap.5, P.ag.516 )
+R: a, b, c, d. ( Vol.III, Cap.5, P.ag.516 )
 837. Febra remitenta :
 a. se prezinta ca o curba cu oscilatii febrile mai mari
 b. temperatura minima nu scade sub 37˚C
 c. intre 37-39˚C
 d. cu perioade afebrile de 1-2 zile
 e. variatii intre dimineata si seara de 0,5-1˚C
-Raspuns: a, b, c. ( Vol.III, Cap.5, Pag.517 )
+R: a, b, c. ( Vol.III, Cap.5, Pag.517 )
 838. *Febra recurenta :
 a. perioade febrile cu temperatura continua intre 39-40˚C
 b. temperatura continua intre 39-40˚C timp de 4-6 zile intercalate de perioade afebrile
 c. perioade afebrile timp de pana la o saptamana
 d. temperatura urca incet si se mentine la 38-39˚C
 e. temperatura scade treptat
-Raspuns: b .( Vol.III, Cap.5, Pag.517 )
+R: b .( Vol.III, Cap.5, Pag.517 )
 839. Manifestarile gastrointestinale in bolile infectioase:
 a. tulburari de tranzit
 b. varsaturile
 c. diareea
 d. mialgii
 e. astenie
-Raspuns: a, b, c. ( Vol.III, Cap.5, Pag.517 )
+R: a, b, c. ( Vol.III, Cap.5, Pag.517 )
 840. Șocul infecțios :
 a. o boala infecțiosa
 b. se datoreaza actiunii directe a microbilor
 c. se datoreaza actiunii directe a toxinelor microbiene
 d. se datoreaza actiunii directe a microbilor si / sau a toxinelor microbiene
 e. complicatie severa a bolilor infectioase
-Raspuns: d , e. ( Vol.III, Cap.5, Pag.517 )
+R: d , e. ( Vol.III, Cap.5, Pag.517 )
 841. Sindroame majore in meningitele acute infectioase
 a. sindromul infectios general
 b. sindromul febril
 c. sindromul neuroleptic
 d. sindromul meningean
 e. sindromul encefalitic
-Raspuns: a, d. ( Vol.III, Cap.5, Pag.517 )
+R: a, d. ( Vol.III, Cap.5, Pag.517 )
 842. Sindromul meningean are ca simptome:
 a. cefalee difuza
 b. rahialgii si dureri lombare
 c. varsaturi in jet fara efort
 d. fotofobie
 e. contractura musculara care duce la manifestarea redorii de ceafa
-Raspuns: b , c, d, e. ( Vol.III, Cap.5, Pag.517 )
+R: b , c, d, e. ( Vol.III, Cap.5, Pag.517 )
 843. Hipertensiune intracraniana are ca manifestari:
 a. cefalee
 b. varsaturi
 c. greturi
 d. stare de somnolenta
 e. spasme abdominale
-Raspuns: a, b, d. ( Vol.III, Cap.5, Pag.517 )
+R: a, b, d. ( Vol.III, Cap.5, Pag.517 )
 844. Manifestari neurologice in meningita infectioasa:
 a. tulburari ale starii de constienta
 b. fatigabilitate
 c. coma
 d. halucinatii
 e. convulsii
-Raspuns: a, c, d, e. ( Vol.III, Cap.5, Pag.517 )
+R: a, c, d, e. ( Vol.III, Cap.5, Pag.517 )
 845. Respectarea Precautiilor Universale (standard si aditionale) pentru prevenirea
 infectiilor asociate asistentei medicale impune :
 a. imbracarea echipamentului de protectie
@@ -6483,7 +6483,7 @@ b. respectarea normelor de asepsie si antisepsie
 c. transpostarea produselor biologic in recipiente inchise
 d. transpostarea produselor patologice in recipiente perfect etanse
 e. transpostarea produselor biologic in recipiente perfect etanse
-Raspuns: a, b, d, e. ( Vol.III, Cap.5, Pag.521 )
+R: a, b, d, e. ( Vol.III, Cap.5, Pag.521 )
 846. Pentru combatera agentului patogen, in tratamentul bolilor infecto - contagioase
 se administreaza :
 a. antibiotice
@@ -6491,56 +6491,56 @@ b. chimioterapice
 c. seruri
 d. vaccinuri
 e. regim igieno - dietetic
-Raspuns: a, b, c, d. ( Vol.III, Cap.5, Pag.522 )
+R: a, b, c, d. ( Vol.III, Cap.5, Pag.522 )
 847. Ce se urmărește în supravegherea bolilor infecto-conagioase?
 a. corectarea dezechilibrelor
 b. combaterea inflamatiei
 c. eliminarea complete a tuturor bacteriilor din organism
 d. sustinerea generala a organismului
 e. creștere numărului de internări în spitale
-Raspuns: a, b, d. ( Vol.III, Cap.5, Pag.522 )
+R: a, b, d. ( Vol.III, Cap.5, Pag.522 )
 848. Imunizarea poate fi :
 a. naturala, dupa natura procedeului de inducere a rezistentei
 b. artificiala, dupa natura procedeului de inducere a rezistentei
 c. dobantida, dupa natura procedeului de inducere a rezistentei
 d. activa, dupa tipul rezistentei induse
 e. pasiva, dupa tipul rezistentei induse
-Raspuns: a, b, d, e. ( Vol.III, Cap.5, Pag.522 )
+R: a, b, d, e. ( Vol.III, Cap.5, Pag.522 )
 849. Administrarea vaccinurilor este utilizata cu scop :
 a. in profilatie
 b. cu scop curativ
 c. reducerea unor epidemii
 d. prevenirea infectiilor
 e. prevenirea sindromului infectios generalizat
-Raspuns: a, b. ( Vol.III, Cap.5, Pag.523 )
+R: a, b. ( Vol.III, Cap.5, Pag.523 )
 850. Care sunt căile de administrare a vaccinurilor :
 a. calea intradermica
 b. calea subcutanata
 c. calea intramusculara
 d. calea intraarticulara
 e. calea intranazala
-Raspuns: a, b, c, e .( Vol.III, Cap.5, Pag.523 )
+R: a, b, c, e .( Vol.III, Cap.5, Pag.523 )
 851. Care sunt căile de administrare a serurilor :
 a. intravenoasa
 b. subcutanata
 c. intramusculara, regiunea fesiera
 d. intramusculara, regiunea coapsei
 e. intramusculara, regiunea deltoidiana
-Raspuns: a, d, e. ( Vol.III, Cap.5, Pag.523 )
+R: a, d, e. ( Vol.III, Cap.5, Pag.523 )
 852. Trusa de medicamente antisoc este compusă din :
 a. adrenalina
 b. antihistaminice
 c. hemisuccinat de hidrocortizon
 d. solutie perfuzabila, aminoven
 e. materiale necesare punctiei venoase
-Raspuns: a, b, c, e .( Vol.III, Cap.5, Pag.523 )
+R: a, b, c, e .( Vol.III, Cap.5, Pag.523 )
 853. Prevenirea bolilor infecto - contagioase , masurile pentru caile de transmitere:
 a. metode de dezinfectie
 b. metode de sterilizare
 c. dezinsectie
 d. deratizare
 e. antibioterapia profilactica
-Raspuns: a, b, c, d. ( Vol.III, Cap.5, Pag.524 )
+R: a, b, c, d. ( Vol.III, Cap.5, Pag.524 )
 854. Educatia pentru sanatate a pacientilor privind limitarea transmiterii infectiei
 cuprinde :
 a. spalarea mainilor
@@ -6548,14 +6548,14 @@ b. evitarea colectivitatilor
 c. ventilatia incaperilor
 d. igiena personala
 e. controlul tusei si stranutului
-Raspuns: a, c, d, e. ( Vol.III, Cap.5, Pag.524 )
+R: a, c, d, e. ( Vol.III, Cap.5, Pag.524 )
 855. Asistentii medicali din cabinetele medicilor de familie au obligatia :
 a. de a cuprinde integral in catagrafie toti copiii programati pentru imunizare
 b. de a cunoaste pupulatia infantila bolnava
 c. de a cuprinde in catagrafie subiectii amanati
 d. de a cuprinde in catagrafie subiectii contraindicati temporar
 e. de a cuprinde in catagrafie subiectii omisi din campania anterioara
-Raspuns : a, c, d, e. ( Vol.III, Cap.5, Pag.524 )
+R: a, c, d, e. ( Vol.III, Cap.5, Pag.524 )
 Cap. 6. Gerontologie, geriatrie și nursing specific
 856. Care sunt factorii care influentează îmbătrânirea?
 a. factori genetici
@@ -6777,7 +6777,7 @@ b. invazie extraganglionara
 c. tumora mai mica de 4 cm
 d. tumora mai mare de 5 cm
 e. 1 ganglion pozitiv
-Raspuns corect: a,b,d. ( Vol. III, Cap. 7, Pag. 580)
+R: a,b,d. ( Vol. III, Cap. 7, Pag. 580)
 887. Factori de risc ai cancerului colorectal:
 a. alt tip de cancer
 b. vârsta
@@ -7063,7 +7063,7 @@ b. administrarea exclusivă a tratamentului prescris fără evaluare
 c. educațtia pacientului și a familiei privind îngrijirea la domiciliu
 d. identificarea riscurilor de dependență și a complicațiilor
 e. excluderea familiei din planul de îngrijire
-Raspuns corect ;a,c,d.(Vol.III.Cap.9.Pag.684)
+R: a,c,d.(Vol.III.Cap.9.Pag.684)
 927. Factorii care influențiază decizia de menținere a persoanei vârnisce includ :
 a. gradul de autonomie a persoanei ;
 b. existența unei rețele de sprijin familial ;
