@@ -18,6 +18,23 @@ Application::Application(std::pair<int, int> version, const int& width, const in
 	std::ranges::fill(selectionCache, std::vector<int>());
 }
 
+bool Application::setupRenderer()
+{
+	if (!renderer.initializeRenderer())
+	{
+		std::cerr << "Error during Renderer initialization\n";
+		return false;
+	}
+
+	if (!renderer.initializeImGui())
+	{
+		std::cerr << "Error during ImGui initialization\n";
+		return false;
+	}
+	setDarkTheme();
+	return true;
+}
+
 bool Application::readText(const std::string_view& path)
 {
 	parser.configurePath(std::string(path));
@@ -44,6 +61,14 @@ bool Application::readXml(const std::string& path)
 	return true;
 }
 
+ImFont* Application::configureFont(const std::string_view& path, float size)
+{
+	ImGuiIO& io = ImGui::GetIO();
+	ImFont* font = io.Fonts->AddFontFromFileTTF(std::string(path).c_str(), size);
+
+	return font;
+}
+
 bool Application::start()
 {
 	if (!setupRenderer())
@@ -57,6 +82,9 @@ bool Application::start()
 		std::cerr << "Error parsing text to XML\n";
 		return false;
 	}
+
+	bold22 = configureFont(SystemPath::defaultFont, 22.0f);
+	bold18 = configureFont(SystemPath::defaultFont, 18.0f);
 
 	std::cerr << "Starting Application\n";
 	while (!renderer.shouldClose())
@@ -84,23 +112,6 @@ bool Application::start()
 	return true;
 }
 
-bool Application::setupRenderer()
-{
-	if (!renderer.initializeRenderer())
-	{
-		std::cerr << "Error during Renderer initialization\n";
-		return false;
-	}
-
-	if (!renderer.initializeImGui())
-	{
-		std::cerr << "Error during ImGui initialization\n";
-		return false;
-	}
-	setDarkTheme();
-	return true;
-}
-
 void Application::displayMainMenuBar()
 {
 	if (ImGui::BeginMainMenuBar())
@@ -119,15 +130,14 @@ void Application::displayMainMenuBar()
 			ImGui::EndMenu();
 		}
 
-		ImGui::PushStyleColor(ImGuiCol_Button, ImColors::RedHeader);
-		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImColors::GreenHeader);
-		ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImColors::GreenHeader);
+		ImGui::PushStyleColor(ImGuiCol_Button, ImColors::VioletHeader);
+		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImColors::RedHeader);
 		if (ImGui::Button("Restart"))
 		{
 			resetQuizData();
 			state = ApplicationState::QUIZ_SELECT;
 		}
-		ImGui::PopStyleColor(3);
+		ImGui::PopStyleColor(2);
 
 		ImGui::EndMainMenuBar();
 	}
@@ -222,7 +232,6 @@ void Application::displayStatusWindow()
 	ImGui::End();
 }
 
-
 void Application::displayQuizSelection()
 {
 	float windowWidth = ImGui::GetContentRegionAvail().x;
@@ -234,24 +243,19 @@ void Application::displayQuizSelection()
 	ImGuiStyle& style = ImGui::GetStyle();
 	style.ChildRounding = 10.0f;
 
-	ImGui::SetCursorPosY(windowHeight * 0.2f);
-	ImGui::SetCursorPosX((windowWidth - 400.0f) * 0.5f);
-
 	ImGui::PushStyleColor(ImGuiCol_ChildBg, ImVec4(0.12f, 0.12f, 0.19f, 0.9f));
 	ImGui::PushStyleColor(ImGuiCol_Border, ImColors::VioletHeader);
 
-	if (ImGui::BeginChild("#questionCountRandom", ImVec2(childWidth, childHeight), ImGuiChildFlags_Borders))
+	ImGui::SetCursorPosY(windowHeight * 0.2f);
+	ImGui::SetCursorPosX((windowWidth - 400.0f) * 0.5f);
+	if (ImGui::BeginChild("##questionCountRandom", ImVec2(childWidth, childHeight), ImGuiChildFlags_Borders))
 	{
-		ImGuiIO& io = ImGui::GetIO();
-		ImFont* fontBold = io.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\segoeuib.ttf", 22.0f);
-		
-		ImGui::PushFont(fontBold);
-		
+		ImGui::PushFont(bold22);
+
 		float titleWidth = ImGui::CalcTextSize("Random Question Selection").x;
 		ImGui::SetCursorPosX((childWidth - titleWidth) * 0.5f);
 
 		ImGui::TextUnformatted("Random Question Selection");
-		
 		ImGui::PopFont();
 
 		ImGui::SetCursorPosY((childHeight - 30.0f) * 0.45f);
@@ -263,16 +267,70 @@ void Application::displayQuizSelection()
 
 		titleWidth = ImGui::CalcTextSize("Choose the total number of questions for this quiz").x;
 		ImGui::SetCursorPosX((childWidth - titleWidth) * 0.5f);
-		ImGui::TextUnformatted("Choose the total number of questions for this quiz");
+		ImGui::TextWrapped("Choose the total number of questions for this quiz");
 	}
 	ImGui::EndChild();
-	ImGui::PopStyleColor(2);
+
+	ImGui::Spacing();
+	ImGui::SetCursorPosX((windowWidth - 400.0f) * 0.5f);
+	if (ImGui::BeginChild("##QuestionInterval", ImVec2(childWidth, childHeight * 1.2f), ImGuiChildFlags_Borders))
+	{
+		ImGui::PushFont(bold22);
+
+		float titleWidth = ImGui::CalcTextSize("Question Interval").x;
+		ImGui::SetCursorPosX((childWidth - titleWidth) * 0.5f);
+
+		ImGui::TextUnformatted("Question Interval");
+		ImGui::PopFont();
+
+		ImGui::PushFont(bold18);
+		ImGui::Spacing();
+		ImGui::TextUnformatted("Interval Start:");
+
+		ImGui::SameLine();
+		ImGui::SetCursorPosX(childWidth - childWidth / 2.1f);
+		ImGui::TextUnformatted("Interval End:");
+		ImGui::PopFont();
+
+		ImGui::SetCursorPosY((childHeight - 30.0f) * 0.65f);
+		ImGui::SetNextItemWidth(childWidth / 2.25f);
+		ImGui::InputInt("##Start Index", &values[0]);
+
+		ImGui::SameLine();
+
+		ImGui::SetCursorPosX(childWidth - childWidth / 2.1f);
+		ImGui::SetNextItemWidth(childWidth / 2.25f);
+		ImGui::InputInt("##End Index", &values[1]);
+
+		titleWidth = ImGui::CalcTextSize("Define the interval [Start, End] for test generation").x;
+		ImGui::Spacing();
+		ImGui::SetCursorPosX((childWidth - titleWidth) * 0.5f);
+		ImGui::TextWrapped("%s", "Define the interval [Start, End] for test generation");
+	}
+	ImGui::EndChild();
+
+	ImGui::Spacing();
+	ImGui::SetCursorPosX((windowWidth - 400.0f + childWidth / 2.0f) * 0.5f);
+	ImGui::PushStyleColor(ImGuiCol_Button, ImColors::Violet);
+	if (ImGui::Button("Start", ImVec2(childWidth / 2.0f, 30.0f)))
+	{
+		if (values[0] && values[1] && values[0] < values[1])
+		{
+			questionCount = (values[1] - values[0]) + 1;
+			fillSet(values[0], values[1]);
+		}
+		else
+		{
+			randomizeSet(questionCount);
+		}
+		state = ApplicationState::QUIZ_EXEC;
+	}
+	ImGui::PopStyleColor(3);
 }
 
 void Application::displayQuiz()
 {
 	int size = document.root->childCount();
-
 
 	static std::vector<int> selectedResults(ApplicationDefault::maxQuestionOptions, 0);
 	std::vector<int> result{};
@@ -280,7 +338,6 @@ void Application::displayQuiz()
 
 	ImGui::TextEx(statusLabel.c_str());
 	ImGui::Spacing();
-
 
 	for (int i = 0; i < size; ++i)
 	{
@@ -526,6 +583,8 @@ void Application::resetQuizData()
 		selectionCache = {};
 	}
 
+	values[0] = 1;
+	values[1] = 1;
 	questionCount = ApplicationDefault::minimumQuestionCount;
 	currentQuestion = 0;
 }
@@ -545,7 +604,6 @@ std::vector<int> Application::parseResultLine(const std::string& string)
 			result[tolower(c) - 'a'] = ~result[tolower(c) - 'a'];
 		}
 	}
-
 	return result;
 }
 

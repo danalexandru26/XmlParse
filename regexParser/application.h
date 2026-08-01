@@ -21,6 +21,11 @@ public:
 private:
 	bool setupRenderer();
 
+	void setLightTheme();
+	void setDarkTheme();
+
+	ImFont* configureFont(const std::string_view& path, float size);
+
 	void displayMainMenuBar();
 	void displayDropDown();
 	void displayMainWindow();
@@ -33,22 +38,22 @@ private:
 	void randomizeSet(const int& size);
 	void fillSet(const int& start, const int& finish);
 
-
 	void resetQuizData();
 
 	std::vector<int> parseResultLine(const std::string& string);
 
-	void setLightTheme();
-	void setDarkTheme();
-
 private:
 	int currentQuestion;
 	int questionCount;
+	int values[2];
 
 	std::array<int, ApplicationDefault::maxQuestionCount> grade;
 	std::array<std::vector<int>, ApplicationDefault::maxQuestionCount> selectionCache;
 	std::vector<int> selector;
 	std::string title;
+
+	ImFont* bold22;
+	ImFont* bold18;
 
 	ApplicationState state;
 	Renderer renderer;

@@ -3,6 +3,7 @@
 #include<string_view>
 
 struct ImVec4;
+struct ImFont;
 
 namespace ImColors
 {

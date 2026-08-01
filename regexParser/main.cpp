@@ -13,7 +13,7 @@
 constexpr size_t width = 1280;
 constexpr size_t height = 720;
 
-int main()
+int WinMain()
 {
 	Application app({3, 3}, width, height, "QuizGen");
 
