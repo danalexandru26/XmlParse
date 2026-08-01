@@ -9,7 +9,7 @@ Application::Application(std::pair<int, int> version, const int& width, const in
 	: title{title}
 {
 	currentQuestion = 0;
-	questionCount = minimumQuestionCount;
+	questionCount = ApplicationDefault::minimumQuestionCount;
 
 	state = ApplicationState::QUIZ_SELECT;
 	renderer = Renderer(version, width, height, title);
@@ -18,9 +18,9 @@ Application::Application(std::pair<int, int> version, const int& width, const in
 	std::ranges::fill(selectionCache, std::vector<int>());
 }
 
-bool Application::readText(const std::string& path)
+bool Application::readText(const std::string_view& path)
 {
-	parser.configurePath(path);
+	parser.configurePath(std::string(path));
 
 	std::unique_ptr<XmlNode> root = parser.txtToXml();
 
@@ -52,7 +52,7 @@ bool Application::start()
 		return false;
 	}
 
-	if (!readText(defaultPathText))
+	if (!readText(SystemPath::defaultPathText))
 	{
 		std::cerr << "Error parsing text to XML\n";
 		return false;
@@ -76,7 +76,7 @@ bool Application::start()
 		displayStatusWindow();
 
 		ImGui::Render();
-		renderer.clearColor(defaultColor, GL_COLOR_BUFFER_BIT);
+		renderer.clearColor(ApplicationDefault::defaultColor, GL_COLOR_BUFFER_BIT);
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
 		renderer.swapBuffers();
@@ -225,57 +225,48 @@ void Application::displayStatusWindow()
 
 void Application::displayQuizSelection()
 {
-	float textWidth = ImGui::CalcTextSize("Quiz Configuration").x;
 	float windowWidth = ImGui::GetContentRegionAvail().x;
 	float windowHeight = ImGui::GetContentRegionAvail().y;
 
-	ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
-	ImGui::TextEx("Quiz Configuration");
+	float childWidth = ImGui::GetContentRegionAvail().x * 0.5f;
+	float childHeight = 140.0f;
 
-	ImGui::Spacing();
-	ImGui::Separator();
-	ImGui::Spacing();
+	ImGuiStyle& style = ImGui::GetStyle();
+	style.ChildRounding = 10.0f;
 
-	textWidth = ImGui::CalcTextSize("Question Count").x;
-	ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
-	ImGui::TextEx("Question Count");
-	ImGui::Spacing();
-
-	ImGui::SetNextItemWidth(400.0f);
 	ImGui::SetCursorPosY(windowHeight * 0.2f);
 	ImGui::SetCursorPosX((windowWidth - 400.0f) * 0.5f);
-	ImGui::InputInt("##Number of Questions", &questionCount);
-	ImGui::Spacing();
 
-	ImGui::SetNextItemWidth(300.0f);
-	ImGui::SetCursorPosY(windowHeight * 0.3f);
-	ImGui::SetCursorPosX((windowWidth - 300.0f) * 0.5f);
+	ImGui::PushStyleColor(ImGuiCol_ChildBg, ImVec4(0.12f, 0.12f, 0.19f, 0.9f));
+	ImGui::PushStyleColor(ImGuiCol_Border, ImColors::VioletHeader);
 
-	static int values[2]{};
-	if (ImGui::InputInt2("##", values))
+	if (ImGui::BeginChild("#questionCountRandom", ImVec2(childWidth, childHeight), ImGuiChildFlags_Borders))
 	{
-		values[0] = std::max(0, values[0]);
-		values[1] = std::max(0, values[1]);
-	}
+		ImGuiIO& io = ImGui::GetIO();
+		ImFont* fontBold = io.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\segoeuib.ttf", 22.0f);
+		
+		ImGui::PushFont(fontBold);
+		
+		float titleWidth = ImGui::CalcTextSize("Random Question Selection").x;
+		ImGui::SetCursorPosX((childWidth - titleWidth) * 0.5f);
 
-	ImGui::Spacing();
-	ImGui::SetCursorPosX((windowWidth - 200.0f) * 0.5f);
-	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.50f, 0.90f, 0.50f, 1.00f));
-	if (ImGui::Button("Start", ImVec2(200.0f, 30.0f)))
-	{
-		if (values[0] && values[1] && values[0] < values[1])
-		{
-			questionCount = (values[1] - values[0]) + 1;
-			fillSet(values[0], values[1]);
-		}
-		else
-		{
-			randomizeSet(questionCount);
-		}
+		ImGui::TextUnformatted("Random Question Selection");
+		
+		ImGui::PopFont();
 
-		state = ApplicationState::QUIZ_EXEC;
+		ImGui::SetCursorPosY((childHeight - 30.0f) * 0.45f);
+		ImGui::SetCursorPosX((childWidth - childWidth / 1.3f) * 0.5f);
+		ImGui::SetNextItemWidth(childWidth / 1.3f);
+
+		ImGui::InputInt("##Number of Questions", &questionCount);
+		ImGui::Spacing();
+
+		titleWidth = ImGui::CalcTextSize("Choose the total number of questions for this quiz").x;
+		ImGui::SetCursorPosX((childWidth - titleWidth) * 0.5f);
+		ImGui::TextUnformatted("Choose the total number of questions for this quiz");
 	}
-	ImGui::PopStyleColor();
+	ImGui::EndChild();
+	ImGui::PopStyleColor(2);
 }
 
 void Application::displayQuiz()
@@ -283,7 +274,7 @@ void Application::displayQuiz()
 	int size = document.root->childCount();
 
 
-	static std::vector<int> selectedResults(maxQuestionOptions, 0);
+	static std::vector<int> selectedResults(ApplicationDefault::maxQuestionOptions, 0);
 	std::vector<int> result{};
 	std::string statusLabel = std::format("Question {}/{}", currentQuestion + 1, questionCount);
 
@@ -433,7 +424,7 @@ void Application::displayQuizResults()
 			int optionIdx{};
 			for (const auto& option : document.root->children[current]->children)
 			{
-				if (optionIdx < maxQuestionOptions && selectionCache[current][optionIdx] == -1)
+				if (optionIdx < ApplicationDefault::maxQuestionOptions && selectionCache[current][optionIdx] == -1)
 				{
 					if (grade[current] == 1)
 					{
@@ -535,13 +526,13 @@ void Application::resetQuizData()
 		selectionCache = {};
 	}
 
-	questionCount = minimumQuestionCount;
+	questionCount = ApplicationDefault::minimumQuestionCount;
 	currentQuestion = 0;
 }
 
 std::vector<int> Application::parseResultLine(const std::string& string)
 {
-	std::vector<int> result(maxQuestionOptions, 0);
+	std::vector<int> result(ApplicationDefault::maxQuestionOptions, 0);
 
 	for (const auto& c : string)
 	{

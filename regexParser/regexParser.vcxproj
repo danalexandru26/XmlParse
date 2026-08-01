@@ -167,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
+    <ClInclude Include="Constants.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="XmlAttribute.h" />
     <ClInclude Include="XmlDocument.h" />

@@ -25,12 +25,6 @@
     <Filter Include="Source Files\Application">
       <UniqueIdentifier>{d8e66041-37bd-4a30-8eb0-115c00d4ce73}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Application\GUI">
-      <UniqueIdentifier>{ac802e1c-0bf6-425d-bed5-a29e6c835f12}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Application\GUI">
-      <UniqueIdentifier>{c3652268-e6c5-4536-adca-e1d9e6cc6d84}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Renderer">
       <UniqueIdentifier>{ef298d6b-8150-49ae-a217-6db7e71e4338}</UniqueIdentifier>
     </Filter>
@@ -103,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="Renderer.h">
       <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Header Files\Application</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
