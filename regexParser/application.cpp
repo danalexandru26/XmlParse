@@ -1,7 +1,7 @@
 #include <imgui.h>
 #include <imgui_internal.h>
-#include <backends/imgui_impl_glfw.h>
-#include <backends/imgui_impl_opengl3.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 #include"application.h"
 
 Application::Application(std::pair<int, int> version, const int& width, const int& height,
@@ -13,6 +13,9 @@ Application::Application(std::pair<int, int> version, const int& width, const in
 
 	state = ApplicationState::QUIZ_SELECT;
 	renderer = Renderer(version, width, height, title);
+
+	bold22 = configureFont(SystemPath::defaultFont, 22.0f);
+	bold18 = configureFont(SystemPath::defaultFont, 18.0f);
 
 	std::ranges::fill(grade, 0);
 	std::ranges::fill(selectionCache, std::vector<int>());
@@ -82,9 +85,6 @@ bool Application::start()
 		std::cerr << "Error parsing text to XML\n";
 		return false;
 	}
-
-	bold22 = configureFont(SystemPath::defaultFont, 22.0f);
-	bold18 = configureFont(SystemPath::defaultFont, 18.0f);
 
 	std::cerr << "Starting Application\n";
 	while (!renderer.shouldClose())
@@ -330,7 +330,7 @@ void Application::displayQuizSelection()
 
 void Application::displayQuiz()
 {
-	int size = document.root->childCount();
+	int size = document.root->childrenCount();
 
 	static std::vector<int> selectedResults(ApplicationDefault::maxQuestionOptions, 0);
 	std::vector<int> result{};
@@ -456,7 +456,7 @@ void Application::displayQuiz()
 
 void Application::displayQuizResults()
 {
-	int size = document.root->childCount();
+	int size = document.root->childrenCount();
 
 	for (int i = 0; i < selector.size(); ++i)
 	{

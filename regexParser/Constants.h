@@ -35,7 +35,7 @@ namespace ApplicationDefault
 namespace SystemPath
 {
 	constexpr std::string_view defaultFont = R"(C:\Windows\Fonts\segoeuib.ttf)";
-	constexpr std::string_view defaultPathText = R"(D:\github\XmlParse\x64\Debug\questions.txt)";
+	constexpr std::string_view defaultPathText = R"(D:\Emulation\regexParser\x64\Debug\questions.txt)";
 }
 
 enum class ApplicationState

@@ -52,9 +52,9 @@ std::string XmlNode::getData()
 	return data;
 }
 
-size_t XmlNode::childCount()
+int XmlNode::childrenCount()
 {
-	return children.size();
+	return static_cast<int>(children.size());
 }
 
 void XmlNode::appendData(const std::string& val)

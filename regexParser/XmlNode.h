@@ -32,7 +32,7 @@ public:
 	std::string sanitize();
 	std::string getTag();
 	std::string getData();
-	size_t childCount();
+	int childrenCount();
 
 	void appendData(const std::string& val);
 

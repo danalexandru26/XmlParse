@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\gl_files\include;E:\imgui-1.92.8-docking;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\gl_files\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\include\include;D:\include\include\imgui;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\include\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>E:\gl_files\include;E:\imgui-1.92.8-docking;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\gl_files\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\include\include;D:\include\include\imgui;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\include\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -149,15 +149,15 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\include\include\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\..\include\include\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\..\include\include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\include\include\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\..\include\include\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\..\include\include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\..\include\include\imgui\imgui_widgets.cpp" />
     <ClCompile Include="application.cpp" />
-    <ClCompile Include="E:\glad\glad.c" />
-    <ClCompile Include="E:\imgui-1.92.8-docking\backends\imgui_impl_glfw.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8-docking\backends\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8-docking\imgui.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_demo.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_draw.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_tables.cpp" />
-    <ClCompile Include="E:\imgui-1.92.8-docking\imgui_widgets.cpp" />
+    <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="XmlAttribute.cpp" />
