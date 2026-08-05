@@ -23,6 +23,7 @@ bool Renderer::initializeRenderer()
 	if (constructWindow() == false) { return false; }
 	if (initializeGLAD() == false) { return false; }
 
+	glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
 	glViewport(0, 0, width, height);
 
 	return true;
@@ -108,14 +109,6 @@ bool Renderer::shouldClose()
 	return glfwWindowShouldClose(window);
 }
 
-void Renderer::setResizeCallback(GLFWframebuffersizefun func)
-{
-	if (window != nullptr)
-	{
-		glfwSetFramebufferSizeCallback(window, func);
-	}
-}
-
 void Renderer::swapBuffers()
 {
 	glfwSwapBuffers(window);
@@ -152,4 +145,9 @@ bool Renderer::validateGLVersion(const std::pair<int, int>& version) const
 		return false;
 	}
 	return true;
+}
+
+void framebufferSizeCallback(GLFWwindow* window, int width, int height)
+{
+	glViewport(0, 0, width, height);
 }

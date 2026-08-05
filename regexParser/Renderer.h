@@ -19,7 +19,6 @@ inline const ImWchar ro_glyph_ranges[] = {
 };
 
 struct GLFWwindow;
-typedef void (*GLFWframebuffersizefun)(GLFWwindow* window, int width, int height);
 
 class Renderer
 {
@@ -36,7 +35,6 @@ public:
 	bool constructWindow();
 
 	bool shouldClose();
-	void setResizeCallback(GLFWframebuffersizefun func);
 	void swapBuffers();
 	void pollEvents();
 	void clearColor(std::array<float, 4> color, GLbitfield mask);
@@ -54,3 +52,5 @@ private:
 	int height;
 	std::string title;
 };
+
+void framebufferSizeCallback(GLFWwindow* window, int width, int height);
