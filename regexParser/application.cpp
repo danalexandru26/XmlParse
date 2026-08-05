@@ -178,18 +178,7 @@ void Application::displayDropDown()
 							if ((option->getTag() == "R" && state != ApplicationState::QUIZ_EXEC) || option->getTag() !=
 								"R")
 							{
-								float wrapWidth = ImGui::GetContentRegionAvail().x;
-								ImVec2 textSize =
-									ImGui::CalcTextSize(option->getData().c_str(), nullptr, false, wrapWidth);
-
-								ImVec2 cursorPos = ImGui::GetCursorPos();
-
-								if (ImGui::Selectable("##selectableId", false, 0, ImVec2(wrapWidth, textSize.y)))
-								{
-								}
-
-								ImGui::SetCursorPos(cursorPos);
-								ImGui::TextWrapped("%s", option->getData().c_str());
+								displaySelectableWrap(option->getData(), nullptr);
 							}
 						}
 						ImGui::Unindent(40.0f);
@@ -199,6 +188,7 @@ void Application::displayDropDown()
 			}
 			ImGui::EndChild();
 		}
+		ImGui::Unindent(10.0f);
 	}
 	ImGui::End();
 }
@@ -360,22 +350,10 @@ void Application::displayQuiz()
 				{
 					if (option->getTag() != "R")
 					{
-						float wrapWidth = ImGui::GetContentRegionAvail().x;
-						ImVec2 textSize =
-							ImGui::CalcTextSize(option->getData().c_str(), nullptr, false, wrapWidth);
-						ImVec2 cursorPos = ImGui::GetCursorPos();
-
 						ImGui::PushID(resultIdx);
 						ImGui::PushStyleColor(ImGuiCol_Header, ImColors::GreenHeader);
 
-						if (ImGui::Selectable("##", selectedResults[resultIdx] != 0, 0,
-						                      ImVec2(wrapWidth, textSize.y)))
-						{
-							selectedResults[resultIdx] = ~selectedResults[resultIdx];
-						}
-
-						ImGui::SetCursorPos(cursorPos);
-						ImGui::TextWrapped("%s", option->getData().c_str());
+						displaySelectableWrap(option->getData(), &selectedResults[resultIdx]);
 
 						ImGui::PopID();
 						ImGui::PopStyleColor();
@@ -506,18 +484,7 @@ void Application::displayQuizResults()
 					ImGui::PushStyleColor(ImGuiCol_Header, ImColors::Transparent);
 				}
 
-				float wrapWidth = ImGui::GetContentRegionAvail().x;
-				ImVec2 textSize =
-					ImGui::CalcTextSize(option->getData().c_str(), nullptr, false, wrapWidth);
-
-				ImVec2 cursorPos = ImGui::GetCursorPos();
-
-				if (ImGui::Selectable("##selectableId", true, 0, ImVec2(wrapWidth, textSize.y)))
-				{
-				}
-
-				ImGui::SetCursorPos(cursorPos);
-				ImGui::TextWrapped("%s", option->getData().c_str());
+				displaySelectableWrap(option->getData(), nullptr, true);
 
 				ImGui::PopStyleColor();
 				++optionIdx;
@@ -541,6 +508,29 @@ void Application::displayQuizResults()
 
 	ImGui::Spacing();
 	ImGui::TextEx(summary.c_str());
+}
+
+void Application::displaySelectableWrap(const std::string& text, int* condition, bool selected)
+{
+	float wrapWidth = ImGui::GetContentRegionAvail().x;
+	ImVec2 textSize = ImGui::CalcTextSize(text.c_str(), nullptr, false, wrapWidth);
+	ImVec2 cursorPos = ImGui::GetCursorPos();
+
+
+	if (condition != nullptr)
+	{
+		if (ImGui::Selectable("##", *condition != 0, 0, ImVec2(wrapWidth, textSize.y)))
+		{
+			*condition = ~(*condition);
+		}
+	}
+	else
+	{
+		ImGui::Selectable("##", selected, 0, ImVec2(wrapWidth, textSize.y));
+	}
+
+	ImGui::SetCursorPos(cursorPos);
+	ImGui::TextWrapped("%s", text.c_str());
 }
 
 void Application::randomizeSet(const int& size)

@@ -35,6 +35,8 @@ private:
 	void displayQuiz();
 	void displayQuizResults();
 
+	void displaySelectableWrap(const std::string& text, int* condition, bool selected = false);
+
 	void randomizeSet(const int& size);
 	void fillSet(const int& start, const int& finish);
 
