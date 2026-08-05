@@ -131,19 +131,25 @@ void Application::displayMainMenuBar()
 			{
 				setDarkTheme();
 			}
-
 			ImGui::EndMenu();
 		}
-
-		ImGui::PushStyleColor(ImGuiCol_Button, ImColors::VioletHeader);
-		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImColors::RedHeader);
-		if (ImGui::Button("Restart"))
+		if (ImGui::BeginMenu("Options"))
 		{
-			resetQuizData();
-			state = ApplicationState::QUIZ_SELECT;
-		}
-		ImGui::PopStyleColor(2);
+			if (ImGui::MenuItem("Restart"))
+			{
+				resetQuizData();
+				state = ApplicationState::QUIZ_SELECT;
+			}
 
+			if (state == ApplicationState::QUIZ_EXEC)
+			{
+				if (ImGui::MenuItem("Finish"))
+				{
+					state = ApplicationState::QUIZ_FINISH;
+				}
+			}
+			ImGui::EndMenu();
+		}
 		ImGui::EndMainMenuBar();
 	}
 }
@@ -464,7 +470,9 @@ void Application::displayQuizResults()
 			int optionIdx{};
 			for (const auto& option : document.root->children[current]->children)
 			{
-				if (optionIdx < ApplicationDefault::maxQuestionOptions && selectionCache[current][optionIdx] == -1)
+				if (optionIdx < ApplicationDefault::maxQuestionOptions
+					&& selectionCache[current].size() == ApplicationDefault::maxQuestionOptions
+					&& selectionCache[current][optionIdx] == -1)
 				{
 					if (grade[current] == 1)
 					{
