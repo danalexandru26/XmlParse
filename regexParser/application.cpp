@@ -8,14 +8,14 @@ Application::Application(std::pair<int, int> version, const int& width, const in
                          const std::string& title)
 	: title{title}
 {
+	bold22 = nullptr;
+	bold18 = nullptr;
+
 	currentQuestion = 0;
 	questionCount = ApplicationDefault::minimumQuestionCount;
 
 	state = ApplicationState::QUIZ_SELECT;
 	renderer = Renderer(version, width, height, title);
-
-	bold22 = configureFont(SystemPath::defaultFont, 22.0f);
-	bold18 = configureFont(SystemPath::defaultFont, 18.0f);
 
 	std::ranges::fill(grade, 0);
 	std::ranges::fill(selectionCache, std::vector<int>());
@@ -34,7 +34,12 @@ bool Application::setupRenderer()
 		std::cerr << "Error during ImGui initialization\n";
 		return false;
 	}
+
+	bold22 = configureFont(SystemPath::defaultFont, 22.0f);
+	bold18 = configureFont(SystemPath::defaultFont, 18.0f);
+
 	setDarkTheme();
+
 	return true;
 }
 
