@@ -35,7 +35,8 @@ private:
 	void displayQuiz();
 	void displayQuizResults();
 
-	void displaySelectableWrap(const std::string& text, int* condition, bool selected = false);
+	bool displaySelectableWrap(const std::string& text, int* condition, bool selected = false);
+	void displayProgressBar(float fraction, const ImVec4& color);
 
 	void randomizeSet(const int& size);
 	void fillSet(const int& start, const int& finish);

@@ -10,12 +10,12 @@
 #include"XmlParser.h"
 #include"Renderer.h"
 
-constexpr size_t width = 1280;
-constexpr size_t height = 720;
+constexpr size_t width = 1500;
+constexpr float aspect = 0.56f;
 
 int WinMain()
 {
-	Application app({3, 3}, width, height, "QuizGen");
+	Application app({3, 3}, width, width * aspect, "QuizGen");
 
 	if (!app.start())
 	{

@@ -12,6 +12,7 @@ namespace ImColors
 	constexpr ImVec4 Orange = ImVec4(1.00f, 0.42f, 0.00f, 1.00f);
 	constexpr ImVec4 Grey = ImVec4(0.12f, 0.15f, 0.18f, 1.00f);
 	constexpr ImVec4 Violet = ImVec4(0.53f, 0.38f, 0.96f, 1.0f);
+	constexpr ImVec4 Turquoise = ImVec4(0.21f, 0.74f, 0.60f, 1.0f);
 
 	constexpr ImVec4 RedHeader = ImVec4(0.95f, 0.20f, 0.20f, 0.70f);
 	constexpr ImVec4 GreenHeader = ImVec4(0.15f, 0.95f, 0.30f, 0.70f);
@@ -35,7 +36,7 @@ namespace ApplicationDefault
 namespace SystemPath
 {
 	constexpr std::string_view defaultFont = R"(C:\Windows\Fonts\segoeuib.ttf)";
-	constexpr std::string_view defaultPathText = R"(D:\Emulation\regexParser\x64\Debug\questions.txt)";
+	constexpr std::string_view defaultPathText = R"(questions.txt)";
 }
 
 enum class ApplicationState

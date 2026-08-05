@@ -157,44 +157,44 @@ void Application::displayMainMenuBar()
 void Application::displayDropDown()
 {
 	static int questionId{};
+	static std::array<int, 1028> selected{};
 
 	if (ImGui::Begin("Questions"))
 	{
-		ImGui::Indent(10.0f);
-		ImGui::PushItemWidth(200.0f);
-		ImGui::InputInt("Question ID", &questionId);
+		ImGui::SetNextItemWidth(200.0f);
+		ImGui::InputInt("Question", &questionId);
 		ImGui::Separator();
 
 		if (document.root != nullptr)
 		{
-			int currentLoopID{};
-
-			if (ImGui::BeginChild("Question", ImVec2(0, 0), false))
+			if (ImGui::BeginChild("Question", ImVec2(0, 0), true))
 			{
+				int current{};
 				for (const auto& child : document.root->children)
 				{
-					if (ImGui::CollapsingHeader(child->getTag().c_str()))
+					ImGui::PushID(current);
+					if (displaySelectableWrap(child->getData(), &selected[current]))
 					{
-						ImGui::Indent(20.0f);
-						ImGui::TextWrapped("%s", child->getData().c_str());
-						ImGui::Indent(20.0f);
-
 						for (const auto& option : child->children)
 						{
 							if ((option->getTag() == "R" && state != ApplicationState::QUIZ_EXEC) || option->getTag() !=
 								"R")
 							{
+								ImGui::PushStyleColor(ImGuiCol_Header, ImColors::OrangeHeader);
 								displaySelectableWrap(option->getData(), nullptr);
+								ImGui::PopStyleColor();
 							}
 						}
-						ImGui::Unindent(40.0f);
 					}
+
 					ImGui::Separator();
+					ImGui::PopID();
+
+					current += 1;
 				}
 			}
 			ImGui::EndChild();
 		}
-		ImGui::Unindent(10.0f);
 	}
 	ImGui::End();
 }
@@ -247,8 +247,8 @@ void Application::displayQuizSelection()
 	ImGui::PushStyleColor(ImGuiCol_ChildBg, ImVec4(0.12f, 0.12f, 0.19f, 0.9f));
 	ImGui::PushStyleColor(ImGuiCol_Border, ImColors::VioletHeader);
 
-	ImGui::SetCursorPosY(windowHeight * 0.2f);
-	ImGui::SetCursorPosX((windowWidth - 400.0f) * 0.5f);
+	ImGui::SetCursorPosY((windowHeight - (childHeight * 2)) * 0.4f);
+	ImGui::SetCursorPosX((windowWidth - childWidth) * 0.5f);
 	if (ImGui::BeginChild("##questionCountRandom", ImVec2(childWidth, childHeight), ImGuiChildFlags_Borders))
 	{
 		ImGui::PushFont(bold22);
@@ -269,11 +269,20 @@ void Application::displayQuizSelection()
 		titleWidth = ImGui::CalcTextSize("Choose the total number of questions for this quiz").x;
 		ImGui::SetCursorPosX((childWidth - titleWidth) * 0.5f);
 		ImGui::TextWrapped("Choose the total number of questions for this quiz");
+
+		if (questionCount < 0)
+		{
+			questionCount = 1;
+		}
+		else
+		{
+			questionCount = std::min(questionCount, 1028);
+		}
 	}
 	ImGui::EndChild();
 
 	ImGui::Spacing();
-	ImGui::SetCursorPosX((windowWidth - 400.0f) * 0.5f);
+	ImGui::SetCursorPosX((windowWidth - childWidth) * 0.5f);
 	if (ImGui::BeginChild("##QuestionInterval", ImVec2(childWidth, childHeight * 1.2f), ImGuiChildFlags_Borders))
 	{
 		ImGui::PushFont(bold22);
@@ -311,7 +320,7 @@ void Application::displayQuizSelection()
 	ImGui::EndChild();
 
 	ImGui::Spacing();
-	ImGui::SetCursorPosX((windowWidth - 400.0f + childWidth / 2.0f) * 0.5f);
+	ImGui::SetCursorPosX((windowWidth - (childWidth - childWidth / 2.0f)) * 0.5f);
 	ImGui::PushStyleColor(ImGuiCol_Button, ImColors::Violet);
 	if (ImGui::Button("Start", ImVec2(childWidth / 2.0f, 30.0f)))
 	{
@@ -336,6 +345,8 @@ void Application::displayQuiz()
 	static std::vector<int> selectedResults(ApplicationDefault::maxQuestionOptions, 0);
 	std::vector<int> result{};
 	std::string statusLabel = std::format("Question {}/{}", currentQuestion + 1, questionCount);
+
+	displayProgressBar(static_cast<float>(currentQuestion) / static_cast<float>(questionCount), ImColors::Turquoise);
 
 	ImGui::TextEx(statusLabel.c_str());
 	ImGui::Spacing();
@@ -518,16 +529,15 @@ void Application::displayQuizResults()
 	ImGui::TextEx(summary.c_str());
 }
 
-void Application::displaySelectableWrap(const std::string& text, int* condition, bool selected)
+bool Application::displaySelectableWrap(const std::string& text, int* condition, bool selected)
 {
 	float wrapWidth = ImGui::GetContentRegionAvail().x;
 	ImVec2 textSize = ImGui::CalcTextSize(text.c_str(), nullptr, false, wrapWidth);
 	ImVec2 cursorPos = ImGui::GetCursorPos();
 
-
 	if (condition != nullptr)
 	{
-		if (ImGui::Selectable("##", *condition != 0, 0, ImVec2(wrapWidth, textSize.y)))
+		if (ImGui::Selectable("##", (*condition) != 0, 0, ImVec2(wrapWidth, textSize.y)))
 		{
 			*condition = ~(*condition);
 		}
@@ -538,7 +548,21 @@ void Application::displaySelectableWrap(const std::string& text, int* condition,
 	}
 
 	ImGui::SetCursorPos(cursorPos);
+
+	ImGui::Indent(10.0f);
 	ImGui::TextWrapped("%s", text.c_str());
+	ImGui::Unindent(10.0f);
+
+	return (condition != nullptr) ? (*condition) != 0 : selected;
+}
+
+void Application::displayProgressBar(float fraction, const ImVec4& color)
+{
+	ImGui::PushStyleColor(ImGuiCol_PlotHistogram, color);
+
+	ImGui::ProgressBar(fraction, ImVec2(-1.0f, 4.0f));
+
+	ImGui::PopStyleColor();
 }
 
 void Application::randomizeSet(const int& size)
@@ -720,7 +744,7 @@ void Application::setDarkTheme()
 	colors[ImGuiCol_ButtonHovered] = accent_hover;
 	colors[ImGuiCol_ButtonActive] = accent_active;
 
-	colors[ImGuiCol_Header] = ImVec4(0.53f, 0.38f, 0.96f, 0.25f);
+	colors[ImGuiCol_Header] = accent;
 	colors[ImGuiCol_HeaderHovered] = accent_hover;
 	colors[ImGuiCol_HeaderActive] = accent_active;
 
@@ -738,6 +762,7 @@ void Application::setDarkTheme()
 	colors[ImGuiCol_ScrollbarGrabHovered] = surface1;
 	colors[ImGuiCol_ScrollbarGrabActive] = accent;
 	colors[ImGuiCol_NavHighlight] = accent;
+	colors[ImGuiCol_Separator] = accent;
 
 	style.WindowRounding = 8.0f;
 	style.FrameRounding = 5.0f;
