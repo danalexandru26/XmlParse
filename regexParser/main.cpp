@@ -15,7 +15,7 @@ constexpr float aspect = 0.56f;
 
 int WinMain()
 {
-	Application app({3, 3}, width, width * aspect, "QuizGen");
+	Application app({3, 3}, width, width * aspect, "");
 
 	if (!app.start())
 	{
